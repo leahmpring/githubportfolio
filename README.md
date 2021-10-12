@@ -1,6 +1,6 @@
 <a name="top"></a>
 
-# Welcome! Below is a little about me and a sampling of my work.
+# Welcome! This is a little about me and a sampling of my work.
 <hr>
 
 ## Education
