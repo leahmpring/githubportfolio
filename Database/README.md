@@ -1,7 +1,7 @@
 <a name="top"></a>
 
 # Back to Roots Bakery OLTP
-[Executive Summary](ExecutiveSummary) | [The Problem and Opportunity](ProblemOpportunity) | [Database Design](DatabaseDesign) | [Build Script](BuildScript)
+[Executive Summary](#ExecutiveSummary) | [The Problem and Opportunity](#ProblemOpportunity) | [Database Design](#DatabaseDesign) | [Build Script](#BuildScript)
 
 <a name="ExecutiveSummary"></a>
 ### Executive Summary
