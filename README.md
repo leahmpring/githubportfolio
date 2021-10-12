@@ -50,3 +50,6 @@ Univeristy of Denver, Daniels College of Business
   <li><a href = "https://www.credly.com/badges/cc990015-1ddf-42e1-8924-71b24d236c37/public_url">Microsoft Associate Word 2019</a></li>
   <li><a href = "https://www.credly.com/badges/e1f089c5-e148-4a30-9dc3-b6551e873dd8/public_url">Microsoft Associate PowerPoint 2019</a></li>
 </ul>
+
+<a name="database"></a>
+## SQL Database Projects
