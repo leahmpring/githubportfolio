@@ -35,7 +35,7 @@ Univeristy of Denver, Daniels College of Business
 <br><b>Certifications</b>
 <ul>
   <li><a href = "https://www.credly.com/badges/e654fce3-19be-40b3-9347-228eea2ce3a1/public_url">Microsoft Expert Access 2019</a></li>
-  <li>Microsoft Expert Excel 2019</li>
-  <li>Microsoft Associate Word 2019</li>
-  <li>Microsoft Associate PowerPoint 2019</li>
+  <li><a href = "https://www.credly.com/badges/23f6c6da-fbcd-4a01-bedc-2f9ca4e5a540/public_url">Microsoft Expert Excel 2019</a></li>
+  <li><a href = "https://www.credly.com/badges/cc990015-1ddf-42e1-8924-71b24d236c37/public_url">Microsoft Associate Word 2019</a></li>
+  <li><a href = "https://www.credly.com/badges/e1f089c5-e148-4a30-9dc3-b6551e873dd8/public_url">Microsoft Associate PowerPoint 2019</a></li>
 </ul>
