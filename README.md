@@ -19,7 +19,7 @@ Univeristy of Denver, Daniels College of Business
 <br><i>Programmer / Analyst Intern</i>
 <br>June 2019 - August 2021
 <br>
-<br>[See my full resume]
+<br>See my [resume] or [LinkedIn](https://www.linkedin.com/in/hannah-m-mcdonald/)
 
 <a name="skills"></a>
 ## Skills
