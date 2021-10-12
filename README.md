@@ -1,2 +1,9 @@
-# Hi there 👋
-[See my database](Database)
+<a name="top"></a>
+
+# Welcome! Below is a little about me and a sampling of my work.
+<hr>
+
+## Education
+Univeristy of Denver, Daniels College of Business
+<br>Bachelor of Science Business Administration – Business Information and Analytics
+<br>Expected Graduation June 2022
