@@ -59,16 +59,16 @@ CREATE TABLE Employee
   ```
 ```SQL
 CREATE TABLE CustomerOrder
-	(OrderID            INT IDENTITY(1,1)                 		CONSTRAINT pk_customer_order PRIMARY KEY,
-	EmployeeID          INT                               		CONSTRAINT fk_order_employee_id FOREIGN KEY
+	(OrderID            INT IDENTITY(1,1)                 	CONSTRAINT pk_customer_order PRIMARY KEY,
+	EmployeeID          INT                               	CONSTRAINT fk_order_employee_id FOREIGN KEY
 		REFERENCES Employee(EmployeeID),
-	LocationID          NVARCHAR(13)                      		CONSTRAINT fk_order_location_id FOREIGN KEY
+	LocationID          NVARCHAR(13)                      	CONSTRAINT fk_order_location_id FOREIGN KEY
 		REFERENCES StoreLocation(LocationID),
-	CustomerID          INT           	DEFAULT 0           	CONSTRAINT fk_order_customer_id FOREIGN KEY
+	CustomerID          INT DEFAULT 0           		CONSTRAINT fk_order_customer_id FOREIGN KEY
 		REFERENCES Customer(CustomerID),
-	OrderDate           DATE          	DEFAULT GetDate()   	CONSTRAINT nn_order_date NOT NULL,
-	OrderPlacement      NVARCHAR(10)  	DEFAULT 'In-Store'  	CONSTRAINT ck_order_placement CHECK ((OrderPlacement = 'In-Store') OR (OrderPlacement = 'Online') OR (OrderPlacement = 'Phone')) NOT NULL,
-	OrderFulfillment    NVARCHAR(10)  	DEFAULT 'In-Store'  	CONSTRAINT ck_order_fulfillment CHECK ((OrderFulfillment = 'In-Store') OR (OrderFulfillment = 'Pick-Up') OR (OrderFulfillment = 'Delivery')) NOT NULL
+	OrderDate           DATE DEFAULT GetDate()   		CONSTRAINT nn_order_date NOT NULL,
+	OrderPlacement      NVARCHAR(10) DEFAULT 'In-Store'	CONSTRAINT ck_order_placement CHECK ((OrderPlacement = 'In-Store') OR (OrderPlacement = 'Online') OR (OrderPlacement = 'Phone')) NOT NULL,
+	OrderFulfillment    NVARCHAR(10) DEFAULT 'In-Store'	CONSTRAINT ck_order_fulfillment CHECK ((OrderFulfillment = 'In-Store') OR (OrderFulfillment = 'Pick-Up') OR (OrderFulfillment = 'Delivery')) NOT NULL
 	);
   ```
 <br> Below is a sampling of my SQL statements to load data from CSV files into the tables:
