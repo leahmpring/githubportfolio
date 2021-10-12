@@ -28,6 +28,8 @@ Univeristy of Denver, Daniels College of Business
 <br>
 <br><b>Technical Skills</b>
 <ul>
+  <li>SQL</li>
+  <li>Visual Basic</li>
   <li>Microsoft SQL Server</li>
   <li>Visual Studio</li>
   <li>Tableau</li>
