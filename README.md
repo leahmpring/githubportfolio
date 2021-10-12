@@ -40,6 +40,7 @@ Univeristy of Denver, Daniels College of Business
   <li>Microsoft SQL Server</li>
   <li>Visual Studio</li>
   <li>Tableau</li>
+  <li>Trello</li>
 </ul>
 
 <br><b>Certifications</b>
