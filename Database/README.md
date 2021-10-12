@@ -71,7 +71,7 @@ CREATE TABLE CustomerOrder
 	OrderFulfillment    NVARCHAR(10) DEFAULT 'In-Store'	CONSTRAINT ck_order_fulfillment CHECK ((OrderFulfillment = 'In-Store') OR (OrderFulfillment = 'Pick-Up') OR (OrderFulfillment = 'Delivery')) NOT NULL
 	);
   ```
-<br> Below is a sampling of my SQL statements to load data from CSV files into the tables:
+Below is a sampling of my SQL statements to load data from CSV files into the tables:
 ```SQL
 EXECUTE (N'BULK INSERT CustomerOrder FROM ''' + @data_path + N'CustomerOrder.csv''
 WITH (
@@ -86,7 +86,7 @@ WITH (
 	);
 ');
 ```
-<br>To confirm the creation of the database, a list of table names and row counts is output by the following code as shown below:
+To confirm the creation of the database, the below list of table names and row counts is output by the following code:
 ```SQL
 SET NOCOUNT ON
 SELECT 'Customer' AS "Table",	COUNT(*) AS "Rows"	FROM Customer			UNION
