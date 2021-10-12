@@ -21,3 +21,114 @@ After seeing an increase in health-conscious eating and the success of the Bould
 ### Database Design: Entity Relationship Diagram (ERD)
 
 <img width="1003" alt="Back to Roots OLTP ERD" src="https://user-images.githubusercontent.com/91146906/137017556-bae865cc-df49-48f9-9cf5-417b10a44c3f.png">
+
+### Populating Data
+Coming soon...
+
+### Build Script
+The Back to Roots build script creates the "BackToRoots" database if it does not exist, deletes tables if they exist, creates tables with the appropriate attributes and constraints, populates each table with data from CSV files, and then lists table names and row counts for confirmation.
+<br>
+<br> Below is a sampling of my create table SQL statements:
+```SQL
+CREATE TABLE Customer
+	(CustomerID             INT IDENTITY(0,1)   CONSTRAINT pk_customer PRIMARY KEY,
+	CustomerFirstName       NVARCHAR(25)        CONSTRAINT nn_customer_first_name NOT NULL,
+	CustomerLastName        NVARCHAR(25)        CONSTRAINT nn_customer_last_name NOT NULL,
+	CustomerDOB             DATE,
+	CustomerEmail           NVARCHAR(100),
+	CustomerPhoneNumber     NVARCHAR(14),
+	CustomerStreetAddress   NVARCHAR(50),
+	CustomerCity            NVARCHAR(50),
+	CustomerState           NVARCHAR(2),
+	CustomerZipCode         NVARCHAR(11)
+	);
+  ```
+```SQL
+CREATE TABLE Employee
+	(EmployeeID             INT IDENTITY(1,1)   CONSTRAINT pk_employee PRIMARY KEY,
+	EmployeeFirstName       NVARCHAR(25)        CONSTRAINT nn_employee_first_name NOT NULL,
+	EmployeeLastName        NVARCHAR(25)        CONSTRAINT nn_employee_last_name NOT NULL,
+	EmployeeDOB             DATE                CONSTRAINT nn_employee_dob NOT NULL,
+	EmployeeEmail           NVARCHAR(67)        CONSTRAINT nn_employee_email NOT NULL,
+	EmployeePhoneNumber     NVARCHAR(14)        CONSTRAINT nn_employee_phone NOT NULL CONSTRAINT un_employee_phone UNIQUE,
+	EmployeeStreetAddress   NVARCHAR(50)        CONSTRAINT nn_employee_street NOT NULL,
+	EmployeeCity            NVARCHAR(50)        CONSTRAINT nn_employee_city NOT NULL,
+	EmployeeState           NVARCHAR(2)         CONSTRAINT nn_employee_state NOT NULL,
+	EmployeeZipCode         NVARCHAR(11)        CONSTRAINT nn_employee_zip NOT NULL
+	);
+  ```
+```SQL
+CREATE TABLE CustomerOrder
+	(OrderID            INT IDENTITY(1,1)                 CONSTRAINT pk_customer_order PRIMARY KEY,
+	EmployeeID          INT                               CONSTRAINT fk_order_employee_id FOREIGN KEY
+		REFERENCES Employee(EmployeeID),
+	LocationID          NVARCHAR(13)                      CONSTRAINT fk_order_location_id FOREIGN KEY
+		REFERENCES StoreLocation(LocationID),
+	CustomerID          INT           DEFAULT 0           CONSTRAINT fk_order_customer_id FOREIGN KEY
+		REFERENCES Customer(CustomerID),
+	OrderDate           DATE          DEFAULT GetDate()   CONSTRAINT nn_order_date NOT NULL,
+	OrderPlacement      NVARCHAR(10)  DEFAULT 'In-Store'  CONSTRAINT ck_order_placement CHECK ((OrderPlacement = 'In-Store') OR (OrderPlacement = 'Online') OR (OrderPlacement = 'Phone')) NOT NULL,
+	OrderFulfillment    NVARCHAR(10)  DEFAULT 'In-Store'  CONSTRAINT ck_order_fulfillment CHECK ((OrderFulfillment = 'In-Store') OR (OrderFulfillment = 'Pick-Up') OR (OrderFulfillment = 'Delivery')) NOT NULL
+	);
+  ```
+<br>
+<br> To confirm the creation of the database, a list of table names and row counts is output as follows:
+<br>
+<br><table>
+  <tr>
+    <th>Table</th>
+    <th>Rows</th>
+  </tr>
+  <tr>
+    <td>Customer</td>
+    <td>7070</td>
+  </tr>
+  <tr>
+    <td>CustomerOrder</td>
+    <td>200000</td>
+  </tr>
+  <tr>
+    <td>Diet</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>DietProduct</td>
+    <td>143</td>
+  </tr>
+  <tr>
+    <td>Employee</td>
+    <td>20</td>
+  </tr>
+  <tr>
+    <td>EmploymentHistory</td>
+    <td>27</td>
+  </tr>
+  <tr>
+    <td>OrderLine</td>
+    <td>553042</td>
+  </tr>
+  <tr>
+    <td>Position</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>Product</td>
+    <td>33</td>
+  </tr>
+  <tr>
+    <td>ProductType</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>RewardHistory</td>
+    <td>10863</td>
+  </tr>
+  <tr>
+    <td>RewardStatus</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>StoreLocation</td>
+    <td>2</td>
+  </tr>
+</table>
