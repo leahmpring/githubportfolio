@@ -32,7 +32,7 @@ Univeristy of Denver, Daniels College of Business
   <li>Achiever</li>
 </ol>
 
-<br><b>Technical Skills</b>
+<br><b>Tools and Technical Skills</b>
 <ul>
   <li>SQL</li>
   <li>Visual Basic</li>
