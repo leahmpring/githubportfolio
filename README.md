@@ -23,7 +23,7 @@ Univeristy of Denver, Daniels College of Business
 
 <a name="skills"></a>
 ## Skills
-<b>Clifton Strengths Finder (Fall 2018)</b>
+<b>CliftonStrengths (Fall 2018)</b>
  <ol>
   <li>Responsibility</li>
   <li>Learner</li>
