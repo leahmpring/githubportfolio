@@ -26,9 +26,15 @@ Univeristy of Denver, Daniels College of Business
 <b>Learner</b>
 <br><i>Story coming soon</i>
 <br>
+<br><b>Technical Skills</b>
+<ul>
+  <li>Microsoft SQL Server</li>
+  <li>Visual Studio</li>
+  <li>Tableau</li>
+</ul>
 <br><b>Certifications</b>
 <ul>
-  <li>Microsoft Expert Access 2019</li>
+  <li><a href = "https://www.credly.com/badges/e654fce3-19be-40b3-9347-228eea2ce3a1/public_url">Microsoft Expert Access 2019</a></li>
   <li>Microsoft Expert Excel 2019</li>
   <li>Microsoft Associate Word 2019</li>
   <li>Microsoft Associate PowerPoint 2019</li>
