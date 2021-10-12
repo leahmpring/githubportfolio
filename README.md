@@ -9,8 +9,8 @@ Univeristy of Denver, Daniels College of Business
 <br>Bachelor of Science Business Administration – Business Information and Analytics
 <br>Expected Graduation June 2022
 
-<a name="jobs"></a>
-## Jobs and Internships
+<a name="resume"></a>
+## (Some) Jobs and Internships
 Univeristy of Denver, Daniels College of Business
 <br>Microsoft Office Certification Program Teaching Assistant Coordinator
 <br>June 2020 - Present
@@ -18,3 +18,5 @@ Univeristy of Denver, Daniels College of Business
 <br>St. Vrain Valley School District: District Technology Services
 <br>Programmer / Analyst Intern
 <br>June 2019 - August 2021
+<br>
+<br>[See my full resume]
