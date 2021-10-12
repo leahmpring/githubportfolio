@@ -1,7 +1,7 @@
 <a name="top"></a>
 
 # Back to Roots Bakery OLTP
-[Executive Summary](#ExecutiveSummary) | [The Problem and Opportunity](#ProblemOpportunity) | [Database Design](#DatabaseDesign) | [Build Script](#BuildScript)
+[Executive Summary](#ExecutiveSummary) | [The Problem and Opportunity](#ProblemOpportunity) | [Database Design](#DatabaseDesign) | [Simulating Data](SimulatingData) | [Build Script](#BuildScript)
 
 <a name="ExecutiveSummary"></a>
 ### Executive Summary
@@ -28,8 +28,8 @@ After seeing an increase in health-conscious eating and the success of the Bould
 
 <img width="1003" alt="Back to Roots OLTP ERD" src="https://user-images.githubusercontent.com/91146906/137017556-bae865cc-df49-48f9-9cf5-417b10a44c3f.png">
 
-<a name="PopulatingData"></a>
-### Populating Data
+<a name="SimulatingData"></a>
+### Simulating Data
 Coming soon...
 
 <a name="BuildScript"></a>
