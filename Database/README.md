@@ -1,7 +1,7 @@
 <a name="top"></a>
 
 # Back to Roots Bakery OLTP
-[Executive Summary](#ExecutiveSummary) | [The Problem and Opportunity](#ProblemOpportunity) | [Database Design](#DatabaseDesign) | [Simulating Data](SimulatingData) | [Build Script](#BuildScript) | [View](#View) | [Function](#Function)
+[Executive Summary](#ExecutiveSummary) | [The Problem and Opportunity](#ProblemOpportunity) | [Database Design](#DatabaseDesign) | [Simulating Data](SimulatingData) | [Build Script](#BuildScript) | [View](#View) | [Function](#Function) | [Stored Procedure](#SPROC)
 
 <a name="ExecutiveSummary"></a>
 ### Executive Summary
@@ -216,6 +216,8 @@ Below is the table returned by the build script:
 The CurrentEmployee view lists all current employees and their information, excluding HR and payroll information (sensitive information). The purpose is to allow managers to see current employees, their position, and other relevant information without exposing sensitive HR and payroll information.
 <br>
 <br>The CurrentEmployee view is then used to create a list of the current employees' positions and contact information. The purpose is to share this list with staff members, so they can effectively communicate with the appropriate people when needed.
+<br>
+<br><i>Download the BackToRootsScript (including a view, function, and stored procedure) [here](../Database/BackToRootsScript.sql).</i>
 ```SQL
 -- CREATE VIEW: CurrentEmployee
 --
@@ -256,6 +258,8 @@ ORDER BY 2,1;
 ### Function
 #### ufn_OrderTotal Function
 The ufn_OrderTotal function calculates the order total for a specified order. The purpose is to quickly aggregate each line item and calculate the order total, so it is clear what customers need to pay. An order total needs to be calclated for every order placed, making it a highly purposeful user-defined function.
+<br>
+<br><i>Download the BackToRootsScript (including a view, function, and stored procedure) [here](../Database/BackToRootsScript.sql).</i>
 ```SQL
 -- CREATE FUNCTION: ufn_OrderTotal
 --
@@ -295,3 +299,62 @@ SELECT dbo.ufn_OrderTotal(0) AS "Order Does Not Exist";
 <a name="SPROC"></a>
 ### Stored Procedure
 #### usp_CustomerOrders Stored Procedure
+The usp_CustomerOrders stored procedure returns customer's order history. The purpose is to list every order placed by a customer, in addition to details regaring those orders, making it easy to track-down information regarding customers' orders if compliments, complaints, or questions arise. Additionally, it reveals the buying patterns of individual customers.
+<br>
+<br><i>Download the BackToRootsScript (including a view, function, and stored procedure) [here](../Database/BackToRootsScript.sql).</i>
+```SQL
+-- CREATE SPROC: usp_CustomerOrders
+--
+CREATE PROCEDURE 
+	usp_CustomerOrders(@FirstName NVARCHAR(25)=NULL, @LastName NVARCHAR(25)=NULL)
+AS
+BEGIN
+	IF @FirstName IS NULL AND @LastName IS NULL
+		BEGIN
+			-- Argument omitted for procedure
+			SELECT 'Omitted Parameter - Use the following form for this procedure: EXEC CustomerOrders''<CustomerFirstName>'' ''<CustomerLastName>''' AS "Warning Message"
+		END;
+	ELSE
+		BEGIN
+			-- Determine if customer has placed orders
+			DECLARE @CustOrderCount INT
+			SELECT @CustOrderCount = COUNT(*)
+			FROM CustomerOrder
+			INNER JOIN Customer
+				ON Customer.CustomerID = CustomerOrder.CustomerID
+			WHERE Customer.CustomerFirstName = @FirstName AND Customer.CustomerLastName = @LastName;
+			-- If customer has not placed orders, display warning message stating that
+			IF @CustOrderCount = 0
+				BEGIN
+					SELECT 'No orders for customer '+@FirstName+' '+@LastName AS "Warning: Not Found"
+					RETURN(1)
+				END;
+			-- If customer name specified and orders placed, retrieve orders for given customer
+			SELECT
+				Customer.CustomerID, -- Added to differentiate in the case two customers have the same name
+				CustomerOrder.OrderID, 
+				CONVERT(NVARCHAR,CustomerOrder.OrderDate,101) AS "Order Date",
+				CustomerOrder.LocationID AS "OrderLocation",
+				Employee.EmployeeFirstName + ' ' + Employee.EmployeeLastName AS "Employee",
+				CustomerOrder.OrderPlacement AS "Order Placed",
+				CustomerOrder.OrderFulfillment AS "Order Filled",
+				'$' + CONVERT(NVARCHAR,dbo.ufn_OrderTotal(CustomerOrder.OrderID),1) AS "Order Total"
+			FROM Customer
+			INNER JOIN CustomerOrder
+				ON Customer.CustomerID = CustomerOrder.CustomerID
+			INNER JOIN Employee
+				ON Employee.EmployeeID = CustomerOrder.EmployeeID
+			WHERE Customer.CustomerFirstName = @FirstName AND Customer.CustomerLastName = @LastName
+			ORDER BY CustomerOrder.OrderDate
+		END;
+END;
+GO
+--
+-- TEST SPROC: usp_CustomerOrders
+--
+EXEC usp_CustomerOrders @LastName='Dohr', @FirstName='Sydney';
+--
+EXEC usp_CustomerOrders 'Hannah','McDonald';
+--
+EXEC usp_CustomerOrders;
+```
