@@ -36,8 +36,37 @@ Coming soon...
 ### Build Script
 The Back to Roots build script creates the "BackToRoots" database if it does not exist, deletes tables if they exist, creates tables with the appropriate attributes and constraints, populates each table with data from CSV files, and then lists table names and row counts for confirmation.
 <br>
-<br> Below is a sampling of my create table SQL statements:
+<br> Below is the create database SQL statement and declaration of the data path variable, used to load data into the tables:
 ```SQL
+-- Create database if it does not exist
+--
+IF NOT EXISTS(SELECT * FROM sys.databases
+	WHERE NAME = N'BackToRoots')
+	CREATE DATABASE BackToRoots
+GO
+USE BackToRoots
+--
+-- Alter the path so the script can find the CSV files
+--
+DECLARE
+	@data_path NVARCHAR(256);
+SELECT @data_path = 'C:\BuildBackToRoots\';
+```
+Below is a sample of my drop table if exists SQL statements:
+```SQL
+-- Delete existing tables
+--
+IF EXISTS(
+	SELECT *
+	FROM sys.tables
+	WHERE NAME = N'OrderLine'
+	  )
+	DROP TABLE OrderLine;
+```
+Below is a sample of my create table SQL statements:
+```SQL
+-- Create tables
+--
 CREATE TABLE Customer
 	(CustomerID             INT IDENTITY(0,1)   CONSTRAINT pk_customer PRIMARY KEY,
 	CustomerFirstName       NVARCHAR(25)        CONSTRAINT nn_customer_first_name NOT NULL,
@@ -50,7 +79,7 @@ CREATE TABLE Customer
 	CustomerState           NVARCHAR(2),
 	CustomerZipCode         NVARCHAR(11)
 	);
-  ```
+```
 ```SQL
 CREATE TABLE Employee
 	(EmployeeID             INT IDENTITY(1,1)   CONSTRAINT pk_employee PRIMARY KEY,
@@ -79,8 +108,10 @@ CREATE TABLE CustomerOrder
 	OrderFulfillment    NVARCHAR(10) DEFAULT 'In-Store'	CONSTRAINT ck_order_fulfillment CHECK ((OrderFulfillment = 'In-Store') OR (OrderFulfillment = 'Pick-Up') OR (OrderFulfillment = 'Delivery')) NOT NULL
 	);
   ```
-Below is a sampling of my SQL statements to load data from CSV files into the tables:
+Below is a sample of my SQL statements to load data from CSV files into the tables:
 ```SQL
+-- Load table data
+--
 EXECUTE (N'BULK INSERT CustomerOrder FROM ''' + @data_path + N'CustomerOrder.csv''
 WITH (
 	
@@ -88,32 +119,36 @@ WITH (
 	CHECK_CONSTRAINTS,
 	CODEPAGE=''ACP'',
 	DATAFILETYPE = ''char'',
-	FIELDTERMINATOR= '','',
+	FIELDTERMINATOR= '','', -- change to ''\t'' if delimiter is tabs
 	ROWTERMINATOR = ''\n'',
 	TABLOCK
 	);
 ');
 ```
-To confirm the creation of the database, the below list of table names and row counts is output by the following code:
+To confirm the creation of the database, a list of table names and row counts is returned by the following code:
 ```SQL
+-- List table names and row counts for confirmation
+--
 SET NOCOUNT ON
-SELECT 'Customer' AS "Table",	COUNT(*) AS "Rows"	FROM Customer			UNION
-SELECT 'RewardStatus',		COUNT(*)		FROM RewardStatus		UNION
-SELECT 'RewardHistory',		COUNT(*)		FROM RewardHistory		UNION
-SELECT 'Employee',		COUNT(*)		FROM Employee			UNION
-SELECT 'Position',		COUNT(*)		FROM Position			UNION
-SELECT 'EmploymentHistory',	COUNT(*)		FROM EmploymentHistory		UNION
-SELECT 'Diet',			COUNT(*)		FROM Diet			UNION
-SELECT 'ProductType',		COUNT(*)		FROM ProductType		UNION
-SELECT 'Product',		COUNT(*)		FROM Product			UNION
-SELECT 'DietProduct',		COUNT(*)		FROM DietProduct		UNION
-SELECT 'StoreLocation',		COUNT(*)		FROM StoreLocation		UNION
-SELECT 'CustomerOrder',		COUNT(*)		FROM CustomerOrder		UNION
+SELECT 'Customer' AS "Table",	COUNT(*) AS "Rows"	FROM Customer		UNION
+SELECT 'RewardStatus',		COUNT(*)		FROM RewardStatus	UNION
+SELECT 'RewardHistory',		COUNT(*)		FROM RewardHistory	UNION
+SELECT 'Employee',		COUNT(*)		FROM Employee		UNION
+SELECT 'Position',		COUNT(*)		FROM Position		UNION
+SELECT 'EmploymentHistory',	COUNT(*)		FROM EmploymentHistory	UNION
+SELECT 'Diet',			COUNT(*)		FROM Diet		UNION
+SELECT 'ProductType',		COUNT(*)		FROM ProductType	UNION
+SELECT 'Product',		COUNT(*)		FROM Product		UNION
+SELECT 'DietProduct',		COUNT(*)		FROM DietProduct	UNION
+SELECT 'StoreLocation',		COUNT(*)		FROM StoreLocation	UNION
+SELECT 'CustomerOrder',		COUNT(*)		FROM CustomerOrder	UNION
 SELECT 'OrderLine',		COUNT(*)		FROM OrderLine
 ORDER BY 1;
 SET NOCOUNT OFF
 GO
 ```
+Below is the table returned by the build script:
+<br>
 <table>
   <tr>
     <th>Table</th>
