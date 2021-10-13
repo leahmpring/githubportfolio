@@ -1,7 +1,7 @@
 <a name="top"></a>
 
 # Back to Roots Bakery OLTP
-[Executive Summary](#ExecutiveSummary) | [The Problem and Opportunity](#ProblemOpportunity) | [Database Design](#DatabaseDesign) | [Simulating Data](SimulatingData) | [Build Script](#BuildScript)
+[Executive Summary](#ExecutiveSummary) | [The Problem and Opportunity](#ProblemOpportunity) | [Database Design](#DatabaseDesign) | [Simulating Data](SimulatingData) | [Build Script](#BuildScript) | [View](#View) | [Function](#Function)
 
 <a name="ExecutiveSummary"></a>
 ### Executive Summary
@@ -209,3 +209,89 @@ Below is the table returned by the build script:
     <td>2</td>
   </tr>
 </table>
+
+<a name="View"></a>
+### View
+#### CurrentEmployee View
+The CurrentEmployee view lists all current employees and their information, excluding HR and payroll information (sensitive information). The purpose is to allow managers to see current employees, their position, and other relevant information without exposing sensitive HR and payroll information.
+<br>
+<br>The CurrentEmployee view is then used to create a list of the current employees' positions and contact information. The purpose is to share this list with staff members, so they can effectively communicate with the appropriate people when needed.
+```SQL
+-- CREATE VIEW: CurrentEmployee
+--
+CREATE VIEW CurrentEmployee
+AS
+	SELECT
+		Employee.EmployeeFirstName,
+		Employee.EmployeeLastName,
+		Position.PositionName,
+		Employee.EmployeeDOB,
+		Employee.EmployeeEmail,
+		Employee.EmployeePhoneNumber,
+		Employee.EmployeeStreetAddress,
+		Employee.EmployeeCity,
+		Employee.EmployeeState,
+		Employee.EmployeeZipCode
+	FROM Employee
+	INNER JOIN EmploymentHistory
+		ON Employee.EmployeeID = EmploymentHistory.EmployeeID
+	INNER JOIN Position
+		ON Position.PositionID = EmploymentHistory.PositionID
+	WHERE EmploymentHistory.EndDate IS NULL
+WITH CHECK OPTION;
+GO
+--
+-- USE VIEW: Create list of current employees' positions and contact information
+--
+SELECT
+	EmployeeFirstName + ' ' + EmployeeLastName AS "Employee Name",
+	PositionName AS "Position",
+	EmployeeEmail AS "Email",
+	EmployeePhoneNumber AS "Phone"
+FROM CurrentEmployee
+ORDER BY 2,1;
+```
+
+<a name="Function"></a>
+### Function
+#### ufn_OrderTotal Function
+The ufn_OrderTotal function calculates the order total for a specified order. The purpose is to quickly aggregate each line item and calculate the order total, so it is clear what customers need to pay. An order total needs to be calclated for every order placed, making it a highly purposeful user-defined function.
+```SQL
+-- CREATE FUNCTION: ufn_OrderTotal
+--
+CREATE FUNCTION 
+	ufn_OrderTotal(@InputOrderID INT)
+	RETURNS MONEY 
+AS
+BEGIN
+	DECLARE @Tally INT, @OrderTotal MONEY;
+	--Test OrderID to see if it exists
+	SELECT @Tally = COUNT(*)
+	FROM CustomerOrder
+	WHERE CustomerOrder.OrderID = @InputOrderID;
+	-- If OrderID does not exist, output illogical -1
+	IF @Tally = 0
+		SET @OrderTotal = -1
+	-- If OrderID exists, calculate order total
+	ELSE
+		SELECT @OrderTotal = SUM(Product.ProductPrice*OrderLine.Quantity)
+		FROM CustomerOrder
+		INNER JOIN OrderLine
+			ON CustomerOrder.OrderID = OrderLine.OrderID
+		INNER JOIN Product
+			ON Product.ProductID = OrderLine.ProductID
+		WHERE CustomerOrder.OrderID = @InputOrderID
+	RETURN @OrderTotal
+END;
+GO
+--
+-- TEST FUNCTION: ufn_OrderTotal
+--
+SELECT '$' + CONVERT(NVARCHAR, dbo.ufn_OrderTotal(15),1) AS "Order Total: Order #15";
+--
+SELECT dbo.ufn_OrderTotal(0) AS "Order Does Not Exist";
+```
+
+<a name="SPROC"></a>
+### Stored Procedure
+#### usp_CustomerOrders Stored Procedure
