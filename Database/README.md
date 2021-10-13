@@ -124,6 +124,9 @@ https://user-images.githubusercontent.com/91146906/137153830-d4bc600c-1931-483e-
 ### Order Search Form
 The Order Search form returns orders from the database that meet specified criteria, allowing orders to quickly and easily be found. 
 <br>
+<br>
+<img width="964" alt="Back to Roots Order Search Form" src="https://user-images.githubusercontent.com/91146906/137174709-5fbce691-44a1-4805-95a1-6b241c17695a.png">
+<br>
 <br><b>Order Search View:</b> To create the Order Search form, an Order Search view is first created to list all relevant information about an order. This view is then used to create the Order Search form. <i>See the BackToRootsView.sql (including the OrderSearch view) [here](../Database/BackToRootsView.sql).</i>
 <br>
 <br> Back to Roots only allows certain combinations of order placement and order fulfillment methods. Thus, the Order Search form auto-populates the order fulfillment method based on the order placement method, using the following sub.
@@ -161,5 +164,93 @@ Further, if the user changes the auto-populated order fulfillment methed, the fo
         Catch ex As Exception
             'Do Nothing
         End Try
+    End Sub
+```
+Users can choose to search by all employees, rather than a specific employee, by checking the box next to "Search all employees." The following sub evaluates whether the box to search by all employees is checked and makes the appropriate changes to the Employee combo box.
+```VBA
+  Private Sub cbEmpAll_CheckStateChanged(sender As Object, e As EventArgs) Handles cbEmpAll.CheckStateChanged
+        'OrderSearch form: Check if the "search all employees" checkbox is selected and update the text in cbo.Employee accordingly
+        If cbEmpAll.Checked Then
+            cboEmployee.Text = "All Employees"
+        Else
+            cboEmployee.Text = "Ondrea Swanston"
+        End If
+    End Sub
+```
+To execute the search, the user presses the "Search" button and orders that meet the specified criteria are loaded. Different FillBy methods are used, depending on whether the user is searching by all employees or a specific employee. If no orders matching the criteria are found, a "No Orders Found" message is displayed.
+```VBA
+  Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
+        'OrderSearch Form: Load results meeting search conditions by pressing "Search" button
+        Try
+            If cbEmpAll.Checked Then
+                'Use the FillByEmpAll table adapter when box checked to exclude the employeeID condition in the WHERE clause
+                Me.OrderSearchTableAdapter.FillByEmpAll(Me.BackToRootsDataSet.OrderSearch,
+                Me.dtBeginDate.Value,
+                Me.dtEndDate.Value,
+                Me.cboLocation.SelectedValue,
+                Me.cboOrderPlacement.SelectedValue,
+                Me.cboOrderFulfillment.SelectedValue)
+                SearchSummary()
+            Else
+                'Use the FillBy table adapter when box checked to include the employeeID condition in the WHERE clause (selected value from cboEmployee)
+                Me.OrderSearchTableAdapter.FillBy(Me.BackToRootsDataSet.OrderSearch,
+                Me.dtBeginDate.Value,
+                Me.dtEndDate.Value,
+                Me.cboLocation.SelectedValue,
+                Me.cboEmployee.SelectedValue,
+                Me.cboOrderPlacement.SelectedValue,
+                Me.cboOrderFulfillment.SelectedValue)
+                SearchSummary()
+            End If
+        Catch ex As Exception
+            MsgBox("Error in the Query")
+        End Try
+        Dim records As Integer
+        records = Me.OrderSearchDataGridView.Rows.Count - 1
+        If records = 0 Then
+            MsgBox("No Orders Found")
+        End If
+    End Sub
+```
+After executing the search, a summary of the results is provided using the following sub.
+```VBA
+    Private Sub SearchSummary()
+        'OrderSearch Form: Summarize the search results
+        Dim OrderTotal As Decimal
+        Dim TotalItems As Integer
+        Dim dgvr As System.Windows.Forms.DataGridViewRow
+        For Each dgvr In Me.OrderSearchDataGridView.Rows
+            OrderTotal += dgvr.Cells("OrderTotal").Value
+            TotalItems += dgvr.Cells("ItemsOrdered").Value
+        Next dgvr
+        lblTotal.Text = OrderTotal.ToString("$ #,##0.00")
+        lblTotalItems.Text = TotalItems.ToString("#,##0")
+
+        Dim count As Integer
+        count = Me.OrderSearchDataGridView.Rows.Count - 1
+        lblQuantity.Text = count.ToString("#,##0")
+
+        Dim avg As Decimal
+        If (count > 0) Then
+            avg = OrderTotal / count
+        Else
+            avg = 0
+        End If
+        lblAvgTotal.Text = avg.ToString("$ #,##0.00")
+    End Sub
+```
+Users can double click on the orderID of the orders returned by the search to open the Orders form to the specified order, allowing users to easily see all information on the given order.
+```VBA
+  Private Sub OrderSearchDataGridView_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles OrderSearchDataGridView.CellContentDoubleClick
+        'OrderSearch Form: Open the Orders form to the orderID that was double clicked on
+        If (e.ColumnIndex <> 1) Then
+            Try
+                Dim frmOrder As New Orders
+                frmOrder.Show()
+                frmOrder.FillItem(OrderSearchDataGridView.Rows(e.RowIndex).Cells("OrderID").Value)
+            Catch ex As Exception
+                System.Windows.Forms.MessageBox.Show(ex.Message)
+            End Try
+        End If
     End Sub
 ```
