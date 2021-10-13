@@ -36,6 +36,8 @@ Coming soon...
 ### Build Script
 The Back to Roots build script creates the "BackToRoots" database if it does not exist, deletes tables if they exist, creates tables with the appropriate attributes and constraints, populates each table with data from CSV files, and then lists table names and row counts for confirmation.
 <br>
+<br><i>Download the BuildBackToRoots script and CSV data files [here].</i>
+<br>
 <br> Below is the create database SQL statement and declaration of the data path variable, used to load data into the tables:
 ```SQL
 -- Create database if it does not exist
