@@ -426,19 +426,19 @@ WITH (
 -- List table names and row counts for confirmation
 --
 SET NOCOUNT ON
-SELECT 'Customer' AS "Table",	COUNT(*) AS "Rows"	FROM Customer				UNION
-SELECT 'RewardStatus',			COUNT(*)			FROM RewardStatus			UNION
-SELECT 'RewardHistory',			COUNT(*)			FROM RewardHistory			UNION
-SELECT 'Employee',				COUNT(*)			FROM Employee				UNION
-SELECT 'Position',				COUNT(*)			FROM Position				UNION
-SELECT 'EmploymentHistory',		COUNT(*)			FROM EmploymentHistory		UNION
-SELECT 'Diet',					COUNT(*)			FROM Diet					UNION
-SELECT 'ProductType',			COUNT(*)			FROM ProductType			UNION
-SELECT 'Product',				COUNT(*)			FROM Product				UNION
-SELECT 'DietProduct',			COUNT(*)			FROM DietProduct			UNION
-SELECT 'StoreLocation',			COUNT(*)			FROM StoreLocation			UNION
-SELECT 'CustomerOrder',			COUNT(*)			FROM CustomerOrder			UNION
-SELECT 'OrderLine',				COUNT(*)			FROM OrderLine
+SELECT 'Customer' AS "Table",	COUNT(*) AS "Rows"	FROM Customer			UNION
+SELECT 'RewardStatus',		COUNT(*)		FROM RewardStatus		UNION
+SELECT 'RewardHistory',		COUNT(*)		FROM RewardHistory		UNION
+SELECT 'Employee',		COUNT(*)		FROM Employee			UNION
+SELECT 'Position',		COUNT(*)		FROM Position			UNION
+SELECT 'EmploymentHistory',	COUNT(*)		FROM EmploymentHistory		UNION
+SELECT 'Diet',			COUNT(*)		FROM Diet			UNION
+SELECT 'ProductType',		COUNT(*)		FROM ProductType		UNION
+SELECT 'Product',		COUNT(*)		FROM Product			UNION
+SELECT 'DietProduct',		COUNT(*)		FROM DietProduct		UNION
+SELECT 'StoreLocation',		COUNT(*)		FROM StoreLocation		UNION
+SELECT 'CustomerOrder',		COUNT(*)		FROM CustomerOrder		UNION
+SELECT 'OrderLine',		COUNT(*)		FROM OrderLine
 ORDER BY 1;
 SET NOCOUNT OFF
 GO
