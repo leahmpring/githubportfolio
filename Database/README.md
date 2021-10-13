@@ -38,7 +38,7 @@ The Back to Roots build script creates the "BackToRoots" database if it does not
 <br>
 <br><i>See the BuildBackToRoots.sql build script [here](../Database/BuildBackToRoots.sql).</i>
 <br>
-<br>To confirm the creation of the database, a list of table names and row counts is returned by the build script:
+<br>Below is the list of table names and row counts returned by the build script to confirm creation of the database:
 <br>
 <table>
   <tr>
