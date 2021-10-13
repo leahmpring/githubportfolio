@@ -124,4 +124,42 @@ https://user-images.githubusercontent.com/91146906/137153830-d4bc600c-1931-483e-
 ### Order Search Form
 The Order Search form returns orders from the database that meet specified criteria, allowing orders to quickly and easily be found. 
 <br>
-<br><b>Order Search View:</b> To create the Order Search form, I first created an Order Search view to list all relevant information about an order. This view is then used to create the Order Search form. <i>See the BackToRootsView.sql (including the OrderSearch view) [here](../Database/BackToRootsView.sql).</i>
+<br><b>Order Search View:</b> To create the Order Search form, an Order Search view is first created to list all relevant information about an order. This view is then used to create the Order Search form. <i>See the BackToRootsView.sql (including the OrderSearch view) [here](../Database/BackToRootsView.sql).</i>
+<br>
+<br> Back to Roots only allows certain combinations of order placement and order fulfillment methods. Thus, the Order Search form auto-populates the order fulfillment method based on the order placement method, using the following sub.
+```VBA
+    Private Sub cboOrderPlacement_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cboOrderPlacement.SelectionChangeCommitted
+        'OrderSaerch form: Auto-populate order fulfillment combo box based on selected order placement
+        Try
+            If cboOrderPlacement.SelectedValue = "In-Store" Then
+                cboOrderFulfillment.SelectedValue = "In-Store"
+            ElseIf cboOrderPlacement.SelectedValue = "Online" Then
+                cboOrderFulfillment.SelectedValue = "Delivery"
+            ElseIf cboOrderPlacement.SelectedValue = "Phone" Then
+                cboOrderFulfillment.SelectedValue = "Pick-Up"
+            End If
+        Catch ex As Exception
+            'Do Nothing
+        End Try
+    End Sub
+```
+Further, if the user changes the auto-populated order fulfillment methed, the form checks whether the order placement and fulfillment methods are compatible using the following sub. If they are not compatible, an error message is returned and the order fulfillment method reverts back to what it was prior to being changed.
+```VBA
+  Private Sub cboOrderFulfillment_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cboOrderFulfillment.SelectionChangeCommitted
+        'OrderSaerch form: Error message if placement and fulfillment method are not compatible (evaluated on fulfillment change)
+        Try
+            If cboOrderPlacement.SelectedValue = "In-Store" And cboOrderFulfillment.SelectedValue <> "In-Store" Then
+                MsgBox("Orders placed in-store must be filled in-store")
+                cboOrderFulfillment.SelectedValue = "In-Store"
+            ElseIf cboOrderPlacement.SelectedValue = "Online" And cboOrderFulfillment.SelectedValue = "In-Store" Then
+                MsgBox("Orders placed online must be filled via pick-up or delivery")
+                cboOrderFulfillment.SelectedValue = "Delivery"
+            ElseIf cboOrderPlacement.SelectedValue = "Phone" And cboOrderFulfillment.SelectedValue = "In-Store" Then
+                MsgBox("Orders placed via phone must be filled via pick-up or delivery")
+                cboOrderFulfillment.SelectedValue = "Pick-Up"
+            End If
+        Catch ex As Exception
+            'Do Nothing
+        End Try
+    End Sub
+```
