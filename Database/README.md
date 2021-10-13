@@ -212,7 +212,7 @@ Below is the table returned by the build script:
 
 <a name="ViewFunctionSPROC"></a>
 ## View, Function, and Stored Procedure
-<i>See the BackToRootsScript (including a view, function, and stored procedure) [here](../Database/BackToRootsScript.sql).</i>
+<i>See the BackToRootsScript.sql (including a view, function, and stored procedure) [here](../Database/BackToRootsScript.sql).</i>
 ### View: CurrentEmployee
 The CurrentEmployee view lists all current employees and their information, excluding HR and payroll information (sensitive information). The purpose is to allow managers to see current employees, their position, and other relevant information without exposing sensitive HR and payroll information.
 <br>
@@ -223,3 +223,18 @@ The ufn_OrderTotal function calculates the order total for a specified order. Th
 
 ### Stored Procedure: usp_CustomerOrders
 The usp_CustomerOrders stored procedure returns customer's order history. The purpose is to list every order placed by a customer, in addition to details regaring those orders, making it easy to track-down information regarding customers' orders if compliments, complaints, or questions arise. Additionally, it reveals the buying patterns of individual customers.
+
+
+<a name="Application"></a>
+## Order Management Application: Forms and Reports
+
+
+https://user-images.githubusercontent.com/91146906/137153830-d4bc600c-1931-483e-86c0-f72f6e6f0806.mp4
+
+<a name="OrderSearch"></a>
+### Order Search Form
+The Order Search form returns orders from the database that meet specified criteria, allowing orders to quickly and easily be found. 
+#### Order Search View
+<i>See the BackToRootsView.sql (including the OrderSearch view) [here](../Database/BackToRootsView.sql).</i>
+<br>
+<br>To create the Order Search form, I first created an Order Search view to list all relevant information about an order. This view is then used to create the Order Search form.
