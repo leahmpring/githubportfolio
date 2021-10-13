@@ -234,7 +234,5 @@ https://user-images.githubusercontent.com/91146906/137153830-d4bc600c-1931-483e-
 <a name="OrderSearch"></a>
 ### Order Search Form
 The Order Search form returns orders from the database that meet specified criteria, allowing orders to quickly and easily be found. 
-#### Order Search View
-<i>See the BackToRootsView.sql (including the OrderSearch view) [here](../Database/BackToRootsView.sql).</i>
 <br>
-<br>To create the Order Search form, I first created an Order Search view to list all relevant information about an order. This view is then used to create the Order Search form.
+<br><b>Order Search View:</b> To create the Order Search form, I first created an Order Search view to list all relevant information about an order. This view is then used to create the Order Search form. <i>See the BackToRootsView.sql (including the OrderSearch view) [here](../Database/BackToRootsView.sql).</i>
