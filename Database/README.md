@@ -254,3 +254,11 @@ Users can double click on the orderID of the orders returned by the search to op
         End If
     End Sub
 ```
+
+<a name="OrderForm"></a>
+### Order Form
+The Order form allows users to view individual orders, including information on the orders and the products ordered.
+<br>
+<br>
+<img width="845" alt="Back to Roots Order Form" src="https://user-images.githubusercontent.com/91146906/137210957-72085121-618f-40ed-ac20-0c2145c5fced.png">
+<br>
