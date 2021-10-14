@@ -257,8 +257,45 @@ Users can double click on the orderID of the orders returned by the search to op
 
 <a name="OrderForm"></a>
 ### Order Form
-The Order form allows users to view individual orders, including information on the orders and the products ordered.
+The Order form allows users to view individual orders, including information on the orders and the products ordered. Further, existing orders can be modified and new orders can be added.
 <br>
 <br>
 <img width="845" alt="Back to Roots Order Form" src="https://user-images.githubusercontent.com/91146906/137210957-72085121-618f-40ed-ac20-0c2145c5fced.png">
 <br>
+<br> The following sub, and another similar sub, allows users to search for a specific order by typing in the orderID and either clicking "Search" or pressing the enter key.
+```VBA
+    Private Sub txtOrderIDToolStrip_KeyDown(sender As Object, e As KeyEventArgs) Handles txtOrderIDToolStrip.KeyDown
+        'Order form: Press enter key when searching for specific order to find order
+        If e.KeyCode = Keys.Enter Then
+            Try
+                Dim cmd As New Data.SqlClient.SqlCommand
+                cmd.CommandText = "SELECT OrderID FROM CustomerOrder  WHERE OrderID = @OrderID"
+                cmd.CommandType = CommandType.Text
+                cmd.Connection = Me.CustomerOrderTableAdapter.Connection
+                cmd.Parameters.AddWithValue("@OrderID", txtOrderIDToolStrip.Text)
+                cmd.Connection.Open()
+                If cmd.ExecuteScalar <> 0 Then
+                    Me.CustomerOrderTableAdapter.FillBy(Me.BackToRootsDataSet.CustomerOrder, CType(txtOrderIDToolStrip.Text, Integer))
+                Else
+                    MsgBox("No Orders Found")
+                End If
+                cmd.Connection.Close()
+            Catch ex As System.Exception
+                System.Windows.Forms.MessageBox.Show(ex.Message)
+            End Try
+            e.SuppressKeyPress = True
+        End If
+    End Sub
+```
+After searching for an order, the following sub allows the user to click "Fill All" to reload all orders and toggle between them.
+```VBA
+    Private Sub ToolStripFillAllOrders_Click(sender As Object, e As EventArgs) Handles ToolStripFillAllOrders.Click
+        'Order form: Press "Fill All" button to load all records (useful after searching for one record)
+        Try
+            Me.CustomerOrderTableAdapter.Fill(Me.BackToRootsDataSet.CustomerOrder)
+            txtOrderIDToolStrip.Text = ""
+        Catch ex As Exception
+            MsgBox(ex.Message, "Error Filling All Customer Orders")
+        End Try
+    End Sub
+```
