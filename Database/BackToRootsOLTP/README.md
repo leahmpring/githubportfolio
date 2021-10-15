@@ -37,7 +37,7 @@ Coming soon...
 ## Build Script
 The Back to Roots build script creates the "BackToRoots" database if it does not exist, deletes tables if they exist, creates tables with the appropriate attributes and constraints, populates each table with data from CSV files, and then lists table names and row counts for confirmation. Due to the logic, the script can be run multiple times without error.
 <br>
-<br><i>See the BuildBackToRoots.sql build script [here](../Database/BuildBackToRoots.sql).</i>
+<br><i>See the BuildBackToRoots.sql build script [here](../Database/BackToRootsOLTP/BuildBackToRoots.sql).</i>
 <br>
 <br>Below is the list of table names and row counts returned by the build script to confirm creation of the database:
 <br>
@@ -102,7 +102,7 @@ The Back to Roots build script creates the "BackToRoots" database if it does not
 
 <a name="ViewFunctionSPROC"></a>
 ## View, Function, and Stored Procedure
-<i>See the BackToRootsScript.sql (including a view, function, and stored procedure) [here](../Database/BackToRootsScript.sql).</i>
+<i>See the BackToRootsScript.sql (including a view, function, and stored procedure) [here](../Database/BackToRootsOLTP/BackToRootsScript.sql).</i>
 ### View: CurrentEmployee
 The CurrentEmployee view lists all current employees and their information, excluding HR and payroll information (sensitive information). The purpose is to allow managers to see current employees, their position, and other relevant information without exposing sensitive HR and payroll information.
 <br>
