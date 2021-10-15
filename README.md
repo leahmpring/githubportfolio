@@ -55,6 +55,7 @@ Univeristy of Denver, Daniels College of Business
 ## SQL Database Projects
 
 ### Back to Roots OLTP
+Below is a video demo of the application's forms and reports. A complete project walk-through can be found [here](/Database/BackToRootsOLTP/#top)
 
 https://user-images.githubusercontent.com/91146906/137014339-857ce945-ef60-4d76-be97-c7a9ae3a6b52.mp4
 
