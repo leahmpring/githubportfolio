@@ -119,7 +119,7 @@ The usp_CustomerOrders stored procedure returns customer's order history. The pu
 ## Order Management Application: Forms and Reports
 This is a VB.NET application built using Microsoft Visual Studio, consisting of forms and reports that allow Back to Roots to interact with and gain insight from their OLTP. The forms support business operations, and the reports empower data-driven decision making.
 <br>
-<br><b>Forms: </b>[Start-Up Form](../BackToRootsForms/#StartUpForm) | [Order Search Form](../Database/BackToRootsForms/#OrderSearchForm) | [Order Form](../Database/BackToRootsForms/#OrderForm) | [Customer Form](../Database/BackToRootsForms/#CustomerForm) | [Reward Status Form](../Database/BackToRootsForms/#RewardStatusForm)
+<br><b>Forms: </b>[Start-Up Form](../BackToRootsOLTP/BackToRootsForms/#StartUpForm) | [Order Search Form](../BackToRootsOLTP/BackToRootsForms/#OrderSearchForm) | [Order Form](../BackToRootsOLTP/BackToRootsForms/#OrderForm) | [Customer Form](../BackToRootsOLTP/BackToRootsForms/#CustomerForm) | [Reward Status Form](../BackToRootsOLTP/BackToRootsForms/#RewardStatusForm)
 <br><b>Reports: </b>[Product Sales Report](#ProductSalesReport) | [Employee Performance Report](#EmployeePerformanceReport)
 <br>
 <br>Below is a video demo of the application's forms and reports, followed by detailed descriptions and the code behind them.
