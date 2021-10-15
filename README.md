@@ -24,7 +24,7 @@ Univeristy of Denver, Daniels College of Business
 
 <a name="skills"></a>
 # Skills
-<b>CliftonStrengths (Fall 2018)</b>
+### CliftonStrengths (Fall 2018)
  <ol>
   <li>Responsibility</li>
   <li>Learner</li>
@@ -33,18 +33,18 @@ Univeristy of Denver, Daniels College of Business
   <li>Achiever</li>
 </ol>
 
-<br><b>Tools and Technical Skills</b>
+### Tools and Technical Skills
 <ul>
   <li>SQL</li>
   <li>Visual Basic</li>
   <li>Excel</li>
-  <li>Microsoft SQL Server</li>
-  <li>Visual Studio</li>
+  <li>Microsoft SQL Server Management Studio</li>
+  <li>Microsoft Visual Studio</li>
   <li>Tableau</li>
   <li>Trello</li>
 </ul>
 
-<br><b>Certifications</b>
+### Certifications
 <ul>
   <li><a href = "https://www.credly.com/badges/e654fce3-19be-40b3-9347-228eea2ce3a1/public_url">Microsoft Expert Access 2019</a></li>
   <li><a href = "https://www.credly.com/badges/23f6c6da-fbcd-4a01-bedc-2f9ca4e5a540/public_url">Microsoft Expert Excel 2019</a></li>
