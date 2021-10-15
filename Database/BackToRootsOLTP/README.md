@@ -2,7 +2,7 @@
 
 # Back to Roots Bakery OLTP
 [Executive Summary](#ExecutiveSummary) | [Problem and Opportunity](#ProblemOpportunity) | [Database Design](#DatabaseDesign) | [Simulating Data](#SimulatingData)
-<br>[Build Script](#BuildScript) | [View, Function, Stored Procedure](#ViewFunctionSPROC) | [VB.NET Application](#Application) | [Download and Explore!](#YouTry)
+<br>[Build Script](#BuildScript) | [View, Function, Stored Procedure](#ViewFunctionSPROC) | [VB.NET Application](#Application) | [Download and Explore!](#DownloadExplore)
 
 <a name="ExecutiveSummary"></a>
 ## Executive Summary
@@ -205,7 +205,7 @@ GROUP BY
 	IIF(EmploymentHistory.EndDate IS NULL, 'Current', 'End Dated');
 ```
 
-<a name="YouTry"></a>
+<a name="DownloadExplore"></a>
 ## Downlaod and Explore!
 Want to explore the Back to Roots OLTP yourself?
 <br>
