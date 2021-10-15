@@ -117,8 +117,14 @@ The usp_CustomerOrders stored procedure returns customer's order history. The pu
 
 <a name="Application"></a>
 ## Order Management Application: Forms and Reports
-<b>Forms: </b>[Start-Up Form](../Database/BackToRootsForms/#StartUpForm) | [Order Search Form](../Database/BackToRootsForms/#OrderSearchForm) | [Order Form](../Database/BackToRootsForms/#OrderForm) | [Customer Form](../Database/BackToRootsForms/#CustomerForm) | [Reward Status Form](../Database/BackToRootsForms/#RewardStatusForm)
+This is a VB.NET application built using Visual Studio and consisting of forms and reports that allow Back to Roots Bakery to interact with and gain insight from their OLTP. The forms support business operations, and the reports empower data-driven decision making.
+<br>
+<br><b>Forms: </b>[Start-Up Form](../Database/BackToRootsForms/#StartUpForm) | [Order Search Form](../Database/BackToRootsForms/#OrderSearchForm) | [Order Form](../Database/BackToRootsForms/#OrderForm) | [Customer Form](../Database/BackToRootsForms/#CustomerForm) | [Reward Status Form](../Database/BackToRootsForms/#RewardStatusForm)
 <br><b>Reports: </b>[Product Sales Report](#ProductSalesReport) | [Employee Performance Report](#EmployeePerformanceReport)
+<br>
+<br>Below is a video demo of the application's forms and reports, followed by detailed descriptions and the code behind them.
+<br>
+<br><i>Unmute video for narration</i>
 
 
 https://user-images.githubusercontent.com/91146906/137153830-d4bc600c-1931-483e-86c0-f72f6e6f0806.mp4
