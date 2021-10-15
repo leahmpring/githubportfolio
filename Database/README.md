@@ -1,9 +1,8 @@
 <a name="top"></a>
 
 # Back to Roots Bakery OLTP
-[Executive Summary](#ExecutiveSummary) | [Problem and Opportunity](#ProblemOpportunity)
-<br>[Database Design](#DatabaseDesign) | [Simulating Data](#SimulatingData) | [Build Script](#BuildScript)
-<br>[View, Function, Stored Procedure](#ViewFunctionSPROC) | [VB.NET Application](#Application)
+[Executive Summary](#ExecutiveSummary) | [Problem and Opportunity](#ProblemOpportunity) | [Database Design](#DatabaseDesign) | [Simulating Data](#SimulatingData)
+<br>[Build Script](#BuildScript) | [View, Function, Stored Procedure](#ViewFunctionSPROC) | [VB.NET Application](#Application) | [Download and Explore!](#YouTry)
 
 <a name="ExecutiveSummary"></a>
 ## Executive Summary
