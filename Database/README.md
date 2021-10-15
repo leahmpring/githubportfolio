@@ -288,7 +288,7 @@ The Order form allows users to view individual orders, including information on 
 <br>
 <img width="845" alt="Back to Roots Order Form" src="https://user-images.githubusercontent.com/91146906/137210957-72085121-618f-40ed-ac20-0c2145c5fced.png">
 <br>
-<br><i>See the VB code behind the Order form [here](../Database/BackToRootsForms/Order.vb).</i>
+<br><i>See the VB code behind the Order form [here](../Database/BackToRootsForms/Orders.vb).</i>
 <br>
 <br>Similar to the Order Search form, the Orders form uses subs to ensure only acceptable order placement and fulfillment methods are selected. Further, the order total is calculated and displayed, like the summary information on the Order Search form.
 <br>
@@ -391,7 +391,7 @@ The Customer form allows users to view information regarding customers, includin
 <br>
 <img width="1207" alt="Back to Roots Customer Form" src="https://user-images.githubusercontent.com/91146906/137405419-a87373b4-eb91-4fc0-84d9-1cebbb4328ee.png">
 <br>
-<br><i>See the VB code behind the Customer form [here](../Database/BackToRootsForms/Customer.vb).</i>
+<br><i>See the VB code behind the Customer form [here](../Database/BackToRootsForms/Customers.vb).</i>
 <br>
 <br>Similar to the Orders form, the Customer form allows users to search for a customer by last name (or part of a last name). Users can then click "Fill All" to reload all customers and toggle between them. Further, when a new customer is added, the customer ID is auto-populated, like the order ID. Similar to the Order Search form, users can double click on the orderID in the customer's order history to open the Orders form to the specified order. Additionally, the total spent by the customer is calculated and displayed, like the summary information on the Order Search form.
 <br>
