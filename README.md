@@ -1,17 +1,17 @@
 <a name="top"></a>
 
-# Welcome! This is a little about me and a sampling of my work.
-<hr>
+## Welcome! This is a little about me and a sampling of my work.
+
 [Education](#education) | [Jobs and Internships](#resume) | [Skills](#skills) | [Database Projects](#DatabaseProjects)
 
 <a name="education"></a>
-## Education
+# Education
 Univeristy of Denver, Daniels College of Business
 <br>Bachelor of Science Business Administration – Business Information and Analytics
 <br>Expected Graduation June 2022
 
 <a name="resume"></a>
-## (Some) Jobs and Internships
+# (Some) Jobs and Internships
 <b>Univeristy of Denver, Daniels College of Business</b>
 <br><i>Microsoft Office Certification Program Teaching Assistant Coordinator</i>
 <br>June 2020 - Present
@@ -23,7 +23,7 @@ Univeristy of Denver, Daniels College of Business
 <br>See my [resume] or [LinkedIn](https://www.linkedin.com/in/hannah-m-mcdonald/)
 
 <a name="skills"></a>
-## Skills
+# Skills
 <b>CliftonStrengths (Fall 2018)</b>
  <ol>
   <li>Responsibility</li>
@@ -53,9 +53,9 @@ Univeristy of Denver, Daniels College of Business
 </ul>
 
 <a name="DatabaseProjects"></a>
-## Database Projects
+# Database Projects
 
-### Back to Roots OLTP
+## Back to Roots OLTP
 Below is a video demo of the application's forms and reports. A complete project walk-through can be found [here](/Database/BackToRootsOLTP/#top)
 
 https://user-images.githubusercontent.com/91146906/137014339-857ce945-ef60-4d76-be97-c7a9ae3a6b52.mp4
