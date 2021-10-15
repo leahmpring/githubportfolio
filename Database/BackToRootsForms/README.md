@@ -20,7 +20,7 @@ The Order Search form returns orders from the database that meet specified crite
 <br>
 <img width="964" alt="Back to Roots Order Search Form" src="https://user-images.githubusercontent.com/91146906/137174709-5fbce691-44a1-4805-95a1-6b241c17695a.png">
 <br>
-<br><b>Order Search View:</b> To create the Order Search form, an Order Search view is first created to list all relevant information about an order. This view is then used to create the Order Search form. <i>See the BackToRootsView.sql (including the OrderSearch view) [here](../BackToRootsView.sql).</i>
+<br><b>Order Search View:</b> To create the Order Search form, an Order Search view is first created to list all relevant information about an order. This view is then used to create the Order Search form. <i>See the BackToRootsView.sql (including the OrderSearch view) [here](../BackToRootsForms/BackToRootsView.sql).</i>
 <br>
 <br> Back to Roots only allows certain combinations of order placement and fulfillment methods. Thus, the Order Search form auto-populates the order fulfillment method based on the order placement method, using the following sub.
 ```VBA
