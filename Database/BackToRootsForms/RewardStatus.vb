@@ -16,6 +16,7 @@
             MsgBox("Unable to Load Form")
         End Try
     End Sub
+    
     Private Sub SearchSummary()
         'RewardStatus form: Summarize the search results
         Dim count As Integer
@@ -27,6 +28,7 @@
         'RewardStatus form: Close form
         Me.Close()
     End Sub
+    
     Private Sub OrderSearchToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OrderSearchToolStripMenuItem.Click
         'RewardStatus form: Open OrderSearch form from menu
         Try
