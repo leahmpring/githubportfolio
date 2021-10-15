@@ -273,6 +273,8 @@ The Customer form allows users to view information regarding customers, includin
 <br>
 <img width="1207" alt="Back to Roots Customer Form" src="https://user-images.githubusercontent.com/91146906/137405419-a87373b4-eb91-4fc0-84d9-1cebbb4328ee.png">
 <br>
+<br><b>Order Search View:</b> To create the Order History subform, an Order Search view is first created to list all relevant information about an order. This view is then used to create the Order History subform. <i>See the BackToRootsView.sql (including the OrderSearch view) [here](../BackToRootsForms/BackToRootsView.sql).</i>
+<br>
 <br>Similar to the Orders form, the Customer form allows users to search for a customer by last name (or part of a last name). Users can then click "Fill All" to reload all customers and toggle between them. Further, when a new customer is added, the customer ID is auto-populated, like the order ID. Similar to the Order Search form, users can double click on the orderID in the customer's order history to open the Orders form to the specified order. Additionally, the total spent by the customer is calculated and displayed, like the summary information on the Order Search form.
 <br>
 <br> The customer's current rewards status is displayed on the form using the following sub.
