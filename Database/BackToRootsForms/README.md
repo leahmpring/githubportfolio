@@ -1,14 +1,17 @@
+<a name="Top"></a>
+# Back to Roots Bakery Forms
+
 <a name="StartUpForm"></a>
-### Start-Up Form
+## Start-Up Form
 The Start-Up form serves as a homepage for the other forms; all forms can be opened from the Start-Up form. There is also a menu on each form that allows any form to be opened from any form.
 <br>
 <br>
 <img width="669" alt="Back to Roots Start-Up Form" src="https://user-images.githubusercontent.com/91146906/137418165-e97a5446-28b0-42e4-80ae-70e9be06293a.png">
 <br>
-<br><i>See the VB code behind the Start-Up form [here](../Database/BackToRootsForms/Startup.vb).</i>
+<br><i>See the VB code behind the Start-Up form [here](../BackToRootsForms/Startup.vb).</i>
 
 <a name="OrderSearchForm"></a>
-### Order Search Form
+## Order Search Form
 The Order Search form returns orders from the database that meet specified criteria, allowing orders to quickly and easily be found. 
 <br>
 <br>
@@ -158,7 +161,7 @@ Additionally, the following sub is included on the Order form.
 ```
 
 <a name="OrderForm"></a>
-### Order Form
+## Order Form
 The Order form allows users to view individual orders, including information on the orders and the products ordered. Further, existing orders can be modified and new orders can be added.
 <br>
 <br>
@@ -261,7 +264,7 @@ To get information on the customer associated with an order, users can click the
 ```
 
 <a name="CustomerForm"></a>
-### Customer Form
+## Customer Form
 The Customer form allows users to view information regarding customers, including their personal information, rewards history, and order history. Additionally, it displays the customer's total spending at Back to Roots, and how much more they need to spend to reach the next rewards tier. Further, existing customers' information can be modified and new customers can be added.
 <br>
 <br>
@@ -350,41 +353,10 @@ To get more information on the reward statuses, users can click the "Rewards Inf
 ```
 
 <a name="RewardStatusForm"></a>
-### Reward Status Form
+## Reward Status Form
 The Reward Status form is a simple form that allows users to view and modify information regarding reward statuses. 
 <br>
 <br>
 <img width="1016" alt="Back to Roots Reward Status Form" src="https://user-images.githubusercontent.com/91146906/137407991-0de062cc-f591-411d-84f9-08491e2874fa.png">
 <br>
 <br><i>See the VB code behind the Reward Status form [here](../Database/BackToRootsForms/RewardStatus.vb).</i>
-
-<a name="ProductSalesReport"></a>
-### Product Sales Report
-The Product Sales report shows users the quantity sold and sales by product type and product yearly and monthly. The report can be filtered by month and location. Additionally, there are graphs displaying the sales by month and sales by product type.
-<br>
-<br> This report can inform decisions regarding the menu and purchasing of inventory.
-<br>
-<br>
-![Back to Roots Product Sales Report](https://user-images.githubusercontent.com/91146906/137420652-78e29fc3-1a25-4691-b66a-8bf17649a969.png)
-<br>
-<br>The following query is used to create the Product Sales report.
-```SQL
--- Select the appropriate data for the ProductSales Report
-SELECT 
-	YEAR(CustomerOrder.OrderDate) AS 'Year',
-	MONTH(CustomerOrder.OrderDate) AS 'MonthSort',
-	DATENAME(month, CustomerOrder.OrderDate) AS 'Month',
-	CustomerOrder.LocationID, 
-	ProductType.ProductTypeName, 
-	Product.ProductName, 
-	OrderLine.Quantity,
-	OrderLine.Quantity*Product.ProductPrice AS Sales
-FROM  CustomerOrder 
-INNER JOIN OrderLine 
-	ON CustomerOrder.OrderID = OrderLine.OrderID 
-INNER JOIN Product 
-	ON OrderLine.ProductID = Product.ProductID 
-INNER JOIN ProductType 
-	ON Product.ProductTypeID = ProductType.ProductTypeID
-WHERE (CustomerOrder.LocationID IN (@Location)) AND (YEAR(CustomerOrder.OrderDate) = @Year);
-```
