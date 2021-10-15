@@ -1,4 +1,4 @@
-# Explore Database Projects!
+# Database Projects
 ## Back to Roots OLTP
 Description coming soon...
 <br>
