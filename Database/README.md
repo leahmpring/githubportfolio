@@ -201,5 +201,7 @@ GROUP BY
 ```
 
 <a name="YouTry"></a>
-## Downlaod and Explore the Back to Roots OLTP!
-Want to explore the Back to Roots OLTP yourself? Download the BackToRootsOLTP.zip [here] and open the readme.txt for instructions. This zip file contains all the project's components.
+## Downlaod and Explore!
+Want to explore the Back to Roots OLTP yourself?
+<br>
+<br>Download the BackToRootsOLTP.zip [here] and open the readme.txt for instructions. This zip file contains all the project's components.
