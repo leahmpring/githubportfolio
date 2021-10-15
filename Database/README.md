@@ -116,10 +116,19 @@ The usp_CustomerOrders stored procedure returns customer's order history. The pu
 
 <a name="Application"></a>
 ## Order Management Application: Forms and Reports
-[Order Search Form](#OrderSearchForm) | [Order Form](#OrderForm) | [Customer Form](#CustomerForm) | [Reward Status Form](#RewardStatusForm)
+[Start-Up Form](#StartUpForm) | [Order Search Form](#OrderSearchForm) | [Order Form](#OrderForm) | [Customer Form](#CustomerForm) | [Reward Status Form](#RewardStatusForm)
 
 
 https://user-images.githubusercontent.com/91146906/137153830-d4bc600c-1931-483e-86c0-f72f6e6f0806.mp4
+
+<a name="StartUpForm"></a>
+### Start-Up Form
+The Start-Up form serves as a homepage for the other forms; all forms can be opened from the Start-Up form. There is also a menu on each form that allows any form to be opened from any form.
+<br>
+<br>
+<img width="669" alt="Back to Roots Start-Up Form" src="https://user-images.githubusercontent.com/91146906/137418165-e97a5446-28b0-42e4-80ae-70e9be06293a.png">
+<br>
+<br><i>See the VB code behind the Start-Up form [here].</i>
 
 <a name="OrderSearchForm"></a>
 ### Order Search Form
