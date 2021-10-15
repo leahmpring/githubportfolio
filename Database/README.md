@@ -1,7 +1,7 @@
 <a name="top"></a>
 
 # Back to Roots Bakery OLTP
-[Executive Summary](#ExecutiveSummary) | [Problem and Opportunity](#ProblemOpportunity) | [Database Design](#DatabaseDesign) | [Simulating Data](#SimulatingData) | [Build Script](#BuildScript) | [View, Function, Stored Procedure](#ViewFunctionSPROC) | 
+[Executive Summary](#ExecutiveSummary) | [Problem and Opportunity](#ProblemOpportunity) | [Database Design](#DatabaseDesign) | [Simulating Data](#SimulatingData) | [Build Script](#BuildScript) | [View, Function, Stored Procedure](#ViewFunctionSPROC) | [VB.NET Application: Forms and Reports](#Application)
 
 <a name="ExecutiveSummary"></a>
 ## Executive Summary
@@ -116,11 +116,12 @@ The usp_CustomerOrders stored procedure returns customer's order history. The pu
 
 <a name="Application"></a>
 ## Order Management Application: Forms and Reports
+[Order Search Form](#OrderSearchForm) | [Order Form](#OrderForm) | [Customer Form](#CustomerForm) | [Reward Status Form](#RewardStatusForm)
 
 
 https://user-images.githubusercontent.com/91146906/137153830-d4bc600c-1931-483e-86c0-f72f6e6f0806.mp4
 
-<a name="OrderSearch"></a>
+<a name="OrderSearchForm"></a>
 ### Order Search Form
 The Order Search form returns orders from the database that meet specified criteria, allowing orders to quickly and easily be found. 
 <br>
@@ -129,7 +130,9 @@ The Order Search form returns orders from the database that meet specified crite
 <br>
 <br><b>Order Search View:</b> To create the Order Search form, an Order Search view is first created to list all relevant information about an order. This view is then used to create the Order Search form. <i>See the BackToRootsView.sql (including the OrderSearch view) [here](../Database/BackToRootsView.sql).</i>
 <br>
-<br> Back to Roots only allows certain combinations of order placement and order fulfillment methods. Thus, the Order Search form auto-populates the order fulfillment method based on the order placement method, using the following sub.
+<br><i>See the VB code behind the Order Search form [here].</i>
+<br>
+<br> Back to Roots only allows certain combinations of order placement and fulfillment methods. Thus, the Order Search form auto-populates the order fulfillment method based on the order placement method, using the following sub.
 ```VBA
     Private Sub cboOrderPlacement_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cboOrderPlacement.SelectionChangeCommitted
         'OrderSaerch form: Auto-populate order fulfillment combo box based on selected order placement
@@ -177,7 +180,7 @@ Users can choose to search by all employees, rather than a specific employee, by
         End If
     End Sub
 ```
-To execute the search, the user presses the "Search" button and orders that meet the specified criteria are loaded. Different FillBy methods are used, depending on whether the user is searching by all employees or a specific employee. If no orders matching the criteria are found, a "No Orders Found" message is displayed.
+To execute the search, the user clicks the "Search" button and orders that meet the specified criteria are loaded. Different FillBy methods are used, depending on whether the user is searching by all employees or a specific employee. If no orders matching the criteria are found, a "No Orders Found" message is displayed.
 ```VBA
   Private Sub btnSearch_Click(sender As Object, e As EventArgs) Handles btnSearch.Click
         'OrderSearch Form: Load results meeting search conditions by pressing "Search" button
@@ -239,7 +242,9 @@ After executing the search, a summary of the results is provided using the follo
         lblAvgTotal.Text = avg.ToString("$ #,##0.00")
     End Sub
 ```
-Users can double click on the orderID of the orders returned by the search to open the Orders form to the specified order, allowing users to easily see all information on the given order.
+In the orders returned by the search, users can double click on the OrderID to open the Orders form to the specified order, allowing users to easily see all information on the given order.
+<br>
+<br>To do this, the following sub is included on the Order Search form.
 ```VBA
   Private Sub OrderSearchDataGridView_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles OrderSearchDataGridView.CellContentDoubleClick
         'OrderSearch Form: Open the Orders form to the orderID that was double clicked on
@@ -254,6 +259,17 @@ Users can double click on the orderID of the orders returned by the search to op
         End If
     End Sub
 ```
+Additionally, the following sub is included on the Order form.
+```VBA
+    Public Sub FillItem(ByVal OrderID As Integer)
+        'Order form: When using OrderSearch form or Customer form to find information on an order, this allows the form to be opened to the selected orderID
+        Try
+            Me.CustomerOrderTableAdapter.FillBy(Me.BackToRootsDataSet.CustomerOrder, OrderID)
+        Catch ex As Exception
+            System.Windows.Forms.MessageBox.Show(ex.Message)
+        End Try
+    End Sub
+```
 
 <a name="OrderForm"></a>
 ### Order Form
@@ -262,7 +278,20 @@ The Order form allows users to view individual orders, including information on 
 <br>
 <img width="845" alt="Back to Roots Order Form" src="https://user-images.githubusercontent.com/91146906/137210957-72085121-618f-40ed-ac20-0c2145c5fced.png">
 <br>
-<br> The following sub, and another similar sub, allows users to search for a specific order by typing in the orderID and either clicking "Search" or pressing the enter key.
+<br><i>See the VB code behind the Order form [here].</i>
+<br>
+<br>Similar to the Order Search form, the Orders form uses subs to ensure only acceptable order placement and fulfillment methods are selected. Further, the order total is calculated and displayed, like the summary information on the Order Search form.
+<br>
+<br>The line item for each product in the order is displayed using the following sub.
+```VBA
+    Private Sub OrderLineDataGridView_RowPrePain(sender As Object, e As DataGridViewRowPrePaintEventArgs) Handles OrderLineDataGridView.RowPrePaint
+        'Order form: Show line item numbers on the data grid (order line subform)
+        If e.RowIndex >= 0 Then
+            Me.OrderLineDataGridView.Rows(e.RowIndex).Cells(0).Value = e.RowIndex + 1
+        End If
+    End Sub
+```
+The following sub, and another similar sub, allows users to search for a specific order by typing the orderID and either clicking "Search" or pressing the enter key. If no orders matching the search are found, a "No Orders Found" message is displayed.
 ```VBA
     Private Sub txtOrderIDToolStrip_KeyDown(sender As Object, e As KeyEventArgs) Handles txtOrderIDToolStrip.KeyDown
         'Order form: Press enter key when searching for specific order to find order
@@ -299,3 +328,146 @@ After searching for an order, the following sub allows the user to click "Fill A
         End Try
     End Sub
 ```
+When new orders are added, the following sub auto-populates the orderID and sets the order date to today.
+```VBA
+    Private Sub CustomerOrderBindingSource_CurrentItemChanged(sender As Object, e As EventArgs) Handles CustomerOrderBindingSource.CurrentItemChanged
+        'Order form: Set default date (today) and OrderID for new orders
+        If (IsAdding) Then
+            Try
+                Me.dtOrderDate.Value = Today
+                Dim cmd As New Data.SqlClient.SqlCommand
+                cmd.CommandText = "SELECT Max(OrderID) AS MaxID FROM CustomerOrder"
+                cmd.CommandType = CommandType.Text
+                cmd.Connection = Me.OrderLineTableAdapter.Connection
+                Dim i As Integer
+                cmd.Connection.Open()
+                i = cmd.ExecuteScalar() + 1
+                cmd.Connection.Close()
+                Me.OrderIDTextBox.Text = i.ToString
+            Catch ex As Exception
+                MsgBox(ex.Message)
+            End Try
+        End If
+    End Sub
+```
+The following sub ensures the selected order date is not in the future.
+```VBA
+    Private Sub OrderDateDateTimePicker_Validating(sender As Object, e As CancelEventArgs) Handles dtOrderDate.Validating
+        'Order form: Validate that the selected order date is not in the future
+        If CType(dtOrderDate.Text, DateTime) > Today Then
+            MsgBox("Order date must be today or earlier")
+            e.Cancel = True
+        End If
+    End Sub
+```
+To get information on the customer associated with an order, users can click the "Customer Information" button to open the Customer form to the given customer. To do this, the following sub is included on the Order form and two subs are included on the Customer form.
+```VBA
+    Private Sub btnCustomerInfo_Click(sender As Object, e As EventArgs) Handles btnCustomerInfo.Click
+        'Order form: Open Customer form to current order's customer
+        Try
+            Dim frmCustomer As New Customers
+            frmCustomer.Show()
+            frmCustomer.FillItem(cboCustomer.SelectedValue)
+        Catch ex As Exception
+            System.Windows.Forms.MessageBox.Show(ex.Message)
+        End Try
+    End Sub
+```
+
+<a name="CustomerForm"></a>
+### Customer Form
+The Customer form allows users to view information regarding customers, including their personal information, rewards history, and order history. Additionally, it displays the customer's total spending at Back to Roots, and how much more they need to spend to reach the next rewards tier. Further, existing customers' information can be modified and new customers can be added.
+<br>
+<br>
+<img width="1207" alt="Back to Roots Customer Form" src="https://user-images.githubusercontent.com/91146906/137405419-a87373b4-eb91-4fc0-84d9-1cebbb4328ee.png">
+<br>
+<br><i>See the VB code behind the Customer form [here].</i>
+<br>
+<br>Similar to the Orders form, the Customer form allows users to search for a customer by last name (or part of a last name). Users can then click "Fill All" to reload all customers and toggle between them. Further, when a new customer is added, the customer ID is auto-populated, like the order ID. Similar to the Order Search form, users can double click on the orderID in the customer's order history to open the Orders form to the specified order. Additionally, the total spent by the customer is calculated and displayed, like the summary information on the Order Search form.
+<br>
+<br> The customer's current rewards status is displayed on the form using the following sub.
+```VBA
+    Private Sub RewardHistoryDataGridView_RowPostPaint(sender As Object, e As DataGridViewRowPostPaintEventArgs) Handles RewardHistoryDataGridView.RowPostPaint
+        'Display customer's current reward status on main form
+        Try
+            Dim CurrentRewardStatus As String
+            CurrentRewardStatus = RewardHistoryDataGridView.Rows(0).Cells(0).Value
+            If CurrentRewardStatus = "NO-R" Then
+                lblCurrentRewardStatus.Text = "NO REWARDS"
+            ElseIf CurrentRewardStatus = "BRON" Then
+                lblCurrentRewardStatus.Text = "BRONZE"
+            ElseIf CurrentRewardStatus = "SILV" Then
+                lblCurrentRewardStatus.Text = "SILVER"
+            ElseIf CurrentRewardStatus = "GOLD" Then
+                lblCurrentRewardStatus.Text = "GOLD"
+            ElseIf CurrentRewardStatus = "PLAT" Then
+                lblCurrentRewardStatus.Text = "PLATINUM"
+            End If
+        Catch ex As Exception
+            'Do nothing
+        End Try
+    End Sub
+```
+The RewardsInformation() function is used to calculate how much a customer must spend to reach the next rewards tier.
+```VBA
+    Private Function RewardsInformation()
+        'Calculate and display total spent
+        Dim total As Decimal
+        Dim dgvr As System.Windows.Forms.DataGridViewRow
+        For Each dgvr In Me.OrderSearchDataGridView.Rows
+            total += dgvr.Cells("OrderTotal").Value
+        Next dgvr
+        lblTotalSpent.Text = total.ToString("$ #,##0.00")
+        'Find difference between total spent and cut-off for the next rewards tier
+        Dim difference As Decimal
+        Dim CurrentRewardStatus As String
+        CurrentRewardStatus = RewardHistoryDataGridView.Rows(0).Cells(0).Value
+        If CurrentRewardStatus = "BRON" Then
+            difference = 500 - total
+        ElseIf CurrentRewardStatus = "SILV" Then
+            difference = 2000 - total
+        ElseIf CurrentRewardStatus = "GOLD" Then
+            difference = 3500 - total
+        End If
+        'Display the appropriate message (or hide the message) for how much customer needs to spend to reach next rewards tier
+        If CurrentRewardStatus = "NO-R" Then
+            lblNextRewardTier.Text = "Ask customer about joining the rewards program!"
+        ElseIf CurrentRewardStatus = "PLAT" Then
+            lblNextRewardTier.Text = "Customer reached maximum rewards tier!"
+        Else
+            lblNextRewardTier.Text = "Customer needs to spend " + difference.ToString("$ #,##0.00") + " to reach next rewards tier."
+        End If
+    End Function
+```
+The RewardsInformation() function is called in the following sub to display the appropriate message on the Customer form.
+```VBA
+    Private Sub OrderSearchDataGridView_RowPostPaint(sender As Object, e As DataGridViewRowPostPaintEventArgs) Handles OrderSearchDataGridView.RowPostPaint
+        'Customer form: Calculate and display customer's total spent and how much they need to spend to reach the next rewards tier
+        Try
+            RewardsInformation()
+        Catch ex As Exception
+            'Do nothing
+        End Try
+    End Sub
+```
+To get more information on the reward statuses, users can click the "Rewards Information" button to open the Reward Status form.
+```VBA
+    Private Sub btnRewardsInfo_Click(sender As Object, e As EventArgs) Handles btnRewardsInfo.Click
+        'Customer form: Open the RewardStatus form
+        Try
+            Dim frmRewardStatus As New RewardStatus
+            frmRewardStatus.Show()
+        Catch ex As Exception
+            MsgBox("Unable to Open Form")
+        End Try
+    End Sub
+```
+
+<a name="RewardStatusForm"></a>
+### Reward Status Form
+The Reward Status form is a simple form that allows users to view and modify information regarding reward statuses. 
+<br>
+<br>
+<img width="1016" alt="Back to Roots Reward Status Form" src="https://user-images.githubusercontent.com/91146906/137407991-0de062cc-f591-411d-84f9-08491e2874fa.png">
+<br>
+<br><i>See the VB code behind the Reward Status form [here].</i>
