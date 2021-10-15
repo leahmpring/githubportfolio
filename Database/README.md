@@ -116,7 +116,7 @@ The usp_CustomerOrders stored procedure returns customer's order history. The pu
 
 <a name="Application"></a>
 ## Order Management Application: Forms and Reports
-[Start-Up Form](#StartUpForm) | [Order Search Form](#OrderSearchForm) | [Order Form](#OrderForm) | [Customer Form](#CustomerForm) | [Reward Status Form](#RewardStatusForm)
+[Start-Up Form](#StartUpForm) | [Order Search Form](#OrderSearchForm) | [Order Form](#OrderForm) | [Customer Form](#CustomerForm) | [Reward Status Form](#RewardStatusForm) | [Product Sales Report](#ProductSalesReport) | [Employee Performance Report](#EmployeePerformanceReport)
 
 
 https://user-images.githubusercontent.com/91146906/137153830-d4bc600c-1931-483e-86c0-f72f6e6f0806.mp4
@@ -480,3 +480,77 @@ The Reward Status form is a simple form that allows users to view and modify inf
 <img width="1016" alt="Back to Roots Reward Status Form" src="https://user-images.githubusercontent.com/91146906/137407991-0de062cc-f591-411d-84f9-08491e2874fa.png">
 <br>
 <br><i>See the VB code behind the Reward Status form [here].</i>
+
+<a name="ProductSalesReport"></a>
+### Product Sales Report
+The Product Sales report shows users the quantity sold and sales by product type and product yearly and monthly. The report can be filtered by month and location. Additionally, there are graphs displaying the sales by month and sales by product type.
+<br>
+<br> This report can inform decisions regarding the menu and purchasing of inventory.
+<br>
+<br>
+![Back to Roots Product Sales Report](https://user-images.githubusercontent.com/91146906/137420652-78e29fc3-1a25-4691-b66a-8bf17649a969.png)
+<br>
+<br>The following query is used to create the Product Sales report.
+```SQL
+-- Select the appropriate data for the ProductSales Report
+SELECT 
+	YEAR(CustomerOrder.OrderDate) AS 'Year',
+	MONTH(CustomerOrder.OrderDate) AS 'MonthSort',
+	DATENAME(month, CustomerOrder.OrderDate) AS 'Month',
+	CustomerOrder.LocationID, 
+	ProductType.ProductTypeName, 
+	Product.ProductName, 
+	OrderLine.Quantity,
+	OrderLine.Quantity*Product.ProductPrice AS Sales
+FROM  CustomerOrder 
+INNER JOIN OrderLine 
+	ON CustomerOrder.OrderID = OrderLine.OrderID 
+INNER JOIN Product 
+	ON OrderLine.ProductID = Product.ProductID 
+INNER JOIN ProductType 
+	ON Product.ProductTypeID = ProductType.ProductTypeID
+WHERE (CustomerOrder.LocationID IN (@Location)) AND (YEAR(CustomerOrder.OrderDate) = @Year);
+```
+
+<a name="EmployeePerformanceReport"></a>
+### Employee Performance Report
+The Employee Performance report allows users to select a date range then displays employee position information, in addition to the number of days worked, the orders filled, and the sales brought in. Additionally, there is a graph displaying the number of orders filled by employee.
+<br>
+<br> This report can inform wage, promotion, training, and firing decisions.
+<br>
+<br>
+![Back to Roots Employee Performance Report](https://user-images.githubusercontent.com/91146906/137421507-f5d0e87b-41e3-42b0-bc51-acc61ccdb133.png)
+<br>
+<br>The following query is used to create the Employee Performance report.
+```SQL
+-- Select the appropriate data for the EmployeePerformance Report
+SELECT
+	EmploymentHistory.WageType,
+	Position.PositionName,
+	(Employee.EmployeeFirstName + ' ' + Employee.EmployeeLastName) AS 'EmployeeName',
+	EmploymentHistory.Wage,
+	IIF(EmploymentHistory.EndDate IS NULL, 'Current', 'End Dated') AS 'PositionStatus',
+	COUNT(DISTINCT CustomerOrder.OrderDate) AS 'DaysWorked',
+	COUNT(DISTINCT CustomerOrder.OrderID) AS 'OrdersFilled',
+	SUM(OrderLine.Quantity*Product.ProductPrice) AS 'Sales'
+FROM Position
+INNER JOIN EmploymentHistory
+	ON Position.PositionID = EmploymentHistory.PositionID
+INNER JOIN Employee
+	ON Employee.EmployeeID = EmploymentHistory.EmployeeID
+INNER JOIN CustomerOrder
+	ON Employee.EmployeeID = CustomerOrder.EmployeeID
+INNER JOIN OrderLine
+	ON CustomerOrder.OrderID = OrderLine.OrderID
+INNER JOIN Product
+	ON Product.ProductID = OrderLine.ProductID
+WHERE 
+	CustomerOrder.OrderDate BETWEEN EmploymentHistory.HireDate AND IIF(EmploymentHistory.EndDate IS NULL, GetDate(), EmploymentHistory.EndDate)
+	AND CustomerOrder.OrderDate BETWEEN @ReportStartDate AND @ReportEndDate
+GROUP BY
+	Position.PositionName,
+	EmploymentHistory.WageType,
+	(Employee.EmployeeFirstName + ' ' + Employee.EmployeeLastName),
+	EmploymentHistory.Wage,
+	IIF(EmploymentHistory.EndDate IS NULL, 'Current', 'End Dated');
+```
