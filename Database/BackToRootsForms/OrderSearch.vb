@@ -1,5 +1,4 @@
 ﻿Public Class OrderSearch
-    
     Private Sub OrderSearch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             'TODO: This line of code loads data into the 'BackToRootsDataSet.OrderSearch' table. You can move, or remove it, as needed.
@@ -174,5 +173,4 @@
             System.Windows.Forms.MessageBox.Show(ex.Message)
         End Try
     End Sub
-
 End Class
