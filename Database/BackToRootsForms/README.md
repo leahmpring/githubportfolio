@@ -17,7 +17,7 @@ The Order Search form returns orders from the database that meet specified crite
 <br>
 <img width="964" alt="Back to Roots Order Search Form" src="https://user-images.githubusercontent.com/91146906/137174709-5fbce691-44a1-4805-95a1-6b241c17695a.png">
 <br>
-<br><b>Order Search View:</b> To create the Order Search form, an Order Search view is first created to list all relevant information about an order. This view is then used to create the Order Search form. <i>See the BackToRootsView.sql (including the OrderSearch view) [here](../Database/BackToRootsView.sql).</i>
+<br><b>Order Search View:</b> To create the Order Search form, an Order Search view is first created to list all relevant information about an order. This view is then used to create the Order Search form. <i>See the BackToRootsView.sql (including the OrderSearch view) [here](../BackToRootsView.sql).</i>
 <br>
 <br><i>See the VB code behind the Order Search form [here](../BackToRootsForms/OrderSearch.vb).</i>
 <br>
