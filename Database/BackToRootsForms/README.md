@@ -6,21 +6,21 @@ Forms: </b>[Start-Up Form](#StartUpForm) | [Order Search Form](#OrderSearchForm)
 ## Start-Up Form
 The Start-Up form serves as a homepage for the other forms; all forms can be opened from the Start-Up form. There is also a menu on each form that allows any form to be opened from any form.
 <br>
+<br><i>See the VB code behind the Start-Up form [here](../BackToRootsForms/Startup.vb).</i>
+<br>
 <br>
 <img width="669" alt="Back to Roots Start-Up Form" src="https://user-images.githubusercontent.com/91146906/137418165-e97a5446-28b0-42e4-80ae-70e9be06293a.png">
-<br>
-<br><i>See the VB code behind the Start-Up form [here](../BackToRootsForms/Startup.vb).</i>
 
 <a name="OrderSearchForm"></a>
 ## Order Search Form
 The Order Search form returns orders from the database that meet specified criteria, allowing orders to quickly and easily be found. 
 <br>
+<br><i>See the VB code behind the Order Search form [here](../BackToRootsForms/OrderSearch.vb).</i>
+<br>
 <br>
 <img width="964" alt="Back to Roots Order Search Form" src="https://user-images.githubusercontent.com/91146906/137174709-5fbce691-44a1-4805-95a1-6b241c17695a.png">
 <br>
 <br><b>Order Search View:</b> To create the Order Search form, an Order Search view is first created to list all relevant information about an order. This view is then used to create the Order Search form. <i>See the BackToRootsView.sql (including the OrderSearch view) [here](../BackToRootsView.sql).</i>
-<br>
-<br><i>See the VB code behind the Order Search form [here](../BackToRootsForms/OrderSearch.vb).</i>
 <br>
 <br> Back to Roots only allows certain combinations of order placement and fulfillment methods. Thus, the Order Search form auto-populates the order fulfillment method based on the order placement method, using the following sub.
 ```VBA
@@ -165,10 +165,10 @@ Additionally, the following sub is included on the Order form.
 ## Order Form
 The Order form allows users to view individual orders, including information on the orders and the products ordered. Further, existing orders can be modified and new orders can be added.
 <br>
+<br><i>See the VB code behind the Orders form [here](../BackToRootsForms/Orders.vb).</i>
+<br>
 <br>
 <img width="845" alt="Back to Roots Order Form" src="https://user-images.githubusercontent.com/91146906/137210957-72085121-618f-40ed-ac20-0c2145c5fced.png">
-<br>
-<br><i>See the VB code behind the Orders form [here](../BackToRootsForms/Orders.vb).</i>
 <br>
 <br>Similar to the Order Search form, the Orders form uses subs to ensure only acceptable order placement and fulfillment methods are selected. Further, the order total is calculated and displayed, like the summary information on the Order Search form.
 <br>
@@ -268,10 +268,10 @@ To get information on the customer associated with an order, users can click the
 ## Customer Form
 The Customer form allows users to view information regarding customers, including their personal information, rewards history, and order history. Additionally, it displays the customer's total spending at Back to Roots, and how much more they need to spend to reach the next rewards tier. Further, existing customers' information can be modified and new customers can be added.
 <br>
+<br><i>See the VB code behind the Customers form [here](../BackToRootsForms/Customers.vb).</i>
+<br>
 <br>
 <img width="1207" alt="Back to Roots Customer Form" src="https://user-images.githubusercontent.com/91146906/137405419-a87373b4-eb91-4fc0-84d9-1cebbb4328ee.png">
-<br>
-<br><i>See the VB code behind the Customers form [here](../BackToRootsForms/Customers.vb).</i>
 <br>
 <br>Similar to the Orders form, the Customer form allows users to search for a customer by last name (or part of a last name). Users can then click "Fill All" to reload all customers and toggle between them. Further, when a new customer is added, the customer ID is auto-populated, like the order ID. Similar to the Order Search form, users can double click on the orderID in the customer's order history to open the Orders form to the specified order. Additionally, the total spent by the customer is calculated and displayed, like the summary information on the Order Search form.
 <br>
@@ -357,7 +357,7 @@ To get more information on the reward statuses, users can click the "Rewards Inf
 ## Reward Status Form
 The Reward Status form is a simple form that allows users to view and modify information regarding reward statuses. 
 <br>
+<br><i>See the VB code behind the Reward Status form [here](../BackToRootsForms/RewardStatus.vb).</i>
+<br>
 <br>
 <img width="1016" alt="Back to Roots Reward Status Form" src="https://user-images.githubusercontent.com/91146906/137407991-0de062cc-f591-411d-84f9-08491e2874fa.png">
-<br>
-<br><i>See the VB code behind the Reward Status form [here](../BackToRootsForms/RewardStatus.vb).</i>
