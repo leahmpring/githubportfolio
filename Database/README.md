@@ -3,7 +3,7 @@
 # Back to Roots Bakery OLTP
 [Executive Summary](#ExecutiveSummary) | [Problem and Opportunity](#ProblemOpportunity)
 <br>[Database Design](#DatabaseDesign) | [Simulating Data](#SimulatingData) | [Build Script](#BuildScript)
-<br>[View, Function, Stored Procedure](#ViewFunctionSPROC) | [VB.NET Application: Forms and Reports](#Application)
+<br>[View, Function, Stored Procedure](#ViewFunctionSPROC) | [VB.NET Application](#Application)
 
 <a name="ExecutiveSummary"></a>
 ## Executive Summary
