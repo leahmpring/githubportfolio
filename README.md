@@ -2,6 +2,7 @@
 
 # Welcome! This is a little about me and a sampling of my work.
 <hr>
+[Education](#education) | [Jobs and Internships](#resume) | [Skills](#skills) | [Database Projects](#DatabaseProjects)
 
 <a name="education"></a>
 ## Education
@@ -51,8 +52,8 @@ Univeristy of Denver, Daniels College of Business
   <li><a href = "https://www.credly.com/badges/e1f089c5-e148-4a30-9dc3-b6551e873dd8/public_url">Microsoft Associate PowerPoint 2019</a></li>
 </ul>
 
-<a name="database"></a>
-## SQL Database Projects
+<a name="DatabaseProjects"></a>
+## Database Projects
 
 ### Back to Roots OLTP
 Below is a video demo of the application's forms and reports. A complete project walk-through can be found [here](/Database/BackToRootsOLTP/#top)
