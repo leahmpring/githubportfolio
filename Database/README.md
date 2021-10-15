@@ -118,30 +118,13 @@ The usp_CustomerOrders stored procedure returns customer's order history. The pu
 
 <a name="Application"></a>
 ## Order Management Application: Forms and Reports
-<b>Forms: </b>[Start-Up Form](#StartUpForm) | [Order Search Form](#OrderSearchForm) | [Order Form](../Database/BackToRootsForms/#OrderForm) | [Customer Form](../Database/BackToRootsForms/#CustomerForm) | [Reward Status Form](../Database/BackToRootsForms/#RewardStatusForm)
+<b>Forms: </b>[Start-Up Form](../Database/BackToRootsForms/#StartUpForm) | [Order Search Form](../Database/BackToRootsForms/#OrderSearchForm) | [Order Form](../Database/BackToRootsForms/#OrderForm) | [Customer Form](../Database/BackToRootsForms/#CustomerForm) | [Reward Status Form](../Database/BackToRootsForms/#RewardStatusForm)
 <br><b>Reports: </b>[Product Sales Report](#ProductSalesReport) | [Employee Performance Report](#EmployeePerformanceReport)
 
 
 https://user-images.githubusercontent.com/91146906/137153830-d4bc600c-1931-483e-86c0-f72f6e6f0806.mp4
 
-<a name="StartUpForm"></a>
-### Start-Up Form
-The Start-Up form serves as a homepage for the other forms; all forms can be opened from the Start-Up form. There is also a menu on each form that allows any form to be opened from any form.
-<br>
-<br><i>See more about the Start-Up form [here](../Database/BackToRootsForms/#StartUpForm).</i>
-<br>
-<br>
-<img width="669" alt="Back to Roots Start-Up Form" src="https://user-images.githubusercontent.com/91146906/137418165-e97a5446-28b0-42e4-80ae-70e9be06293a.png">
-
-<a name="OrderSearchForm"></a>
-### Order Search Form
-The Order Search form returns orders from the database that meet specified criteria, allowing orders to quickly and easily be found. 
-<br>
-<br><i>See more about the Order Search form [here](../Database/BackToRootsForms/#OrderSearchForm).</i>
-<br>
-<br>
-<img width="964" alt="Back to Roots Order Search Form" src="https://user-images.githubusercontent.com/91146906/137174709-5fbce691-44a1-4805-95a1-6b241c17695a.png">
-
+<br><b>See more about the Back to Roots form [here](../Database/BackToRootsForms/).</b>
 
 <a name="ProductSalesReport"></a>
 ### Product Sales Report
