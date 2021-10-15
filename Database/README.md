@@ -129,7 +129,7 @@ The Start-Up form serves as a homepage for the other forms; all forms can be ope
 <br>
 <img width="669" alt="Back to Roots Start-Up Form" src="https://user-images.githubusercontent.com/91146906/137418165-e97a5446-28b0-42e4-80ae-70e9be06293a.png">
 <br>
-<br><i>See the VB code behind the Start-Up form [here](../Database/BacktoRootsForms/Startup.vb).</i>
+<br><i>See the VB code behind the Start-Up form [here](../Database/BackToRootsForms/Startup.vb).</i>
 
 <a name="OrderSearchForm"></a>
 ### Order Search Form
