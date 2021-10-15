@@ -1,4 +1,5 @@
 ﻿Public Class OrderSearch
+    
     Private Sub OrderSearch_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
             'TODO: This line of code loads data into the 'BackToRootsDataSet.OrderSearch' table. You can move, or remove it, as needed.
@@ -48,6 +49,7 @@
             MsgBox("No Orders Found")
         End If
     End Sub
+    
     Private Sub SearchSummary()
         'OrderSearch Form: Summarize the search results
         Dim OrderTotal As Decimal
@@ -100,6 +102,7 @@
             'Do Nothing
         End Try
     End Sub
+
     Private Sub cboOrderFulfillment_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cboOrderFulfillment.SelectionChangeCommitted
         'OrderSaerch form: Error message if placement and fulfillment method are not compatible (evaluated on fulfillment change)
         Try
@@ -117,6 +120,7 @@
             'Do Nothing
         End Try
     End Sub
+
     Private Sub cbEmpAll_CheckStateChanged(sender As Object, e As EventArgs) Handles cbEmpAll.CheckStateChanged
         'OrderSearch form: Check if the "search all employees" checkbox is selected and update the text in cbo.Employee accordingly
         If cbEmpAll.Checked Then
@@ -130,6 +134,7 @@
         'OrderSearch form: Close form
         Me.Close()
     End Sub
+
     Private Sub OrderSearchToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OrderSearchToolStripMenuItem.Click
         'OrderSearch form: Open OrderSearch form from menu
         Try
@@ -169,4 +174,5 @@
             System.Windows.Forms.MessageBox.Show(ex.Message)
         End Try
     End Sub
+
 End Class
