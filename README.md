@@ -54,7 +54,7 @@ Univeristy of Denver, Daniels College of Business
   <tr>
     <th>CliftonStrengths (Fall 2018)</th>
     <th>Other Skills</th>
-   </tr>
+ </tr>
  <tr>
    <td>
      <ol>
@@ -64,6 +64,13 @@ Univeristy of Denver, Daniels College of Business
         <li>Developer</li>
         <li>Achiever</li>
      </ol>
+   </td>
+   <td>
+     <ul>
+        <li>Teaching</li>
+        <li>Facilitating</li>
+       <li>Problem Solving</li>
+     </ul>
    </td>
  </tr>
 </table>
