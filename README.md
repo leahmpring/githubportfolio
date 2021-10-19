@@ -12,15 +12,16 @@ Univeristy of Denver, Daniels College of Business
 
 <a name="resume"></a>
 ## (Some) Jobs and Internships
-<b>Univeristy of Denver, Daniels College of Business</b>
+<i>See my [resume] or [LinkedIn](https://www.linkedin.com/in/hannah-m-mcdonald/)</i>
+<br>
+<br><b>Univeristy of Denver, Daniels College of Business</b>
 <br><i>Microsoft Office Certification Program Teaching Assistant Coordinator</i>
 <br>June 2020 - Present
 <br>
 <br><b>St. Vrain Valley School District, District Technology Services</b>
 <br><i>Programmer / Analyst Intern</i>
 <br>June 2019 - August 2021
-<br>
-<br>See my [resume] or [LinkedIn](https://www.linkedin.com/in/hannah-m-mcdonald/)
+<br><blockquote>Description of internship coming soon...</blockquote>
 
 <a name="skills"></a>
 ## Skills
