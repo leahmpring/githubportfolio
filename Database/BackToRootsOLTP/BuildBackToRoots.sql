@@ -116,13 +116,13 @@ IF EXISTS(
 -- Create tables
 --
 CREATE TABLE Customer
-	(CustomerID				INT IDENTITY(0,1) CONSTRAINT pk_customer PRIMARY KEY,
+	(CustomerID			INT IDENTITY(0,1) CONSTRAINT pk_customer PRIMARY KEY,
 	CustomerFirstName		NVARCHAR(25) CONSTRAINT nn_customer_first_name NOT NULL,
 	CustomerLastName		NVARCHAR(25) CONSTRAINT nn_customer_last_name NOT NULL,
-	CustomerDOB				DATE,
+	CustomerDOB			DATE,
 	CustomerEmail			NVARCHAR(100),
 	CustomerPhoneNumber		NVARCHAR(14),
-	CustomerStreetAddress	NVARCHAR(50),
+	CustomerStreetAddress		NVARCHAR(50),
 	CustomerCity			NVARCHAR(50),
 	CustomerState			NVARCHAR(2),
 	CustomerZipCode			NVARCHAR(11)
@@ -131,14 +131,14 @@ CREATE TABLE Customer
 CREATE TABLE RewardStatus
 	(RewardStatusID			NVARCHAR(4) CONSTRAINT pk_reward_status PRIMARY KEY,
 	RewardStatusName		NVARCHAR(10) CONSTRAINT nn_reward_status_name NOT NULL,
-	RewardStatusDescription	NVARCHAR(100) CONSTRAINT nn_reward_status_description NOT NULL,
+	RewardStatusDescription		NVARCHAR(100) CONSTRAINT nn_reward_status_description NOT NULL,
 	RewardStatusPerks		NVARCHAR(100) CONSTRAINT nn_reward_status_perks NOT NULL
 	);
 --
 CREATE TABLE RewardHistory
-	(CustomerID				INT,
+	(CustomerID			INT,
 	RewardStatusID			NVARCHAR(4),
-	RewardStatusJoinDate	DATE DEFAULT GETDATE(),
+	RewardStatusJoinDate		DATE DEFAULT GETDATE(),
 	RewardStatusEndDate		DATE,
 	CONSTRAINT pk_reward_history PRIMARY KEY (CustomerID, RewardStatusID),
 	CONSTRAINT fk_reward_history_customer_id FOREIGN KEY(CustomerID) 
@@ -148,31 +148,31 @@ CREATE TABLE RewardHistory
 	);
 --
 CREATE TABLE Employee
-	(EmployeeID				INT IDENTITY(1,1) CONSTRAINT pk_employee PRIMARY KEY,
+	(EmployeeID			INT IDENTITY(1,1) CONSTRAINT pk_employee PRIMARY KEY,
 	EmployeeFirstName		NVARCHAR(25) CONSTRAINT nn_employee_first_name NOT NULL,
 	EmployeeLastName		NVARCHAR(25) CONSTRAINT nn_employee_last_name NOT NULL,
-	EmployeeDOB				DATE CONSTRAINT nn_employee_dob NOT NULL,
+	EmployeeDOB			DATE CONSTRAINT nn_employee_dob NOT NULL,
 	EmployeeEmail			NVARCHAR(67) CONSTRAINT nn_employee_email NOT NULL,
 	EmployeePhoneNumber		NVARCHAR(14) CONSTRAINT nn_employee_phone NOT NULL CONSTRAINT un_employee_phone UNIQUE,
-	EmployeeStreetAddress	NVARCHAR(50) CONSTRAINT nn_employee_street NOT NULL,
+	EmployeeStreetAddress		NVARCHAR(50) CONSTRAINT nn_employee_street NOT NULL,
 	EmployeeCity			NVARCHAR(50) CONSTRAINT nn_employee_city NOT NULL,
 	EmployeeState			NVARCHAR(2) CONSTRAINT nn_employee_state NOT NULL,
 	EmployeeZipCode			NVARCHAR(11) CONSTRAINT nn_employee_zip NOT NULL
 	);
 --
 CREATE TABLE Position
-	(PositionID				INT IDENTITY(1,1) CONSTRAINT pk_position PRIMARY KEY,
+	(PositionID			INT IDENTITY(1,1) CONSTRAINT pk_position PRIMARY KEY,
 	PositionType			NVARCHAR(9) CONSTRAINT ck_position_type CHECK ((PositionType = 'Part-Time') OR (PositionType = 'Full-Time')) NOT NULL,
 	PositionName			NVARCHAR(25) CONSTRAINT nn_position_name NOT NULL
 	);
 --
 CREATE TABLE EmploymentHistory
-	(EmployeeID				INT,
-	PositionID				INT,
-	HireDate				DATE DEFAULT GETDATE() CONSTRAINT nn_hire_date NOT NULL,
-	EndDate					DATE,
-	WageType				NVARCHAR(6) DEFAULT 'Hourly' CONSTRAINT ck_wage_type CHECK ((WageType = 'Hourly') OR (WageType = 'Salary') OR (WageType = 'Draw')) NOT NULL,
-	Wage					MONEY CONSTRAINT ck_wage CHECK (Wage >= 7.25),
+	(EmployeeID			INT,
+	PositionID			INT,
+	HireDate			DATE DEFAULT GETDATE() CONSTRAINT nn_hire_date NOT NULL,
+	EndDate				DATE,
+	WageType			NVARCHAR(6) DEFAULT 'Hourly' CONSTRAINT ck_wage_type CHECK ((WageType = 'Hourly') OR (WageType = 'Salary') OR (WageType = 'Draw')) NOT NULL,
+	Wage				MONEY CONSTRAINT ck_wage CHECK (Wage >= 7.25),
 	CONSTRAINT pk_employment_history PRIMARY KEY (EmployeeID, PositionID),
 	CONSTRAINT fk_employment_history_employee_id FOREIGN KEY(EmployeeID) 
 		REFERENCES Employee(EmployeeID),
@@ -181,8 +181,8 @@ CREATE TABLE EmploymentHistory
 	);
 --
 CREATE TABLE Diet
-	(DietID					NVARCHAR(3) CONSTRAINT pk_diet PRIMARY KEY,
-	DietName				NVARCHAR(20) CONSTRAINT nn_diet_name NOT NULL,
+	(DietID				NVARCHAR(3) CONSTRAINT pk_diet PRIMARY KEY,
+	DietName			NVARCHAR(20) CONSTRAINT nn_diet_name NOT NULL,
 	DietDescription			NVARCHAR(100) CONSTRAINT nn_diet_description NOT NULL
 	);
 --
@@ -192,17 +192,17 @@ CREATE TABLE ProductType
 	);
 --
 CREATE TABLE Product
-	(ProductID				NVARCHAR(8) CONSTRAINT pk_product PRIMARY KEY,
+	(ProductID			NVARCHAR(8) CONSTRAINT pk_product PRIMARY KEY,
 	ProductTypeID			INT CONSTRAINT fk_product_product_type_id FOREIGN KEY
 		REFERENCES ProductType(ProductTypeID),
-	ProductName				NVARCHAR(35) CONSTRAINT nn_product_name NOT NULL,
+	ProductName			NVARCHAR(35) CONSTRAINT nn_product_name NOT NULL,
 	ProductPrice			MONEY CONSTRAINT ck_product_price CHECK (ProductPrice >= 0) NOT NULL,
 	ProductPhoto			IMAGE
 	);
 --
 CREATE TABLE DietProduct
-	(ProductID				NVARCHAR(8),
-	DietID					NVARCHAR(3),
+	(ProductID			NVARCHAR(8),
+	DietID				NVARCHAR(3),
 	CONSTRAINT pk_diet_product PRIMARY KEY (ProductID, DietID),
 	CONSTRAINT fk_diet_product_product_id FOREIGN KEY(ProductID) 
 		REFERENCES Product(ProductID),
@@ -211,9 +211,9 @@ CREATE TABLE DietProduct
 	);
 --
 CREATE TABLE StoreLocation
-	(LocationID				NVARCHAR(13) CONSTRAINT pk_store_location PRIMARY KEY,
+	(LocationID			NVARCHAR(13) CONSTRAINT pk_store_location PRIMARY KEY,
 	LocationPhoneNumber		NVARCHAR(14) CONSTRAINT nn_location_phone NOT NULL,
-	LocationStreetAddress	NVARCHAR(50) CONSTRAINT nn_location_street NOT NULL,
+	LocationStreetAddress		NVARCHAR(50) CONSTRAINT nn_location_street NOT NULL,
 	LocationCity			NVARCHAR(50) CONSTRAINT nn_location_city NOT NULL,
 	LocationState			NVARCHAR(2) CONSTRAINT nn_location_state NOT NULL,
 	LocationZipCode			NVARCHAR(11) CONSTRAINT nn_location_zip NOT NULL
@@ -221,22 +221,22 @@ CREATE TABLE StoreLocation
 --
 --
 CREATE TABLE CustomerOrder
-	(OrderID				INT IDENTITY(1,1) CONSTRAINT pk_customer_order PRIMARY KEY,
-	EmployeeID				INT CONSTRAINT fk_order_employee_id FOREIGN KEY
+	(OrderID			INT IDENTITY(1,1) CONSTRAINT pk_customer_order PRIMARY KEY,
+	EmployeeID			INT CONSTRAINT fk_order_employee_id FOREIGN KEY
 		REFERENCES Employee(EmployeeID),
-	LocationID				NVARCHAR(13) CONSTRAINT fk_order_location_id FOREIGN KEY
+	LocationID			NVARCHAR(13) CONSTRAINT fk_order_location_id FOREIGN KEY
 		REFERENCES StoreLocation(LocationID),
-	CustomerID				INT DEFAULT 0 CONSTRAINT fk_order_customer_id FOREIGN KEY
+	CustomerID			INT DEFAULT 0 CONSTRAINT fk_order_customer_id FOREIGN KEY
 		REFERENCES Customer(CustomerID),
-	OrderDate				DATE DEFAULT GetDate() CONSTRAINT nn_order_date NOT NULL,
+	OrderDate			DATE DEFAULT GetDate() CONSTRAINT nn_order_date NOT NULL,
 	OrderPlacement			NVARCHAR(10) DEFAULT 'In-Store' CONSTRAINT ck_order_placement CHECK ((OrderPlacement = 'In-Store') OR (OrderPlacement = 'Online') OR (OrderPlacement = 'Phone')) NOT NULL,
 	OrderFulfillment		NVARCHAR(10) DEFAULT 'In-Store' CONSTRAINT ck_order_fulfillment CHECK ((OrderFulfillment = 'In-Store') OR (OrderFulfillment = 'Pick-Up') OR (OrderFulfillment = 'Delivery')) NOT NULL
 	);
 --
 CREATE TABLE OrderLine
-	(ProductID				NVARCHAR(8),
-	OrderID					INT,
-	Quantity				INT CONSTRAINT nn_quantity NOT NULL,
+	(ProductID			NVARCHAR(8),
+	OrderID				INT,
+	Quantity			INT CONSTRAINT nn_quantity NOT NULL,
 	CONSTRAINT pk_order_line PRIMARY KEY (ProductID, OrderID),
 	CONSTRAINT fk_order_line_product_id FOREIGN KEY(ProductID) 
 		REFERENCES Product(ProductID),
@@ -426,19 +426,19 @@ WITH (
 -- List table names and row counts for confirmation
 --
 SET NOCOUNT ON
-SELECT 'Customer' AS "Table",	COUNT(*) AS "Rows"	FROM Customer				UNION
-SELECT 'RewardStatus',			COUNT(*)			FROM RewardStatus			UNION
-SELECT 'RewardHistory',			COUNT(*)			FROM RewardHistory			UNION
-SELECT 'Employee',				COUNT(*)			FROM Employee				UNION
-SELECT 'Position',				COUNT(*)			FROM Position				UNION
-SELECT 'EmploymentHistory',		COUNT(*)			FROM EmploymentHistory		UNION
-SELECT 'Diet',					COUNT(*)			FROM Diet					UNION
-SELECT 'ProductType',			COUNT(*)			FROM ProductType			UNION
-SELECT 'Product',				COUNT(*)			FROM Product				UNION
-SELECT 'DietProduct',			COUNT(*)			FROM DietProduct			UNION
-SELECT 'StoreLocation',			COUNT(*)			FROM StoreLocation			UNION
-SELECT 'CustomerOrder',			COUNT(*)			FROM CustomerOrder			UNION
-SELECT 'OrderLine',				COUNT(*)			FROM OrderLine
+SELECT 'Customer' AS "Table",	COUNT(*) AS "Rows"	FROM Customer			UNION
+SELECT 'RewardStatus',		COUNT(*)		FROM RewardStatus		UNION
+SELECT 'RewardHistory',		COUNT(*)		FROM RewardHistory		UNION
+SELECT 'Employee',		COUNT(*)		FROM Employee			UNION
+SELECT 'Position',		COUNT(*)		FROM Position			UNION
+SELECT 'EmploymentHistory',	COUNT(*)		FROM EmploymentHistory		UNION
+SELECT 'Diet',			COUNT(*)		FROM Diet			UNION
+SELECT 'ProductType',		COUNT(*)		FROM ProductType		UNION
+SELECT 'Product',		COUNT(*)		FROM Product			UNION
+SELECT 'DietProduct',		COUNT(*)		FROM DietProduct		UNION
+SELECT 'StoreLocation',		COUNT(*)		FROM StoreLocation		UNION
+SELECT 'CustomerOrder',		COUNT(*)		FROM CustomerOrder		UNION
+SELECT 'OrderLine',		COUNT(*)		FROM OrderLine
 ORDER BY 1;
 SET NOCOUNT OFF
 GO
