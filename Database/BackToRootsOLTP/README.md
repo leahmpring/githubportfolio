@@ -206,7 +206,7 @@ GROUP BY
 ```
 
 <a name="DownloadExplore"></a>
-## Downlaod and Explore!
+## Download and Explore!
 Want to explore the Back to Roots OLTP yourself?
 <br>
 <br>Download the BackToRootsOLTP.zip [here](../BackToRootsOLTP/BackToRootsOLTP.zip) and open the readme.txt for instructions. This zip file contains all the project's components.
