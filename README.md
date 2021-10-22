@@ -17,6 +17,7 @@ Univeristy of Denver, Daniels College of Business
 <br><b>Univeristy of Denver, Daniels College of Business</b>
 <br><i>Microsoft Office Certification Program Teaching Assistant Coordinator</i>
 <br>June 2020 - Present
+<br><blockquote>Description of job coming soon...</blockquote>
 <br>
 <br><b>St. Vrain Valley School District, District Technology Services</b>
 <br><i>Programmer / Analyst Intern</i>
