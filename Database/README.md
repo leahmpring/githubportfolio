@@ -5,3 +5,5 @@ During my Foundations or Information Management class in Winter 2021, I was task
 <br>During my Enterprise Information Management class in Spring 2021, I expanded this relational database, adding tables and moving it to Microsoft SQL Server Management Studio. This included designing, building, and programing an enterprise information management database using SQL Server and Azure; designing, building, and programing interactive forms using Visual Studio and SQL Server; and designing, building, and programing a Windows integrated application, along with reports, using Visual Studio and SQL Server. Throughout this process, I used SQL (build script, function, stored procedure, views, reports) and Visual Basic (forms).
 <br>
 <br><i>Explore the Back to Roots OLTP project [here](../Database/BackToRootsOLTP/#top).</i>
+## Back to Roots OLAP
+Coming soon...
