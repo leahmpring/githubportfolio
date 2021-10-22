@@ -40,7 +40,7 @@ The Back to Roots data mart build script creates the "BackToRootsDM" data mart i
 
 <a name="ETL"></a>
 ## Extract, Transform, and Load the Data Mart
-Using Visual Studio and SSIS, I extracted data from the Back to Roots OLTP, made the needed transformations, and loaded it into the Back to Roots data mart.
+Using Visual Studio and SSIS, data is extracted from the Back to Roots OLTP, transformed, and loaded into the data mart.
 
 ![BackToRootsDMETL](https://user-images.githubusercontent.com/91146906/138397836-485fec03-a356-45c7-9377-3f0d16099afe.png)
 
@@ -61,7 +61,7 @@ SELECT
 		   LEFT OUTER JOIN BackToRoots.dbo.Diet
 				ON BackToRoots.dbo.Diet.DietID = BackToRoots.dbo.DietProduct.DietID
 			WHERE BackToRoots.dbo.DietProduct.ProductID = BackToRoots.dbo.Product.ProductID
-			FOR XML PATH('')),1,1,'') AS Diet,                            -- Type 0: Fixed
+			FOR XML PATH('')),1,1,'') AS Diet,                -- Type 0: Fixed
 	BackToRoots.dbo.Product.ProductPrice AS ProductPrice              -- Type 2: Historical
 FROM BackToRoots.dbo.Product
 LEFT OUTER JOIN BackToRoots.dbo.ProductType
@@ -160,3 +160,33 @@ FROM BackToRoots.dbo.CustomerOrder
 LEFT OUTER JOIN BackToRoots.dbo.StoreLocation
 	ON BackToRoots.dbo.StoreLocation.LocationID = BackToRoots.dbo.CustomerOrder.LocationID;
 ```
+
+### FactSales
+FactSales is loaded using the following SQL query, then uses a series of lookups in the ETL to populate the SKs
+```SQL
+-- BackToRootsDM FactSales Source Query Written by Hannah McDonald
+-- Originally Written: October 2021 | Updated October 2021
+---------------------------------------------------------------
+-- Script query to load the FactSales table
+-- Use lookups in ETL to bring in SKs
+SELECT 
+	BackToRoots.dbo.CustomerOrder.OrderID,
+	BackToRoots.dbo.Customer.CustomerID,
+	BackToRoots.dbo.Employee.EmployeeID,
+	BackToRoots.dbo.CustomerOrder.OrderDate,
+	BackToRoots.dbo.Product.ProductID,
+	BackToRoots.dbo.OrderLine.Quantity, 
+	BackToRoots.dbo.Product.ProductPrice
+FROM BackToRoots.dbo.Customer 
+INNER JOIN BackToRoots.dbo.CustomerOrder 
+	ON BackToRoots.dbo.Customer.CustomerID = BackToRoots.dbo.CustomerOrder.CustomerID 
+INNER JOIN BackToRoots.dbo.Employee 
+	ON BackToRoots.dbo.CustomerOrder.EmployeeID = BackToRoots.dbo.Employee.EmployeeID 
+INNER JOIN BackToRoots.dbo.OrderLine 
+	ON BackToRoots.dbo.CustomerOrder.OrderID = BackToRoots.dbo.OrderLine.OrderID 
+INNER JOIN BackToRoots.dbo.Product 
+	ON BackToRoots.dbo.OrderLine.ProductID = BackToRoots.dbo.Product.ProductID;
+```
+The lookups in the ETL are as follows
+
+![BackToRootsDMLoadFactSales](https://user-images.githubusercontent.com/91146906/138399979-b6b7c8ec-0cf8-4f0a-8ef0-80fc0d892424.png)
