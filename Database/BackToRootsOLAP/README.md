@@ -32,4 +32,6 @@ Back-to-Roots Bakery is a health-conscious, community-centered bakery focused on
 
 ![BackToRootsDMSnowflakeSchema](https://user-images.githubusercontent.com/91146906/138395442-53585d50-d802-4794-bf6c-3b6ec1aeb7df.png)
 
-
+<a name="BuildScript"></a>
+## Build Script
+The Back to Roots data mart build script creates the "BackToRootsDM" data mart if it does not exist, deletes tables if they exist, and creates dimension tables and the fact table with the appropriate attributes and constraints. Due to the logic, the script can be run multiple times without error.
