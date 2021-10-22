@@ -45,10 +45,10 @@ Using Visual Studio and SSIS, data is extracted from the Back to Roots OLTP, tra
 ![BackToRootsDMETL](https://user-images.githubusercontent.com/91146906/138397836-485fec03-a356-45c7-9377-3f0d16099afe.png)
 
 ### DimDate
-DimDate is loaded using the LoadDimDate.sql SQL query found [here](../BackToRootsOLAP/LoadDimDate.sql)
+DimDate is loaded using the LoadDimDate.sql SQL query found [here](../BackToRootsOLAP/LoadDimDate.sql), which was provided.
 
 ### DimProduct
-DimProduct is loaded using the following SQL query
+DimProduct is loaded using the following SQL query.
 ```SQL
 -- BackToRootsDM DimProduct Source Query Written by Hannah McDonald
 -- Originally Written: October 2021 | Updated October 2021
@@ -72,7 +72,7 @@ LEFT OUTER JOIN BackToRoots.dbo.ProductType
 ```
 
 ### DimPosition
-DimPosition is loaded using the following SQL query
+DimPosition is loaded using the following SQL query.
 ```SQL
 -- BackToRootsDM DimPosition Source Query Written by Hannah McDonald
 -- Originally Written: October 2021 | Updated October 2021
@@ -86,7 +86,7 @@ FROM BackToRoots.dbo.Position;
 ```
 
 ### DimEmployee
-DimEmployee is loaded using the following SQL query
+DimEmployee is loaded using the following SQL query.
 ```SQL
 -- BackToRootsDM DimEmployee Source Query Written by Hannah McDonald
 -- Originally Written: October 2021 | Updated October 2021
@@ -109,7 +109,7 @@ INNER JOIN BackToRootsDM.dbo.DimPosition
 ```
 
 ### DimReward
-DimReward is loaded using the following SQL query
+DimReward is loaded using the following SQL query.
 ```SQL
 -- BackToRootsDM DimReward Source Query Written by Hannah McDonald
 -- Originally Written: October 2021 | Updated October 2021
@@ -122,7 +122,7 @@ FROM BackToRoots.dbo.RewardStatus;
 ```
 
 ### DimCustomer
-DimCustomer is loaded using the following SQL query
+DimCustomer is loaded using the following SQL query.
 ```SQL
 -- BackToRootsDM DimCustomer Source Query Written by Hannah McDonald
 -- Originally Written: October 2021 | Updated October 2021
@@ -145,7 +145,7 @@ INNER JOIN BackToRootsDM.dbo.DimReward
 ```
 
 ### DimOrder
-DimOrder is loaded using the following SQL query
+DimOrder is loaded using the following SQL query.
 ```SQL
 -- BackToRootsDM DimOrder Source Query Written by Hannah McDonald
 -- Originally Written: October 2021 | Updated October 2021
@@ -165,7 +165,7 @@ LEFT OUTER JOIN BackToRoots.dbo.StoreLocation
 ```
 
 ### FactSales
-FactSales is loaded using the following SQL query, then uses a series of lookups in the ETL to populate the SKs
+FactSales is loaded using the following SQL query, then uses a series of lookups in the ETL to populate the SKs.
 ```SQL
 -- BackToRootsDM FactSales Source Query Written by Hannah McDonald
 -- Originally Written: October 2021 | Updated October 2021
@@ -190,6 +190,6 @@ INNER JOIN BackToRoots.dbo.OrderLine
 INNER JOIN BackToRoots.dbo.Product 
 	ON BackToRoots.dbo.OrderLine.ProductID = BackToRoots.dbo.Product.ProductID;
 ```
-The lookups in the ETL, which popluate the SKs, are as follows
+The lookups in the ETL, which popluate the SKs, are as follows.
 
 ![BackToRootsDMLoadFactSales](https://user-images.githubusercontent.com/91146906/138399979-b6b7c8ec-0cf8-4f0a-8ef0-80fc0d892424.png)
