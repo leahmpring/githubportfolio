@@ -25,3 +25,8 @@ Back-to-Roots Bakery is a health-conscious, community-centered bakery focused on
 <a name="DataMartDesign"></a>
 ## Data Mart Design
 ### Information Package
+
+![BackToRootsDMInformationPackage](https://user-images.githubusercontent.com/91146906/138394990-ba725c47-4bd2-4478-aa8c-23640d321c27.png)
+
+
+
