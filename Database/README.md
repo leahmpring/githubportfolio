@@ -7,4 +7,6 @@ During my Foundations or Information Management class in Winter 2021, I was task
 <br>
 <br><i>Explore the Back to Roots OLTP project [here](../Database/BackToRootsOLTP/#top).</i>
 ## Back to Roots OLAP
-Coming soon...
+Project description coming soon...
+<br>
+<br><i>Explore the Back to Roots OLAP project [here](../Database/BackToRootsOLAP/#top).</i>
