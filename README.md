@@ -80,7 +80,9 @@ Univeristy of Denver, Daniels College of Business
 ## Database Projects
 
 ### Back to Roots OLTP
-Below is a video demo of the application's forms and reports. A complete project walk-through can be found [here](/Database/BackToRootsOLTP/#top)
+For this project, I designed, built, and programed an enterprise information management database using SQL Server and Azure; designed, built, and programed interactive forms using Visual Studio and SQL Server; and designed, built, and programed a Windows integrated application, along with reports, using Visual Studio and SQL Server. Throughout this process, I used SQL and Visual Basic.
+
+Below is a video demo of the Windows integrated application and reports, and the full project can be found [here](/Database/BackToRootsOLTP/#top).
 
 https://user-images.githubusercontent.com/91146906/137014339-857ce945-ef60-4d76-be97-c7a9ae3a6b52.mp4
 
