@@ -37,3 +37,126 @@ Back-to-Roots Bakery is a health-conscious, community-centered bakery focused on
 The Back to Roots data mart build script creates the "BackToRootsDM" data mart if it does not exist, deletes tables if they exist, and creates dimension tables and the fact table with the appropriate attributes and constraints. Due to the logic, the script can be run multiple times without error.
 <br>
 <br><i>See the BuildBackToRootsDM.sql build script [here](../BackToRootsOLAP/BuildBackToRootsDM.sql).</i>
+
+<a name="ETL"></a>
+## Extract, Transform, and Load the Data Mart
+Using Visual Studio and SSIS, I extracted data from the Back to Roots OLTP, made the needed transformations, and loaded it into the Back to Roots data mart.
+
+![BackToRootsDMETL](https://user-images.githubusercontent.com/91146906/138397836-485fec03-a356-45c7-9377-3f0d16099afe.png)
+
+### DimProduct
+DimProduct is loaded using the following SQL query
+```SQL
+-- BackToRootsDM DimProduct Source Query Written by Hannah McDonald
+-- Originally Written: October 2021 | Updated October 2021
+---------------------------------------------------------------
+-- Script query to select products for DimProduct
+SELECT
+	BackToRoots.dbo.Product.ProductID,
+	BackToRoots.dbo.ProductType.ProductTypeName AS ProductType,       -- Type 0: Fixed
+	BackToRoots.dbo.Product.ProductName AS ProductName,               -- Type 0: Fixed
+	-- Subquery to get multiple diets on one line to show in single record
+	STUFF((SELECT ', ' + BackToRoots.dbo.Diet.DietName
+		   FROM BackToRoots.dbo.DietProduct
+		   LEFT OUTER JOIN BackToRoots.dbo.Diet
+				ON BackToRoots.dbo.Diet.DietID = BackToRoots.dbo.DietProduct.DietID
+			WHERE BackToRoots.dbo.DietProduct.ProductID = BackToRoots.dbo.Product.ProductID
+			FOR XML PATH('')),1,1,'') AS Diet,                            -- Type 0: Fixed
+	BackToRoots.dbo.Product.ProductPrice AS ProductPrice              -- Type 2: Historical
+FROM BackToRoots.dbo.Product
+LEFT OUTER JOIN BackToRoots.dbo.ProductType
+	ON BackToRoots.dbo.ProductType.ProductTypeID = BackToRoots.dbo.Product.ProductTypeID;
+```
+
+### DimPosition
+DimPosition is loaded using the following SQL query
+```SQL
+-- BackToRootsDM DimPosition Source Query Written by Hannah McDonald
+-- Originally Written: October 2021 | Updated October 2021
+---------------------------------------------------------------
+-- Script query to select positions for DimPosition
+SELECT
+	BackToRoots.dbo.Position.PositionID,
+	BackToRoots.dbo.Position.PositionType,	-- Type 0: Fixed
+	BackToRoots.dbo.Position.PositionName	-- Type 0: Fixed
+FROM BackToRoots.dbo.Position;
+```
+
+### DimEmployee
+DimEmployee is loaded using the following SQL query
+```SQL
+-- BackToRootsDM DimEmployee Source Query Written by Hannah McDonald
+-- Originally Written: October 2021 | Updated October 2021
+---------------------------------------------------------------
+-- Script query to select employees for DimEmployee
+SELECT
+	BackToRoots.dbo.Employee.EmployeeID,
+	BackToRoots.dbo.Employee.EmployeeFirstName AS FirstName,                    -- Type 0: Fixed
+	BackToRoots.dbo.Employee.EmployeeLastName AS LastName                       -- Type 1: Changing
+	BackToRoots.dbo.EmploymentHistory.WageType,                                 -- Type 0: Fixed
+	ISNULL(BackToRoots.dbo.EmploymentHistory.Wage, -1) AS Wage,                 -- Type 0: Fixed      -- Replace null with illogical wage
+	BackToRoots.dbo.EmploymentHistory.HireDate,                                 -- Type 0: Fixed
+	ISNULL(BackToRoots.dbo.EmploymentHistory.EndDate, '9999-01-01') AS EndDate, -- Type 1: Changing   -- Replace null with illogical date
+	BackToRootsDM.dbo.DimPosition.PositionSK                                    -- Type 0: Fixed
+FROM BackToRoots.dbo.Employee
+LEFT OUTER JOIN BackToRoots.dbo.EmploymentHistory
+	ON BackToRoots.dbo.EmploymentHistory.EmployeeID = BackToRoots.dbo.Employee.EmployeeID
+INNER JOIN BackToRootsDM.dbo.DimPosition
+	ON BackToRootsDM.dbo.DimPosition.PositionAK = BackToRoots.dbo.EmploymentHistory.PositionID;
+```
+
+### DimReward
+DimReward is loaded using the following SQL query
+```SQL
+-- BackToRootsDM DimReward Source Query Written by Hannah McDonald
+-- Originally Written: October 2021 | Updated October 2021
+---------------------------------------------------------------
+-- Script query to select rewards for DimReward
+SELECT
+	BackToRoots.dbo.RewardStatus.RewardStatusID,
+	BackToRoots.dbo.RewardStatus.RewardStatusName AS RewardStatus	-- Type 0: Fixed
+FROM BackToRoots.dbo.RewardStatus;
+```
+
+### DimCustomer
+DimCustomer is loaded using the following SQL query
+```SQL
+-- BackToRootsDM DimCustomer Source Query Written by Hannah McDonald
+-- Originally Written: October 2021 | Updated October 2021
+---------------------------------------------------------------
+-- Script query to select customers for DimCustomer
+SELECT
+	Customer.CustomerID,
+	ISNULL(Customer.CustomerDOB, '9999-01-01') AS DOB,                              -- Type 0: Fixed      -- Replace null with illogical date
+	ISNULL(Customer.CustomerCity, 'N/A') AS City,                                   -- Type 1: Changing
+	ISNULL(Customer.CustomerState, 'N/A') AS State,                                 -- Type 1: Changing
+	ISNULL(Customer.CustomerZipCode, 00000) AS ZipCode,                             -- Type 1: Changing   -- Replace null with illogical zip code
+	RewardHistory.RewardStatusJoinDate,                                             -- Type 0: Fixed
+	ISNULL(RewardHistory.RewardStatusEndDate, '9999-01-01') AS RewardStatusEndDate, -- Type 1: Changing   -- Replace null with illogical date
+	BackToRootsDM.dbo.DimReward.RewardSK                                            -- Type 0: Fixed
+FROM BackToRoots.dbo.Customer
+LEFT OUTER JOIN BackToRoots.dbo.RewardHistory
+	ON BackToRoots.dbo.RewardHistory.CustomerID = BackToRoots.dbo.Customer.CustomerID
+INNER JOIN BackToRootsDM.dbo.DimReward
+	ON BackToRootsDM.dbo.DimReward.RewardAK = BackToRoots.dbo.RewardHistory.RewardStatusID;
+```
+
+### DimOrder
+DimOrder is loaded using the following SQL query
+```SQL
+-- BackToRootsDM DimOrder Source Query Written by Hannah McDonald
+-- Originally Written: October 2021 | Updated October 2021
+---------------------------------------------------------------
+-- Script query to select orders for DimOrder
+SELECT
+	BackToRoots.dbo.CustomerOrder.OrderID,                          -- Type 0: Fixed
+	BackToRoots.dbo.CustomerOrder.OrderPlacement AS Placement,      -- Type 0: Fixed
+	BackToRoots.dbo.CustomerOrder.OrderFulfillment AS Fulfillment,  -- Type 0: Fixed
+	BackToRoots.dbo.StoreLocation.LocationStreetAddress,            -- Type 0: Fixed
+	BackToRoots.dbo.StoreLocation.LocationCity,                     -- Type 0: Fixed
+	BackToRoots.dbo.StoreLocation.LocationState,                    -- Type 0: Fixed
+	BackToRoots.dbo.StoreLocation.LocationZipCode                   -- Type 0: Fixed
+FROM BackToRoots.dbo.CustomerOrder
+LEFT OUTER JOIN BackToRoots.dbo.StoreLocation
+	ON BackToRoots.dbo.StoreLocation.LocationID = BackToRoots.dbo.CustomerOrder.LocationID;
+```
