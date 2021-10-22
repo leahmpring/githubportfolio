@@ -1,8 +1,8 @@
 <a name="top"></a>
 
 # Back to Roots Bakery OLAP
-[Executive Summary](#ExecutiveSummary) | [Business Requirements](#BusinessRequirements) | [Data Mart Design](#DataMartDesign) |
-<br>[Build Script](#BuildScript) | [ETL](#ETL) | [Download and Explore!](#DownloadExplore)
+[Executive Summary](#ExecutiveSummary) | [Business Requirements](#BusinessRequirements) | [Data Mart Design](#DataMartDesign) | [Build Script](#BuildScript) | [ETL](#ETL)
+<br>[Download and Explore!](#DownloadExplore)
 
 <a name="ExecutiveSummary"></a>
 ## Executive Summary
@@ -193,3 +193,7 @@ INNER JOIN BackToRoots.dbo.Product
 The lookups in the ETL, which popluate the SKs, are as follows.
 
 ![BackToRootsDMLoadFactSales](https://user-images.githubusercontent.com/91146906/138399979-b6b7c8ec-0cf8-4f0a-8ef0-80fc0d892424.png)
+
+<a name="DownloadExplore"></a>
+## Download and Explore!
+Coming soon...
