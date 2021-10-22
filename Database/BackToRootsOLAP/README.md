@@ -28,5 +28,8 @@ Back-to-Roots Bakery is a health-conscious, community-centered bakery focused on
 
 ![BackToRootsDMInformationPackage](https://user-images.githubusercontent.com/91146906/138394990-ba725c47-4bd2-4478-aa8c-23640d321c27.png)
 
+### Snowflake Schema
+
+![BackToRootsDMSnowflakeSchema](https://user-images.githubusercontent.com/91146906/138395442-53585d50-d802-4794-bf6c-3b6ec1aeb7df.png)
 
 
