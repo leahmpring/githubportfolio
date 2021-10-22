@@ -12,7 +12,7 @@ Univeristy of Denver, Daniels College of Business
 
 <a name="resume"></a>
 ## (Some) Jobs and Internships
-<i>See my [resume] or [LinkedIn](https://www.linkedin.com/in/hannah-m-mcdonald/)</i>
+<i>See my [resume](.../HannahMcDonaldResume.pdf) or [LinkedIn](https://www.linkedin.com/in/hannah-m-mcdonald/)</i>
 <br>
 <br><b>Univeristy of Denver, Daniels College of Business</b>
 <br><i>Microsoft Office Certification Program Teaching Assistant Coordinator</i>
