@@ -1,5 +1,4 @@
 <a name="top"></a>
-
 # Database Projects
 ## Back to Roots OLTP
 During my Foundations or Information Management class in Winter 2021, I was tasked with planning, designing, building, and programming aspects of an information management system using Microsoft Word (documentation), Visio (diagraming), and Access (relational database). This included designing a relational database, simulating data, building the relational database in Access, loading the data into the relational database, querying the relational database using SQL, and developing relational database forms and reports, including using VBA macros, functions, and sub procedures.
