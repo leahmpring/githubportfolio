@@ -44,6 +44,9 @@ Using Visual Studio and SSIS, data is extracted from the Back to Roots OLTP, tra
 
 ![BackToRootsDMETL](https://user-images.githubusercontent.com/91146906/138397836-485fec03-a356-45c7-9377-3f0d16099afe.png)
 
+### DimDate
+DimDate is loaded using the LoadDimDate.sql SQL query found [here](../BackToRootsOLAP/LoadDimDate.sql)
+
 ### DimProduct
 DimProduct is loaded using the following SQL query
 ```SQL
@@ -187,6 +190,6 @@ INNER JOIN BackToRoots.dbo.OrderLine
 INNER JOIN BackToRoots.dbo.Product 
 	ON BackToRoots.dbo.OrderLine.ProductID = BackToRoots.dbo.Product.ProductID;
 ```
-The lookups in the ETL are as follows
+The lookups in the ETL, which popluate the SKs, are as follows
 
 ![BackToRootsDMLoadFactSales](https://user-images.githubusercontent.com/91146906/138399979-b6b7c8ec-0cf8-4f0a-8ef0-80fc0d892424.png)
