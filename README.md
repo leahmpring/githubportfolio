@@ -78,7 +78,7 @@ Univeristy of Denver, Daniels College of Business
 
 <a name="DatabaseProjects"></a>
 ## Database Projects
-[See all Database Projects](/Database/#top)
+[See All Database Projects](/Database/#top)
 
 ### Back to Roots OLTP
 For this project, I designed, built, and programed an enterprise information management database using SQL Server and Azure; designed, built, and programed interactive forms using Visual Studio and SQL Server; and designed, built, and programed a Windows integrated application, along with reports, using Visual Studio and SQL Server. Throughout this process, I used SQL and Visual Basic.
