@@ -35,3 +35,5 @@ Back-to-Roots Bakery is a health-conscious, community-centered bakery focused on
 <a name="BuildScript"></a>
 ## Build Script
 The Back to Roots data mart build script creates the "BackToRootsDM" data mart if it does not exist, deletes tables if they exist, and creates dimension tables and the fact table with the appropriate attributes and constraints. Due to the logic, the script can be run multiple times without error.
+<br>
+<br><i>See the BuildBackToRootsDM.sql build script [here](../BackToRootsOLAP/BuildBackToRootsDM.sql).</i>
