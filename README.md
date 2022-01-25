@@ -79,3 +79,6 @@ Below is a video demo of the Windows integrated application and reports (unmute)
 
 https://user-images.githubusercontent.com/91146906/137014339-857ce945-ef60-4d76-be97-c7a9ae3a6b52.mp4
 
+## Daniels Distinction Portfolio
+[See my Distinction Portfolio](/Daniels Distinction)
+In pursuing Distinction in Business Analytics from the University of Denver, I compiled a portfolio highlighting my experiences and work throughout my undergraduate years. 
