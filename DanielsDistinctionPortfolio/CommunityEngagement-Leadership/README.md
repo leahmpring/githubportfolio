@@ -5,7 +5,7 @@
 <i>April 2019 - June 2020</i>
 <figure>
   <img src="https://user-images.githubusercontent.com/91146906/151018455-c85f1384-062c-466b-ac52-d338eb03a261.jpg" width="400"/>
-  <figcaption style="width 200;">Did you know 68% of DU students had 4 or fewer drinks the last time they partied or socialized? Stick to 1 drink per hour</figcaption>
+  <figcaption style="width 200px;">Did you know 68% of DU students had 4 or fewer drinks the last time they partied or socialized? Stick to 1 drink per hour!</figcaption>
 </figure>
 
 ## Human Leadership Program
