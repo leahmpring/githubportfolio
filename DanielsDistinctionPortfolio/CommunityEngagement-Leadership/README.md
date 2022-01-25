@@ -14,7 +14,7 @@ I am testing this text to see how it will wrap.
     </th>
     <th>
       <img src="https://user-images.githubusercontent.com/91146906/151054845-ce0f887f-f408-4eee-947d-cb4946cd37a1.jpg" width="400">
-      <br><i>Moments of Mindfulness <br> Weekly Destress Event<br></i>
+      <br><i>Moments of Mindfulness <br> Weekly Destress Event<br> </i>
     </th>
   </tr>
 </table>
