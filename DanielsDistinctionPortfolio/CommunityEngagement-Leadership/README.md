@@ -6,7 +6,7 @@
 
 <table style="width:400;">
    <tr><img src="https://user-images.githubusercontent.com/91146906/151018455-c85f1384-062c-466b-ac52-d338eb03a261.jpg" width="400">
-      <p>Did you know 68% of DU students had 4 or fewer drinks the last time they partied or socialized? Stick to one drink per hour!</p>
+      <p>Did you know 68% of DU students had 4 or fewer drinks <br> the last time they partied or socialized? Stick to one drink per hour!</p>
    </tr>
 </table>
 
