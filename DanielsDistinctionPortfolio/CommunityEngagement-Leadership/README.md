@@ -4,6 +4,13 @@
 ## Thrive Peer Health Educators
 <i>April 2019 - June 2020</i>
 
+<ul>
+   <li>
+      <img src="https://user-images.githubusercontent.com/91146906/151018455-c85f1384-062c-466b-ac52-d338eb03a261.jpg" width="400">
+      <p>Did you know 68% of DU students had 4 or fewer drinks the last time they partied or socialized? Stick to one drink per hour!</p>
+   </li>
+</ul>
+
 <p align="center">
    <img src="https://user-images.githubusercontent.com/91146906/151018455-c85f1384-062c-466b-ac52-d338eb03a261.jpg" width="400">
    <br><em wrap="hard">Did you know 68% of DU students had 4 or fewer drinks the last time they partied or socialized? Stick to 1 drink per hour!</em>
