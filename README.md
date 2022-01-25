@@ -2,7 +2,7 @@
 
 ## Welcome! This is a little about me and a sampling of my work.
 
-[Education](#education) | [Jobs and Internships](#resume) | [Skills](#skills) | [Database Projects](#DatabaseProjects)
+[Education](#education) | [Jobs and Internships](#resume) | [Skills](#skills) | [Daniels Distinction Portfolio](#DanielsDistinctionPortfolio)
 
 <a name="education"></a>
 ## Education
@@ -68,17 +68,9 @@ Univeristy of Denver, Daniels College of Business
  </tr>
 </table>
 
-<a name="DatabaseProjects"></a>
-## Database Projects
-[See all Database Projects](/Database/#top)
-
-### Back to Roots OLTP
-For this project, I designed, built, and programed an enterprise information management database using SQL Server and Azure; designed, built, and programed interactive forms using Visual Studio and SQL Server; and designed, built, and programed a Windows integrated application, along with reports, using Visual Studio and SQL Server. Throughout this process, I used SQL and Visual Basic.
-
-Below is a video demo of the Windows integrated application and reports (unmute), and the full project can be found [here](/Database/BackToRootsOLTP/#top).
-
-https://user-images.githubusercontent.com/91146906/137014339-857ce945-ef60-4d76-be97-c7a9ae3a6b52.mp4
+<a name="DanielsDistinctionPortfolio"></a>
 
 ## Daniels Distinction Portfolio
 [See my Distinction Portfolio](/DanielsDistinctionPortfolio)
+<br>
 <br>In pursuing Distinction in Business Analytics from the University of Denver, I compiled a portfolio highlighting my experiences and work throughout my undergraduate years. 
