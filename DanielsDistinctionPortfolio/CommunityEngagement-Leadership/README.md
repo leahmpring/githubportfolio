@@ -16,7 +16,7 @@
     <tr>
       <td>
         <b>Weekly tabling:</b> I hosted outreach events in residence halls to raise awareness surrounding alcohol and drugs, sexual health, and mental health. This outreach included engaging students through trivia and other activities, serving as a quick and fun interaction to start a conversation surrounding these important and prevalent topics.
-        <br><br><i>The drink pouring activity is my favorite. Using water, participants pour a standard drink of beer, wine, and liquor to their best estimate; then, we measure it. This promotes safe drinking strategies, inclduing pouring and counting drinks accurately.</i>
+        <br><br><blockquote><i>The drink pouring activity is my favorite. Using water, participants pour a standard drink of beer, wine, and liquor to their best estimate; then, we measure it. This promotes safe drinking strategies, inclduing pouring and counting drinks accurately.</i></blockquote>
       </td>
     </tr>
     <tr>
@@ -26,7 +26,8 @@
     </tr>
     <tr>
       <td>
-        <b>Mental health workshop facilitation:</b>Led a "Success, Not Stress" workshop to help students better understand stress and how to manage it
+        <b>Mental health workshop facilitation:</b> I led a "Success, Not Stress" workshop for a campus sorority, helping students better understand stress and how to manage it. This included learning what stress is, how it can be helpful and harmful, positive and negative coping mechanisms, how to manage stress in the long-term, and how to identify when it is more than "just stress."
+        <br><br><blockquote>Seeing how stress can be positive is one of my favorite elements of this presentation. What if we think about stress as something to help us meet a challenge and succeed, rather than something to avoid? <a href="https://www.ted.com/talks/kelly_mcgonigal_how_to_make_stress_your_friend?language=en" target="_blank">This TED Talk</a> by Kelly McGonigal talks about the benefit of making stress your friend.</blockquote>
       </td>
     </tr>
     <tr>
@@ -44,11 +45,11 @@
   
 <table>
   <tr>
-    <td style="text-align:right">
+    <td>
       <img src="https://user-images.githubusercontent.com/91146906/151059081-0fd0b40b-cb70-4c3d-965d-3d03df56988b.jpg" width="400">
       <br><i>Did you know 68% of DU students had 4 or fewer <br> drinks the last time they partied or socialized? <br> Stick to one drink per hour!</i>
       </td>
-    <td style="text-align:right">
+    <td>
       <img src="https://user-images.githubusercontent.com/91146906/151059134-5f658f4b-f443-442c-858d-8a6255ad88d7.jpg" width="400">
       <br><i>Relax and make friendship bracelets! <br> Moments of Mindfulness <br> Weekly Destress Event</i>
     </td>
