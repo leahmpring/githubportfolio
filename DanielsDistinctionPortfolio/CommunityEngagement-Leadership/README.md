@@ -1,12 +1,14 @@
 # Community Engagment and Leadership
 ## Wellness Living and Learning Community
 <i>Fall 2018 - Spring 2019</i>
-## Thrive Peer Health Educators
+## Thrive Peer Health Educator
 <i>April 2019 - June 2020</i>
 <br>
 <br>When entering college, I found myself nervous about the stories of peer pressure surrounding alcohol; the prevalance of sexual assault on college campuses; and how busy students across campus seemed to be, with expectations to take heavy class loads in addition to being involved across campus. I quickly learned the need to find balance and empower myself in making the choices best for me–something that comes easy in some ways and continues to be challenging in others. In finding this balance and empowerment for myself, I wanted to support other students in doing the same, leading me to the Thrive Peer Health Educator team.
 <br>
-<br>The Thrive Peer Health Educator team is a group of undergraduate students seeking to empower the DU community to make informed choices regarding alcohol and other drugs, sexual health, and mental health.
+<br>The Thrive Peer Health Educator team is a group of undergraduate students seeking to empower the DU community to make informed choices regarding alcohol and other drugs, sexual health, and mental health. In this role, I positively impacted the DU community through sharing knowledge and resources and starting conversations around traditionally stigmatized issues in an effort to normalize them. While doing this, I developed and expanded my own knowledge around these topics; obtained skills related to educating, facilitating, event planning, and program development; and observed and experienced people-first management.
+<br>
+<br>While my time as a Thrive Peer Health Educator was relatively short, it made a significant impact on me, and I carry forward many lessons and skills, in addition to my continued passion for the topics. In my later role as the TA Coordinator for the Microsoft Certification Program, I brought members of this team to discuss mental health with my new team, recoginizing the widespread importance of the topic. Further, observing the people-first management style and the resulting success I experienced as a team member influenced my leadership style, as I strive to build connection within teams and to see those I interact with as human first. By caring for each other as humans first, I believe we will have more to offer and deliver in our various capacities.
 <br>
 
 <details>
