@@ -78,7 +78,9 @@
 
 ## Human Leadership Program
 <i>August 2021</i>
-
+<br>
+<br>The book <i>Permission to Screw Up: How I Learned to Lead by Doing (Almost) Everything Wrong</i> by Kristen Hadeed was my favorite read in college, although not for a class. 
+<br>
 <table>
   <tr>
     <td>
