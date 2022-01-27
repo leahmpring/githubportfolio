@@ -1,6 +1,20 @@
 # Community Engagment and Leadership
 ## Wellness Living and Learning Community
 <i>Fall 2018 - Spring 2019</i>
+
+<table>
+  <tr>
+    <td>
+      <img src="https://user-images.githubusercontent.com/91146906/151284126-df55e908-f89d-4c27-9a75-65add1c47684.jpg" width="460">
+      <br><i>Community service day with DU's living and learning <br> communities at a Denver community garden.</i>
+    </td>
+    <td>
+      <img src="https://user-images.githubusercontent.com/91146906/151285430-4824b939-f5ff-498c-a656-e7cb802b350f.jpg" width="460">
+      <br><i>Dinner with Wellness Living and Learning Community <br> following our weekly class.</i>
+    </td>
+  </tr>
+</table>
+
 ## Thrive Peer Health Educator
 <i>April 2019 - June 2020</i>
 <br>
@@ -64,3 +78,16 @@
 
 ## Human Leadership Program
 <i>August 2021</i>
+
+<table>
+  <tr>
+    <td>
+      <img src="https://user-images.githubusercontent.com/91146906/151283093-de86875b-f5d0-41f9-9a1a-65851134844b.jpg" width="460">
+      <br><i>Learn to lead as your most authentic, human self!</i>
+      </td>
+    <td>
+      <img src="https://user-images.githubusercontent.com/91146906/151282156-1b4dc494-600a-4ac8-9534-ab7276e1dc63.jpg" width="460">
+      <br><i>Human Leadership Program Zoom session August, 2021</i>
+    </td>
+  </tr>
+</table>
