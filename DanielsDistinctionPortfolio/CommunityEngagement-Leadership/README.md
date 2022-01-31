@@ -79,8 +79,59 @@
 ## Human Leadership Program
 <i>August 2021</i>
 <br>
-<br>The book <i>Permission to Screw Up: How I Learned to Lead by Doing (Almost) Everything Wrong</i> by Kristen Hadeed was my favorite read in college, although not for a class. 
+<br>The book <i>Permission to Screw Up: How I Learned to Lead by Doing (Almost) Everything Wrong</i> by Kristen Hadeed was my favorite read in college, although not for a class. In this book, Kristen told her story, beginning with her experiences starting and growing her business in college and including the valuable lessons she learned along the way. Her story particularly resonated with me because she was a college student managing college students, like I am doing in college. While reading, I connected with many of her experiences and appreciated her perspective. This book inspired me in many ways, and when the opportunity to attend her Human Leadership Program arose, I registered in hopes of continuing to learn and challenge myself as a leader.
 <br>
+<br>At the Human Leadership Program, we covered thinkning, trusting, communicating, growing, caring, and inspiring like a leader.
+<details>
+  <summary><i><b>See what I learned in each of the sessions!</b></i></summary>
+  <br>
+  <table>
+    <tr>
+      <td>
+        <b>Think Like a Leader:</b> How life experiences shape mindset and behavior, and how to harness elements of mindset that fuel forward, while reframing those that hold back.
+        <br><br><blockquote>In reflecting on the most challenging personal relationships in my life and by identifying my personal narratives, I recognized "it is my job to make you happy" as the personal narrative with the biggest impact on my life. I am a peacekeeper, and this stems from my experiences growing up. This personal narrative has many positive impacts: I care deeply about others, do what I can to help others, and consider others when making decisions. However, it also has negative impacts: Always seeking to please others can result in an unsustainable amount of work toward an often impossible goal (always making everyone happy), creating an immense and exhausting weight. While I appreciate the positives of this personal narrative and continue to harness them, I recognize the need to set boundaries and prioritize my wellbeing. To support others to the best of my ability, I also need to take care of myself. Thus, I seek to reframe this limiting belief: It is my hope to make others happy by being kind, although it is not my job. While I better recognize this tendency now, it continues to be a challenge.</blockquote>
+        <blockquote><b>Key takeaway:</b> Everyone has their own limiting beliefs impacting their mindset and behaviors. How can we help each other recognize and face our limiting beliefs?</blockquote>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Trust Like a Leader:</b> How to build, maintain, and strengthen trust in relationships, in addition to the role of vulnerability at work.
+        <br><br><blockquote>I believe vulnerability belongs in the workplace because we are all human and being vulnerable allows us to see each other as such. While there is a line for oversharing, vulnerability creates a more genuine environment for teams and normalizes asking for help, creating a stronger and more empowered team. How do we make people feel seen and heard? Truly listen and reflectively respond. How can we ask questions in a way that promotes vulnerability and connection? In our relationships, we have emotional bank accounts that grow with deposits and shrink with withdrawls. How can we build the balances to stregthen our relationships and trust?</blockquote>
+        <blockquote><b>Key takeaway:</b> I strongly value the ideas and experiences of others. However, I often face two challenges: (1) Setting aside distractions to truly listen and (2) giving up control in trusting others. When listening to others, my attention may wander to the tasks floating in my head, and when working with others, I struggle to trust and transfer ownership. The following help me face these challenges: (1) I schdeule time for myself to be mentally present and then intentionally clear my mind at that time, and (2) I weigh the value of the work being completed by me versus the value of trusting and empowering another.</blockquote>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Communicate Like a Leader:</b> How to give, receive, and solicit feedback in using communication to build connection and trust.
+        <br><br><blockquote>Giving feedback is challenging, and a positive versus negative experience impacts the relationship, one developing trust and the other breaking it, respectively. There are two forms of feedback: Growth feedback inspiring change and recognition feedback inspiring repetition. The most valuable feedback highlights the feeling, behavior, and impact, and we can take several actions to better give, receive, and solicit feedback for optimal experience and development.</blockquote>
+        <blockquote><b>Key takeaway:</b> People give feedback because they care, and that is now my perspective when both giving and receiving feedback. Since this session, I have intentionally impemented key steps in my feedback interactions. In receiving feedback, I start with "thank you" then "tell me more" to develop trust and fully understand the feedback. In giving feedback, I strive to follow the FBI model, sharing the feeling, behavior, and impact.</blockquote>
+        <i>I found this session so impactful and useful that I adapted a version to train my Microsoft Certification TA team.</i>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Grow Like a Leader:</b> How to...
+        <br><br><blockquote>Insert here</blockquote>
+        <blockquote><b>Key takeaway:</b> Insert here.</blockquote>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Care Like a Leader:</b> How to...
+        <br><br><blockquote>Insert here</blockquote>
+        <blockquote><b>Key takeaway:</b> Insert here.</blockquote>
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Inspire Like a Leader:</b> How to...
+        <br><br><blockquote>Insert here</blockquote>
+        <blockquote><b>Key takeaway:</b> Insert here.</blockquote>
+      </td>
+    </tr>
+  </table>
+</details>
+
 <table>
   <tr>
     <td>
