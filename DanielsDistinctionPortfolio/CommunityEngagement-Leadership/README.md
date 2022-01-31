@@ -120,7 +120,7 @@
             <li>Empower others in overcoming challenges: Say "tell me more..." to help people find the answers they already have; ask others three ideas to approach a challenge and the recommendation; ask questions rather than give solution.</li>
             <ul>
               <li>Slow down to speed up: Take time and give others the opportunity to try something new–train them.</li>
-              <li>Plus one others' ideas sparingly: Does it really need the improvement?</li>
+              <li>Plus one others' ideas sparingly: Does it really need the improvement? Ask a question instead.</li>
               <li>Talk less, listen more.</li>
             </ul>
           </ul>
