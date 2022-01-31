@@ -110,9 +110,21 @@
     </tr>
     <tr>
       <td>
-        <b>Grow Like a Leader:</b> How to...
-        <br><br><blockquote>Insert here</blockquote>
-        <blockquote><b>Key takeaway:</b> Insert here.</blockquote>
+        <b>Grow Like a Leader:</b> How to grow resilience and ability to face fear, failure, and setbacks.
+        <br><br><blockquote>Although easier said than done, I believe failing is acceptable, given you learn from it. A healthy relationship with failure enables you to take risks and try new things, and resiliency is how we move through challenges, learn, and bounce back with passion and curiousity. What about success? I define success as being proud of myself and happy with the outcome, although others may define it differently. Like failure, there can be a fear in success. With success comes responsibility and a pressure to both maintain and improve upon that success. In building a "resilience resume," I reflected on challenging situations, what I learned from them, and how I grew, allowing we to recoginize my capability and adaptability.</blockquote>
+        <blockquote><b>Key takeaways:</b> 
+          <ul>
+            <li>Approach fear with curiosity, exploring and planning what to do in various scenarios.</li> 
+            <li>Take first step with permission to do it bad: If you do nothing, cannot make it better–do something then make it better.</li>
+            <li>In uncertainty, find certainty: Identify and focus efforts on what can be controlled.</li>
+            <li>Empower others in overcoming challenges: Say "tell me more..." to help people find the answers they already have; ask others three ideas to approach a challenge and the recommendation; ask questions rather than give solution.</li>
+            <ul>
+              <li>Slow down to speed up: Take time and give others the opportunity to try something new–train them.</li>
+              <li>Plus one others' ideas sparingly: Does it really need the improvement?</li>
+              <li>Talk less, listen more.</li>
+            </ul>
+          </ul>
+        </blockquote>
       </td>
     </tr>
     <tr>
