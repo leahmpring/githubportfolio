@@ -96,7 +96,7 @@
     <tr>
       <td>
         <b>Trust Like a Leader:</b> How to build, maintain, and strengthen trust in relationships, in addition to the role of vulnerability at work.
-        <br><br><blockquote>I believe vulnerability belongs in the workplace because we are all human and being vulnerable allows us to see each other as such. While there is a line for oversharing, vulnerability creates a more genuine environment for teams and normalizes asking for help, creating a stronger and more empowered team. How do we make people feel seen and heard? Truly listen and reflectively respond. How can we ask questions in a way that promotes vulnerability and connection? In our relationships, we have emotional bank accounts that grow with deposits and shrink with withdrawls. How can we build the balances to stregthen our relationships and trust?</blockquote>
+        <br><br><blockquote>I believe vulnerability belongs in the workplace because we are all human and being vulnerable allows us to see each other as such. While there is a line for oversharing, vulnerability creates a genuine environment for teams and normalizes asking for help, creating a stronger and more empowered team. How do we make people feel seen and heard? Truly listen and reflectively respond. How can we ask questions in a way that promotes vulnerability and connection? In our relationships, we have emotional bank accounts that grow with deposits and shrink with withdrawls. How can we build balances to stregthen our relationships and trust?</blockquote>
         <blockquote><b>Key takeaway:</b> I strongly value the ideas and experiences of others. However, I often face two challenges: (1) Setting aside distractions to truly listen and (2) giving up control in trusting others. When listening to others, my attention may wander to the tasks floating in my head, and when working with others, I struggle to trust and transfer ownership. The following help me face these challenges: (1) I schdeule time for myself to be mentally present and then intentionally clear my mind at that time, and (2) I weigh the value of the work being completed by me versus the value of trusting and empowering another.</blockquote>
       </td>
     </tr>
@@ -112,12 +112,12 @@
       <td>
         <b>Grow Like a Leader:</b> How to grow resilience and ability to face fear, failure, and setbacks.
         <br><br><blockquote>Although easier said than done, I believe failing is acceptable, given you learn from it. A healthy relationship with failure enables you to take risks and try new things, and resiliency is how we move through challenges, learn, and bounce back with passion and curiousity. What about success? I define success as being proud of myself and happy with the outcome, although others may define it differently. Like failure, there can be a fear in success. With success comes responsibility and a pressure to both maintain and improve upon that success. In building a "resilience resume," I reflected on challenging situations, what I learned from them, and how I grew, allowing me to recoginize my capability and adaptability.</blockquote>
-        <blockquote><b>Key takeaways:</b> 
+        <blockquote><b>Key takeaways:</b>
           <ul>
             <li>Approach fear with curiosity, exploring and planning what to do in various scenarios.</li> 
             <li>Take first step with permission to do it bad: If you do nothing, cannot make it better–do something then make it better.</li>
             <li>In uncertainty, find certainty: Identify and focus efforts on what can be controlled.</li>
-            <li>Empower others in overcoming challenges: Say "tell me more..." to help people find the answers they already have; ask others three ideas to approach a challenge and the recommendation; ask questions rather than give solution.</li>
+            <li>Empower others in overcoming challenges: Say "tell me more..." to help people find the answers they already have; ask others three ideas to approach a challenge and the recommendation; ask questions rather than give solutions.</li>
             <ul>
               <li>Slow down to speed up: Take time and give others the opportunity to try something new–train them.</li>
               <li>Plus one others' ideas sparingly: Does it really need the improvement? Ask a question instead.</li>
@@ -129,16 +129,16 @@
     </tr>
     <tr>
       <td>
-        <b>Care Like a Leader:</b> How to...
+        <b>Care Like a Leader:</b> How to care for yourself, adopting habits to show up your best so you can better serve others.
         <br><br><blockquote>Insert here</blockquote>
-        <blockquote><b>Key takeaway:</b> Insert here.</blockquote>
+        <blockquote><b>Key takeaway:</b> Insert here</blockquote>
       </td>
     </tr>
     <tr>
       <td>
-        <b>Inspire Like a Leader:</b> How to...
+        <b>Inspire Like a Leader:</b> How to take ownership of your life and path, declaring how you will make your mark on the world.
         <br><br><blockquote>Insert here</blockquote>
-        <blockquote><b>Key takeaway:</b> Insert here.</blockquote>
+        <blockquote><b>Key takeaway:</b> Insert here</blockquote>
       </td>
     </tr>
   </table>
