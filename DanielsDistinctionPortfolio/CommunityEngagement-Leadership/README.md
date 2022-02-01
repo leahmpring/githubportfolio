@@ -1,4 +1,8 @@
+<a name="CommunityLeadership"></a>
 # Community Engagment and Leadership
+[Wellness Living and Learning Community](#WLLC) | [Thrive](#Thrive) | [Human Leadership Program](#HLP)
+
+<a name="WLLC"></a>
 ## Wellness Living and Learning Community
 <i>Fall 2018 - Spring 2019</i>
 
@@ -15,6 +19,7 @@
   </tr>
 </table>
 
+<a name="Thrive"></a>
 ## Thrive Peer Health Educator
 <i>April 2019 - June 2020</i>
 <br>
@@ -76,6 +81,7 @@
   </tr>
 </table>
 
+<a name="HLP"></a>
 ## Human Leadership Program
 <i>August 2021</i>
 <br>
