@@ -32,7 +32,7 @@
   </tr>
 </table>
 
-[![Top of Section](https://user-images.githubusercontent.com/91146906/152069712-566c38fa-4c26-42c3-bf80-d871f4927d3c.png)](#CommunityLeadership)
+[![Top of Section](https://user-images.githubusercontent.com/91146906/152071193-763cf087-929f-4506-896f-ee759e070f71.png)](#CommunityLeadership)
 [![Top of Page](https://user-images.githubusercontent.com/91146906/152069094-e6c9053e-9030-41ba-b362-3056b720299b.png)](#top)
 
 <a name="Thrive"></a>
@@ -97,7 +97,7 @@
   </tr>
 </table>
 
-[![Top of Section](https://user-images.githubusercontent.com/91146906/152069712-566c38fa-4c26-42c3-bf80-d871f4927d3c.png)](#CommunityLeadership)
+[![Top of Section](https://user-images.githubusercontent.com/91146906/152071193-763cf087-929f-4506-896f-ee759e070f71.png)](#CommunityLeadership)
 [![Top of Page](https://user-images.githubusercontent.com/91146906/152069094-e6c9053e-9030-41ba-b362-3056b720299b.png)](#top)
 
 <a name="HLP"></a>
@@ -182,7 +182,7 @@
   </tr>
 </table>
 
-[![Top of Section](https://user-images.githubusercontent.com/91146906/152069712-566c38fa-4c26-42c3-bf80-d871f4927d3c.png)](#CommunityLeadership)
+[![Top of Section](https://user-images.githubusercontent.com/91146906/152071193-763cf087-929f-4506-896f-ee759e070f71.png)](#CommunityLeadership)
 [![Top of Page](https://user-images.githubusercontent.com/91146906/152069094-e6c9053e-9030-41ba-b362-3056b720299b.png)](#top)
 
 
