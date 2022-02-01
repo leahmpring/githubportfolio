@@ -1,5 +1,5 @@
+<a name="top"></a>
 <hr>
-<a name="Top"></a>
 
 # Daniels Distinction Portfolio
 <i>Hannah McDonald – April 2022</i>
@@ -33,6 +33,7 @@
 </table>
 
 [![Top of Section](https://user-images.githubusercontent.com/91146906/152069712-566c38fa-4c26-42c3-bf80-d871f4927d3c.png)](#CommunityLeadership)
+[![Top of Page](https://user-images.githubusercontent.com/91146906/152069094-e6c9053e-9030-41ba-b362-3056b720299b.png)](#top)
 
 <a name="Thrive"></a>
 ### Thrive Peer Health Educator
@@ -97,6 +98,7 @@
 </table>
 
 [![Top of Section](https://user-images.githubusercontent.com/91146906/152069712-566c38fa-4c26-42c3-bf80-d871f4927d3c.png)](#CommunityLeadership)
+[![Top of Page](https://user-images.githubusercontent.com/91146906/152069094-e6c9053e-9030-41ba-b362-3056b720299b.png)](#top)
 
 <a name="HLP"></a>
 ### Human Leadership Program
@@ -181,7 +183,7 @@
 </table>
 
 [![Top of Section](https://user-images.githubusercontent.com/91146906/152069712-566c38fa-4c26-42c3-bf80-d871f4927d3c.png)](#CommunityLeadership)
-[![Top of Page](https://user-images.githubusercontent.com/91146906/152069094-e6c9053e-9030-41ba-b362-3056b720299b.png)](#Top)
+[![Top of Page](https://user-images.githubusercontent.com/91146906/152069094-e6c9053e-9030-41ba-b362-3056b720299b.png)](#top)
 
 
 
