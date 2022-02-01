@@ -2,7 +2,7 @@
 <hr>
 
 # Daniels Distinction Portfolio
-<i>Hannah McDonald – April 2022</i>
+<i>Hannah McDonald – April 2022 – Business Analytics</i>
 <br><br>
 [![Community Engagement and Leadership](https://user-images.githubusercontent.com/91146906/152060072-9f190728-ca31-4032-8ed7-321441bd31fe.png)](#CommunityLeadership)
 [![Technical Knowledge](https://user-images.githubusercontent.com/91146906/152059845-9463d73b-9bec-4bac-94b1-4ed1ecbd2916.png)](#Technical)
