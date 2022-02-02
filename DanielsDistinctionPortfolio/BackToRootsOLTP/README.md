@@ -4,8 +4,15 @@
 <hr>
 
 # Back to Roots Bakery OLTP
-[Executive Summary](#ExecutiveSummary) | [Problem and Opportunity](#ProblemOpportunity) | [Database Design](#DatabaseDesign) | [Simulating Data](#SimulatingData)
-<br>[Build Script](#BuildScript) | [View, Function, Stored Procedure](#ViewFunctionSPROC) | [VB.NET Application](#Application) | [Download and Explore!](#DownloadExplore)
+[<img src="https://user-images.githubusercontent.com/91146906/152239160-8f8c18a2-e724-4be7-863d-bc94151212ce.svg" height="35"/>](#ExecutiveSummary)
+[<img src="https://user-images.githubusercontent.com/91146906/152239264-50077b6e-0879-4769-acc2-f575593d26d0.svg" height="35"/>](#ProblemOpportunity)
+[<img src="https://user-images.githubusercontent.com/91146906/152239346-9d454364-ab2b-4de9-a3a7-acd62969a90b.svg" height="35"/>](#DatabaseDesign)
+[<img src="https://user-images.githubusercontent.com/91146906/152239424-a41f47e7-ca34-4c15-a454-a32c93cdac05.svg" height="35"/>](#SimulatingData)
+[<img src="https://user-images.githubusercontent.com/91146906/152239510-6c631219-71bc-4281-9c8b-b9b1e805b3d8.svg" height="35"/>](#BuildScript)
+[<img src="https://user-images.githubusercontent.com/91146906/152242345-ff52d28e-14c3-445d-bdec-a668a48bc4b4.svg" height="35"/>](#ViewFunctionSPROC)
+[<img src="https://user-images.githubusercontent.com/91146906/152242423-78c24a7a-3937-4196-b97b-59fadedc3191.svg" height="35"/>](#Application)
+[<img src="https://user-images.githubusercontent.com/91146906/152244444-33feb407-c877-4ea1-8486-490c4a8aec78.svg" height="35"/>](#DownloadExplore)
+<hr>
 
 <a name="ExecutiveSummary"></a>
 ## Executive Summary
@@ -151,6 +158,9 @@ Below is a video demo of the application's forms and reports, followed by detail
 
 https://user-images.githubusercontent.com/91146906/137153830-d4bc600c-1931-483e-86c0-f72f6e6f0806.mp4
 
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Application)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+
 <a name="ProductSalesReport"></a>
 ### Product Sales Report
 The Product Sales report shows users the quantity sold and sales by product type and product yearly and monthly. The report can be filtered by month and location. Additionally, there are graphs displaying the sales by month and sales by product type.
@@ -181,6 +191,8 @@ INNER JOIN ProductType
 	ON Product.ProductTypeID = ProductType.ProductTypeID
 WHERE (CustomerOrder.LocationID IN (@Location)) AND (YEAR(CustomerOrder.OrderDate) = @Year);
 ```
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Application)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="EmployeePerformanceReport"></a>
 ### Employee Performance Report
@@ -230,9 +242,9 @@ GROUP BY
 
 <a name="DownloadExplore"></a>
 ## Download and Explore!
-Want to explore the Back to Roots OLTP yourself?
+Want to explore the Back to Roots OLTP yourself? Download the BackToRootsOLTP.zip and open the readme.txt for instructions. This zip file contains all the project's components.
 <br>
-<br>Download the BackToRootsOLTP.zip [here](../BackToRootsOLTP/BackToRootsOLTP.zip) and open the readme.txt for instructions. This zip file contains all the project's components.
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152244570-7696757e-6752-4fab-8230-a9fcc37b11e8.svg" height="35"/>](../BackToRootsOLTP/BackToRootsOLTP.zip)
 <br>
 <br><i>Note: You must have Microsoft SQL Server Management Studio and Visual Studio installed on your machine.</i>
 <br>
