@@ -244,7 +244,7 @@ GROUP BY
 ## Download and Explore!
 Want to explore the Back to Roots OLTP yourself? Download the BackToRootsOLTP.zip and open the readme.txt for instructions. This zip file contains all the project's components.
 <br>
-<br>[<img src="https://user-images.githubusercontent.com/91146906/152244570-7696757e-6752-4fab-8230-a9fcc37b11e8.svg" height="35"/>](../BackToRootsOLTP/BackToRootsOLTP.zip)
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152245279-8e2a2d13-3ea0-4f4d-bd19-131e8d895360.svg" height="35"/>](../BackToRootsOLTP/BackToRootsOLTP.zip)
 <br>
 <br><i>Note: You must have Microsoft SQL Server Management Studio and Visual Studio installed on your machine.</i>
 <br>
