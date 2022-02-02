@@ -1,6 +1,7 @@
 ﻿Imports System.ComponentModel
 'Imports System.Data
 'Imports System.Data.SqlClient
+
 Public Class Orders
     Private Sub Orders_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Order form: Load data
@@ -25,6 +26,7 @@ Public Class Orders
             MsgBox("Error Loading Form")
         End Try
     End Sub
+    
     Private Sub CustomerOrderBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles CustomerOrderBindingNavigatorSaveItem.Click
         'Order form: Save any changes made on form and subform to db by clicking the save icon
         'Try
@@ -38,6 +40,7 @@ Public Class Orders
         'MsgBox("Error Saving Data")
         'End Try
     End Sub
+    
     Private Sub FillByToolStripOrder_Click(sender As Object, e As EventArgs) Handles FillByToolStripOrder.Click
         'Order form: Press search button when searching for specific order to find order
         Try
@@ -57,6 +60,7 @@ Public Class Orders
             System.Windows.Forms.MessageBox.Show(ex.Message)
         End Try
     End Sub
+    
     Private Sub txtOrderIDToolStrip_KeyDown(sender As Object, e As KeyEventArgs) Handles txtOrderIDToolStrip.KeyDown
         'Order form: Press enter key when searching for specific order to find order
         If e.KeyCode = Keys.Enter Then
@@ -79,6 +83,7 @@ Public Class Orders
             e.SuppressKeyPress = True
         End If
     End Sub
+    
     Private Sub ToolStripFillAllOrders_Click(sender As Object, e As EventArgs) Handles ToolStripFillAllOrders.Click
         'Order form: Press "Fill All" button to load all records (useful after searching for one record)
         Try
@@ -88,12 +93,14 @@ Public Class Orders
             MsgBox(ex.Message, "Error Filling All Customer Orders")
         End Try
     End Sub
+    
     Private Sub OrderLineDataGridView_RowPrePain(sender As Object, e As DataGridViewRowPrePaintEventArgs) Handles OrderLineDataGridView.RowPrePaint
         'Order form: Show line item numbers on the data grid (order line subform)
         If e.RowIndex >= 0 Then
             Me.OrderLineDataGridView.Rows(e.RowIndex).Cells(0).Value = e.RowIndex + 1
         End If
     End Sub
+    
     Private Sub OrderDateDateTimePicker_Validating(sender As Object, e As CancelEventArgs) Handles dtOrderDate.Validating
         'Order form: Validate that the selected order date is not in the future
         If CType(dtOrderDate.Text, DateTime) > Today Then
@@ -101,6 +108,7 @@ Public Class Orders
             e.Cancel = True
         End If
     End Sub
+    
     'Order form: Declare variable to determine if user is adding a new record
     Dim IsAdding As Boolean = False
     Private Sub BindingNavigatorAddNewItem_Click(sender As Object, e As EventArgs) Handles BindingNavigatorAddNewItem.Click
@@ -112,6 +120,7 @@ Public Class Orders
         'Order form: Hide tool strip with search and fill all after adding new item to prevent the manually added ID from "sticking"
         FillBy1ToolStrip.Visible = False
     End Sub
+    
     Private Sub CustomerOrderBindingSource_CurrentItemChanged(sender As Object, e As EventArgs) Handles CustomerOrderBindingSource.CurrentItemChanged
         'Order form: Set default date (today) and OrderID for new orders
         If (IsAdding) Then
@@ -145,6 +154,7 @@ Public Class Orders
             'Do nothing
         End Try
     End Sub
+
     Public Sub FillItem(ByVal OrderID As Integer)
         'Order form: When using OrderSearch form or Customer form to find information on an order, this allows the form to be opened to the selected orderID
         Try
@@ -168,6 +178,7 @@ Public Class Orders
             'Do Nothing
         End Try
     End Sub
+
     Private Sub cboOrderFulfillment_SelectionChangeCommitted(sender As Object, e As EventArgs) Handles cboOrderFulfillment.SelectionChangeCommitted
         'Order form: Error message if placement and fulfillment method are not compatible (evaluated on fulfillment change)
         Try
@@ -185,6 +196,7 @@ Public Class Orders
             'Do Nothing
         End Try
     End Sub
+
     Private Sub btnCustomerInfo_Click(sender As Object, e As EventArgs) Handles btnCustomerInfo.Click
         'Order form: Open Customer form to current order's customer
         Try
@@ -200,6 +212,7 @@ Public Class Orders
         'Order form: Close form
         Me.Close()
     End Sub
+
     Private Sub OrderSearchToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OrderSearchToolStripMenuItem.Click
         'Order form: Open OrderSearch form from menu
         Try
