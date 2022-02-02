@@ -4,11 +4,16 @@
 <hr>
 
 # Back to Roots Bakery Forms
-<b>Forms: </b>[Start-Up Form](#StartUpForm) | [Order Search Form](#OrderSearchForm) | [Order Form](#OrderForm) | [Customer Form](#CustomerForm) | [Reward Status Form](#RewardStatusForm)
+[<img src="https://user-images.githubusercontent.com/91146906/152230581-8cd1f9d4-87bf-456c-944a-e9a968ada8ef.svg" height="35"/>](#StartUpForm)
+[<img src="https://user-images.githubusercontent.com/91146906/152230693-c44f0e89-9244-4342-8530-8bcf290d6444.svg" height="35"/>](#OrderSearchForm)
+[<img src="https://user-images.githubusercontent.com/91146906/152230799-46c4c8a9-f6df-489e-9849-fccaa1af2b1d.svg" height="35"/>](#OrderForm)
+[<img src="https://user-images.githubusercontent.com/91146906/152230892-f17bfb66-be71-4b4e-bd32-03623e556a8d.svg" height="35"/>](#CustomerForm)
+[<img src="https://user-images.githubusercontent.com/91146906/152230969-f2157f7e-a4d1-40f2-8909-4ba386352a5a.svg" height="35"/>](#RewardStatusForm)
+<hr>
 
 <a name="StartUpForm"></a>
-## Start-Up Form
-The Start-Up form serves as a homepage for the other forms; all forms can be opened from the Start-Up form. There is also a menu on each form that allows any form to be opened from any form.
+## Startup Form
+The Startup form serves as a homepage for the other forms; all forms can be opened from the Startup form. There is also a menu on each form that allows any form to be opened from any form.
 <br>
 <br>
 [<img src="https://user-images.githubusercontent.com/91146906/152210421-2ef9bade-d45f-4424-b3fa-694d8b926bf3.svg" height="35"/>](../BackToRootsForms/Startup.vb)
