@@ -1,5 +1,6 @@
 ﻿Imports System.ComponentModel
 Imports System.Data.SqlClient
+
 Public Class Customers
     Private Sub CustomerBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles CustomerBindingNavigatorSaveItem.Click
         'Customers form: Save any changes made back to database
@@ -14,6 +15,7 @@ Public Class Customers
             MsgBox(ex.Message, "Error Saving Data")
         End Try
     End Sub
+    
     Private Sub Customers_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'Customers form: Load data
         Try
@@ -29,6 +31,7 @@ Public Class Customers
             MsgBox("Error Loading Form")
         End Try
     End Sub
+    
     'Customer form: Declare variable to determine if user is adding a new record
     Dim IsAdding As Boolean = False
     Private Sub BindingNavigatorAddNewItem_Click(sender As Object, e As EventArgs) Handles BindingNavigatorAddNewItem.Click
@@ -40,6 +43,7 @@ Public Class Customers
         'Customer form: Hide tool strip with search and fill all after adding new item to prevent the manually added ID from "sticking"
         FillByToolStrip.Visible = False
     End Sub
+    
     Private Sub CustomerBindingSource_CurrentItemChanged(sender As Object, e As EventArgs) Handles CustomerBindingSource.CurrentItemChanged
         'Customer form: Set default customerID for new customers
         If (IsAdding) Then
@@ -58,6 +62,7 @@ Public Class Customers
             End Try
         End If
     End Sub
+    
     Private Sub RewardHistoryDataGridView_RowPostPaint(sender As Object, e As DataGridViewRowPostPaintEventArgs) Handles RewardHistoryDataGridView.RowPostPaint
         'Display customer's current reward status on main form
         Try
@@ -78,6 +83,7 @@ Public Class Customers
             'Do nothing
         End Try
     End Sub
+    
     Private Sub FillByToolStripButton_Click(sender As Object, e As EventArgs) Handles FillByToolStripButton.Click
         'Customer form: Press the "Search" button when searching for specific customer to find customer (by last name)
         Try
@@ -98,6 +104,7 @@ Public Class Customers
             System.Windows.Forms.MessageBox.Show(ex.Message)
         End Try
     End Sub
+    
     Private Sub txtCustomerLastNameSearch_KeyDown(sender As Object, e As KeyEventArgs) Handles txtCustomerLastNameSearch.KeyDown
         'Customer form: Press enter key when searching for specific customer to find customer (by last name)
         If e.KeyCode = Keys.Enter Then
@@ -121,6 +128,7 @@ Public Class Customers
             e.SuppressKeyPress = True
         End If
     End Sub
+    
     Private Sub btnFillAll_Click(sender As Object, e As EventArgs) Handles btnFillAll.Click
         'Customer form: Press "Fill All" button to load all records (useful after searching for one record)
         Try
@@ -130,6 +138,7 @@ Public Class Customers
             MsgBox(ex.Message, "Error Filling All Customers")
         End Try
     End Sub
+    
     Private Sub OrderSearchDataGridView_CellContentDoubleClick(sender As Object, e As DataGridViewCellEventArgs) Handles OrderSearchDataGridView.CellContentDoubleClick
         'Customer form: Open the Orders form to the orderID that was double clicked on
         If (e.ColumnIndex <> 1) Then
@@ -142,6 +151,7 @@ Public Class Customers
             End Try
         End If
     End Sub
+    
     Private Sub btnRewardsInfo_Click(sender As Object, e As EventArgs) Handles btnRewardsInfo.Click
         'Customer form: Open the RewardStatus form
         Try
@@ -151,6 +161,7 @@ Public Class Customers
             MsgBox("Unable to Open Form")
         End Try
     End Sub
+    
     Public Sub FillItem(ByVal CustomerID As Integer)
         'Customer form: Click "Customer Details" button on Order form to open customer form to the customer on that order
         Try
@@ -159,6 +170,7 @@ Public Class Customers
             System.Windows.Forms.MessageBox.Show(ex.Message)
         End Try
     End Sub
+    
     Private Sub FillByIDToolStripButton_Click(sender As Object, e As EventArgs) Handles FillByIDToolStripButton.Click
         'Customer form: This is the CustomerID fill by to support the form being opened from the order form; tool strip hidden on Customer form
         Try
@@ -167,6 +179,7 @@ Public Class Customers
             System.Windows.Forms.MessageBox.Show(ex.Message)
         End Try
     End Sub
+    
     Private Sub OrderSearchDataGridView_RowPostPaint(sender As Object, e As DataGridViewRowPostPaintEventArgs) Handles OrderSearchDataGridView.RowPostPaint
         'Customer form: Calculate and display customer's total spent and how much they need to spend to reach the next rewards tier
         Try
@@ -175,6 +188,7 @@ Public Class Customers
             'Do nothing
         End Try
     End Sub
+    
     Private Function RewardsInformation()
         'Calculate and display total spent
         Dim total As Decimal
@@ -208,6 +222,7 @@ Public Class Customers
         ' Customers form: Close form
         Me.Close()
     End Sub
+
     Private Sub OrderSearchToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles OrderSearchToolStripMenuItem.Click
         'Customers form: Open OrderSearch form from menu
         Try
