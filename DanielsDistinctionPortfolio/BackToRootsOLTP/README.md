@@ -1,4 +1,5 @@
 <a name="top"></a>
+
 [<img src="https://user-images.githubusercontent.com/91146906/152112781-2de05074-70b1-436b-9bfb-860890cc1de1.svg" height="35"/>](..)
 <hr>
 
@@ -10,6 +11,9 @@
 ## Executive Summary
 Back to Roots Bakery is a (fictitious) health-conscious, community-centered bakery focused on helping people feel their best while still enjoying “going for ice cream.” The bakery makes and sells a variety of treats and comfort foods for in-store ordering, pre-ordered pick-up, and delivery. Orders can be placed using a variety of methods, including in-store, by phone, and online. In 2018, Back to Roots Bakery opened their first location in Boulder, Colorado and recently opened a new location in Longmont, Colorado. With this expansion, the bakery has seen an increase in demand. This proposed database will give Back to Roots Bakery the competitive advantage, customer insights, process optimization, and data-driven decision-making capabilities to compete in an increasingly competitive industry and to maximize their potential.
 <br>
+<br>
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#ExecutiveSummary)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="ProblemOpportunity"></a>
 ## The Problem and Opportunity
@@ -26,19 +30,32 @@ After seeing an increase in health-conscious eating and the success of the Bould
 <br>
 <br>With the increasing interest in health-conscious eating, particularly in the Boulder area, Back to Roots Bakery is facing more competition, meaning they must differentiate themselves with a competitive advantage. Despite the high initial cost, investment in this database will help provide that competitive advantage and be worthwhile in the long run. Ultimately, this database will guide Back to Roots Bakery’s competitive advantage through its enablement of improved decision-making leading to efficiency, customer satisfaction, and the automation of processes.
 
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#ProblemOpportunity)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+
 <a name="DatabaseDesign"></a>
 ## Database Design: Entity Relationship Diagram (ERD)
 
 <img width="1003" alt="Back to Roots OLTP ERD" src="https://user-images.githubusercontent.com/91146906/137017556-bae865cc-df49-48f9-9cf5-417b10a44c3f.png">
 
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#DatabaseDesign)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+
 <a name="SimulatingData"></a>
 ## Simulating Data
 Coming soon...
+<br>
+<br>
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#SimulatingData)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="BuildScript"></a>
 ## Build Script
 The Back to Roots build script creates the "BackToRoots" database if it does not exist, deletes tables if they exist, creates tables with the appropriate attributes and constraints, populates each table with data from CSV files, and then lists table names and row counts for confirmation. Due to the logic, the script can be run multiple times without error.
 <br>
+<br>
+[<img src="https://user-images.githubusercontent.com/91146906/152126285-8e8e3552-4f25-4e80-89c7-e79000850553.svg" height="35"/>](../BackToRootsOLTP/BuildBackToRoots.sql)
+
 <br><i>See the BuildBackToRoots.sql build script [here](../BackToRootsOLTP/BuildBackToRoots.sql).</i>
 <br>
 <br>Below is the list of table names and row counts returned by the build script to confirm creation of the database:
@@ -102,6 +119,9 @@ The Back to Roots build script creates the "BackToRoots" database if it does not
   </tr>
 </table>
 
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#BuildScript)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+
 <a name="ViewFunctionSPROC"></a>
 ## View, Function, and Stored Procedure
 <i>See the BackToRootsScript.sql (including a view, function, and stored procedure) [here](../BackToRootsOLTP/BackToRootsScript.sql).</i>
@@ -115,23 +135,26 @@ The ufn_OrderTotal function calculates the order total for a specified order. Th
 
 ### Stored Procedure: usp_CustomerOrders
 The usp_CustomerOrders stored procedure returns customer's order history. The purpose is to list every order placed by a customer, in addition to details regaring those orders, making it easy to track-down information regarding customers' orders if compliments, complaints, or questions arise. Additionally, it reveals the buying patterns of individual customers.
-
+<br>
+<br>
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#ViewFunctionSPROC)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="Application"></a>
 ## Order Management Application: Forms and Reports
 This is a VB.NET application built using Microsoft Visual Studio, consisting of forms and reports that allow Back to Roots to interact with and gain insight from their OLTP. The forms support business operations, and the reports empower data-driven decision making.
 <br>
-<br><b>Forms: </b>[Start-Up Form](../BackToRootsOLTP/BackToRootsForms/#StartUpForm) | [Order Search Form](../BackToRootsOLTP/BackToRootsForms/#OrderSearchForm) | [Order Form](../BackToRootsOLTP/BackToRootsForms/#OrderForm) | [Customer Form](../BackToRootsOLTP/BackToRootsForms/#CustomerForm) | [Reward Status Form](../BackToRootsOLTP/BackToRootsForms/#RewardStatusForm)
-<br><b>Reports: </b>[Product Sales Report](#ProductSalesReport) | [Employee Performance Report](#EmployeePerformanceReport)
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152121038-d7b30614-94b3-4e39-af73-e5dc5f7f3c35.svg" height="35"/>](../BackToRootsOLTP/BackToRootsForms/#Top)
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152122847-b1e7132a-dfcb-4e29-a3a0-507e5eb44449.svg" height="35"/>](#ProductSalesReport)
+[<img src="https://user-images.githubusercontent.com/91146906/152122928-5e85bc64-ca76-4228-abc1-0a2518d831ed.svg" height="35"/>](#EmployeePerformanceReport)
 <br>
-<br>Below is a video demo of the application's forms and reports, followed by detailed descriptions and the code behind them.
+<a name="ApplicationVideoDemo"></a>
+### Application Video Demo
+Below is a video demo of the application's forms and reports, followed by detailed descriptions and the code behind them.
 <br>
 <br><i>Unmute video for narration</i>
 
-
 https://user-images.githubusercontent.com/91146906/137153830-d4bc600c-1931-483e-86c0-f72f6e6f0806.mp4
-
-<br><i><b>See more about the Back to Roots Bakery forms [here](../BackToRootsOLTP/BackToRootsForms/#Top).</b></i>
 
 <a name="ProductSalesReport"></a>
 ### Product Sales Report
@@ -207,6 +230,9 @@ GROUP BY
 	IIF(EmploymentHistory.EndDate IS NULL, 'Current', 'End Dated');
 ```
 
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Application)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+
 <a name="DownloadExplore"></a>
 ## Download and Explore!
 Want to explore the Back to Roots OLTP yourself?
@@ -214,3 +240,7 @@ Want to explore the Back to Roots OLTP yourself?
 <br>Download the BackToRootsOLTP.zip [here](../BackToRootsOLTP/BackToRootsOLTP.zip) and open the readme.txt for instructions. This zip file contains all the project's components.
 <br>
 <br><i>Note: You must have Microsoft SQL Server Management Studio and Visual Studio installed on your machine.</i>
+<br>
+<br>
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#DownloadExplore)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
