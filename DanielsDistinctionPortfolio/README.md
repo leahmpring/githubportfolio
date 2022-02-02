@@ -4,16 +4,16 @@
 # Daniels Distinction Portfolio
 <i>Hannah McDonald – April 2022 – Business Analytics</i>
 <br><br>
-[![Community Engagement and Leadership](https://user-images.githubusercontent.com/91146906/152060072-9f190728-ca31-4032-8ed7-321441bd31fe.png)](#CommunityLeadership)
-[![Technical Knowledge](https://user-images.githubusercontent.com/91146906/152059845-9463d73b-9bec-4bac-94b1-4ed1ecbd2916.png)](#Technical)
+[<img src="https://user-images.githubusercontent.com/91146906/152071881-e4fdfd91-bd4d-42f6-a6f4-0e1234c6bfc7.svg" height="35"/>](#CommunityLeadership)
+[<img src="https://user-images.githubusercontent.com/91146906/152072049-ab7d3102-eb2e-4f8b-983e-be3783806f87.svg" height="35"/>](#Technical)
 
 <a name="CommunityLeadership"></a>
 <hr>
 
 ## Community Engagment and Leadership
-[![WLLC](https://user-images.githubusercontent.com/91146906/152067614-415b9566-f371-4064-aaca-05739d2208b7.png)](#WLLC)
-[![Thrive](https://user-images.githubusercontent.com/91146906/152067640-b6c14eda-15e3-4f61-a72c-de1e965716b5.png)](#Thrive)
-[![HLP](https://user-images.githubusercontent.com/91146906/152067671-0ac8ab46-a6f5-4172-b72f-534461740544.png)](#HLP)
+[<img src="https://user-images.githubusercontent.com/91146906/152072147-f6e15400-5167-45c0-b0c7-6df818a3fde2.svg" height="35"/>](#WLLC)
+[<img src="https://user-images.githubusercontent.com/91146906/152072177-b0da1e15-4fc8-49f3-a9fe-49736e3057d8.svg" height="35"/>](#Thrive)
+[<img src="https://user-images.githubusercontent.com/91146906/152072235-a176c4f0-2cb8-4e2c-917b-a58e49aecbd2.svg" height="35"/>](#HLP)
 
 <a name="WLLC"></a>
 ### Wellness Living and Learning Community
@@ -32,8 +32,8 @@
   </tr>
 </table>
 
-[![Top of Section](https://user-images.githubusercontent.com/91146906/152071193-763cf087-929f-4506-896f-ee759e070f71.png)](#CommunityLeadership)
-[![Top of Page](https://user-images.githubusercontent.com/91146906/152069094-e6c9053e-9030-41ba-b362-3056b720299b.png)](#top)
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#CommunityLeadership)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="Thrive"></a>
 ### Thrive Peer Health Educator
@@ -97,8 +97,8 @@
   </tr>
 </table>
 
-[![Top of Section](https://user-images.githubusercontent.com/91146906/152071193-763cf087-929f-4506-896f-ee759e070f71.png)](#CommunityLeadership)
-[![Top of Page](https://user-images.githubusercontent.com/91146906/152069094-e6c9053e-9030-41ba-b362-3056b720299b.png)](#top)
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#CommunityLeadership)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="HLP"></a>
 ### Human Leadership Program
@@ -182,10 +182,8 @@
   </tr>
 </table>
 
-[![Top of Section](https://user-images.githubusercontent.com/91146906/152071193-763cf087-929f-4506-896f-ee759e070f71.png)](#CommunityLeadership)
-[![Top of Page](https://user-images.githubusercontent.com/91146906/152069094-e6c9053e-9030-41ba-b362-3056b720299b.png)](#top)
-
-
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#CommunityLeadership)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="Technical"></a>
 <hr>
