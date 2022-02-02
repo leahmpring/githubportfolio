@@ -26,8 +26,8 @@
       <br><i>Community service day with DU's living and learning <br> communities at a Denver community garden.</i>
     </td>
     <td>
-      <img src="https://user-images.githubusercontent.com/91146906/151285430-4824b939-f5ff-498c-a656-e7cb802b350f.jpg" width="460">
-      <br><i>Dinner with Wellness Living and Learning Community <br> following our weekly class.</i>
+      <img src="https://user-images.githubusercontent.com/91146906/152106480-3ee47784-7b5c-4ee5-8338-2ce28f3efa6b.jpg" width="460">
+      <br><i>Wellness Living and Learning Community retreat <br> to Stone Canyon EdVentures September, 2018.</i>
     </td>
   </tr>
 </table>
@@ -189,3 +189,31 @@
 <hr>
 
 ## Technical Knowledge
+
+<a name="Database"></a>
+### Database Project: Back to Roots OLTP
+<i>Winter 2021</i>
+<br>
+<br>During my Foundations or Information Management class in Winter 2021, I was tasked with planning, designing, building, and programming aspects of an information management system using Microsoft Word (documentation), Visio (diagraming), and Access (relational database). This included designing a relational database, simulating data, building the relational database in Access, loading the data into the relational database, querying the relational database using SQL, and developing relational database forms and reports, including using VBA macros, functions, and sub procedures.
+<br>
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>]()
+
+<i>Spring 2021</i>
+<br>
+<br>During my Enterprise Information Management class in Spring 2021, I expanded this relational database, adding tables and moving it to Microsoft SQL Server Management Studio. This included designing, building, and programing an enterprise information management database using SQL Server and Azure; designing, building, and programing interactive forms using Visual Studio and SQL Server; and designing, building, and programing a Windows integrated application, along with reports, using Visual Studio and SQL Server. Throughout this process, I used SQL (build script, function, stored procedure, views, reports) and Visual Basic (forms).
+<br>
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>]()
+
+### Database Project: Back to Roots OLAP
+<i>Fall 2021</i>
+<br>
+<br>Insert description.
+<br>
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>]()
+
+### Automating Business Processes
+<i>Winter 2021 - Spring 2022</i>
+<br>
+<br>Insert description.
+<br>
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>]()
