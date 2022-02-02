@@ -55,8 +55,6 @@ The Back to Roots build script creates the "BackToRoots" database if it does not
 <br>
 <br>
 [<img src="https://user-images.githubusercontent.com/91146906/152126285-8e8e3552-4f25-4e80-89c7-e79000850553.svg" height="35"/>](../BackToRootsOLTP/BuildBackToRoots.sql)
-
-<br><i>See the BuildBackToRoots.sql build script [here](../BackToRootsOLTP/BuildBackToRoots.sql).</i>
 <br>
 <br>Below is the list of table names and row counts returned by the build script to confirm creation of the database:
 <br>
@@ -124,7 +122,8 @@ The Back to Roots build script creates the "BackToRoots" database if it does not
 
 <a name="ViewFunctionSPROC"></a>
 ## View, Function, and Stored Procedure
-<i>See the BackToRootsScript.sql (including a view, function, and stored procedure) [here](../BackToRootsOLTP/BackToRootsScript.sql).</i>
+[<img src="https://user-images.githubusercontent.com/91146906/152126285-8e8e3552-4f25-4e80-89c7-e79000850553.svg" height="35"/>](../BackToRootsOLTP/BackToRootsScript.sql)
+
 ### View: CurrentEmployee
 The CurrentEmployee view lists all current employees and their information, excluding HR and payroll information (sensitive information). The purpose is to allow managers to see current employees, their position, and other relevant information without exposing sensitive HR and payroll information.
 <br>
