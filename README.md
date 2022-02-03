@@ -1,8 +1,11 @@
 <a name="top"></a>
+<hr>
 
 ## Welcome! This is a little about me and a sampling of my work.
+[<img src="https://user-images.githubusercontent.com/91146906/152290724-72946642-3e58-4ba3-b5b8-b687628526b1.svg" height="35"/>](#DanielsDistinctionPortfolio)
 
-[Education](#education) | [Jobs and Internships](#resume) | [Skills](#skills) | [Daniels Distinction Portfolio](#DanielsDistinctionPortfolio)
+[Education](#education) | [Jobs and Internships](#resume) | [Skills](#skills)
+<hr>
 
 <a name="education"></a>
 ## Education
@@ -71,5 +74,6 @@ Univeristy of Denver, Daniels College of Business
 <a name="DanielsDistinctionPortfolio"></a>
 
 ## Daniels Distinction Portfolio
-<i>See my [Daniels Distinction Portfolio](/DanielsDistinctionPortfolio)</i>
-<br>In pursuing Distinction in Business Analytics from the University of Denver, I compiled a portfolio highlighting my experiences and work throughout my undergraduate years. 
+In pursuing Distinction in Business Analytics from the University of Denver, I compiled a portfolio highlighting my experiences and work throughout my undergraduate years. 
+<br>
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152291436-225cf6f7-2fb4-4c9c-b6bd-96a5010d3db7.svg" height="35"/>](/DanielsDistinctionPortfolio)
