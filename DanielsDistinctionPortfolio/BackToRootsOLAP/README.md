@@ -275,7 +275,7 @@ Back to Roots Bakery is a health-conscious, community-centered bakery focused on
 
 ### Star Schema
 
-![BackToRootsStarSchema](https://user-images.githubusercontent.com/91146906/152255130-e45ed5f0-a2e7-4cfc-9683-0a1ad72d50d7.png)
+<img width="700" alt="BackToRootsDMStarSchema" src="https://user-images.githubusercontent.com/91146906/152288067-6de2031c-267d-4d4c-8cdf-eb1cfff8ddaf.png">
 
 <a name="BuildScript"></a>
 ## Build Script
@@ -440,6 +440,16 @@ INNER JOIN BackToRoots.dbo.Product
 The lookups in the ETL, which popluate the SKs, are as follows.
 
 ![BackToRootsDMLoadFactSales](https://user-images.githubusercontent.com/91146906/138399979-b6b7c8ec-0cf8-4f0a-8ef0-80fc0d892424.png)
+
+<a name="PowerPivot"></a>
+## Power Pivot
+	
+![BackToRootsDMPowerPivotSnapshot](https://user-images.githubusercontent.com/91146906/152288743-11ae6130-9ac9-4bc7-b06e-bed1f1f68ab7.png)
+	
+<a name="PowerBI"></a>
+## Power BI
+	
+<img width="1211" alt="BackToRootsDashboard" src="https://user-images.githubusercontent.com/91146906/152289272-89e5505c-4e6a-4f29-b516-66ec308c28af.png">
 
 <a name="DownloadExplore"></a>
 ## Download and Explore!
