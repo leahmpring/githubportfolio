@@ -76,4 +76,4 @@ Univeristy of Denver, Daniels College of Business
 ## Daniels Distinction Portfolio
 In pursuing Distinction in Business Analytics from the University of Denver, I compiled a portfolio highlighting my experiences and work throughout my undergraduate years. 
 <br>
-<br>[<img src="https://user-images.githubusercontent.com/91146906/152291436-225cf6f7-2fb4-4c9c-b6bd-96a5010d3db7.svg" height="35"/>](/DanielsDistinctionPortfolio)
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152291436-225cf6f7-2fb4-4c9c-b6bd-96a5010d3db7.svg" height="35"/>](/DanielsDistinctionPortfolio/#top)
