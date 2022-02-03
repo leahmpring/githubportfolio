@@ -207,7 +207,7 @@
 <br>
 <br>Insert description.
 <br>
-<br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>]()
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>](../DanielsDistinctionPortfolio/BackToRootsOLAP/#top)
 
 ### Automating Business Processes
 <i>Winter 2021 - Spring 2022</i>
