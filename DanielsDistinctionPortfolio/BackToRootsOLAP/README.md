@@ -7,8 +7,8 @@
 [<img src="https://user-images.githubusercontent.com/91146906/152239160-8f8c18a2-e724-4be7-863d-bc94151212ce.svg" height="35"/>](#ExecutiveSummary)
 [<img src="https://user-images.githubusercontent.com/91146906/152279618-21ae078d-3d0b-45ed-95f1-306e5030f301.svg" height="35"/>](#BusinessRequirements)
 [<img src="https://user-images.githubusercontent.com/91146906/152279677-02eb9847-1863-4641-b59c-58a0e6cd2f24.svg" height="35"/>](#DataMartDesign)
-[<img src="https://user-images.githubusercontent.com/91146906/152280042-228b216c-e76c-4f34-80f6-f456a15358b2.svg" height="35"/>](#ETL)
 [<img src="https://user-images.githubusercontent.com/91146906/152239510-6c631219-71bc-4281-9c8b-b9b1e805b3d8.svg" height="35"/>](#BuildScript)
+[<img src="https://user-images.githubusercontent.com/91146906/152280042-228b216c-e76c-4f34-80f6-f456a15358b2.svg" height="35"/>](#ETL)
 [<img src="https://user-images.githubusercontent.com/91146906/152244444-33feb407-c877-4ea1-8486-490c4a8aec78.svg" height="35"/>](#DownloadExplore)
 <hr>
 
@@ -281,7 +281,7 @@ Back to Roots Bakery is a health-conscious, community-centered bakery focused on
 ## Build Script
 The Back to Roots data mart build script creates the "BackToRootsDM" data mart if it does not exist, deletes tables if they exist, and creates dimension tables and the fact table with the appropriate attributes and constraints. Due to the logic, the script can be run multiple times without error.
 <br>
-<br><i>See the BuildBackToRootsDM.sql build script [here](../BackToRootsOLAP/BuildBackToRootsDM.sql).</i>
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152286999-322b92ed-de1a-46f6-a8ff-9bc08b12f9ca.svg" height="35"/>](../BackToRootsOLAP/BuildBackToRootsDM.sql)
 
 <a name="ETL"></a>
 ## Extract, Transform, and Load the Data Mart
@@ -290,7 +290,9 @@ Using Visual Studio and SSIS, data is extracted from the Back to Roots OLTP, tra
 ![BackToRootsDMETL](https://user-images.githubusercontent.com/91146906/138397836-485fec03-a356-45c7-9377-3f0d16099afe.png)
 
 ### DimDate
-DimDate is loaded using the LoadDimDate.sql SQL query found [here](../BackToRootsOLAP/LoadDimDate.sql), which was provided.
+DimDate is loaded using the LoadDimDate.sql SQL query, which was provided.
+<br>
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152286999-322b92ed-de1a-46f6-a8ff-9bc08b12f9ca.svg" height="35"/>](../BackToRootsOLAP/LoadDimDate.sql)
 
 ### DimProduct
 DimProduct is loaded using the following SQL query.
