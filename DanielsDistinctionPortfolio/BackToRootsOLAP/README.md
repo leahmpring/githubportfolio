@@ -5,11 +5,11 @@
 
 # Back to Roots Bakery OLAP
 [<img src="https://user-images.githubusercontent.com/91146906/152239160-8f8c18a2-e724-4be7-863d-bc94151212ce.svg" height="35"/>](#ExecutiveSummary)
+[<img src="https://user-images.githubusercontent.com/91146906/152279618-21ae078d-3d0b-45ed-95f1-306e5030f301.svg" height="35"/>](#BusinessRequirements)
+[<img src="https://user-images.githubusercontent.com/91146906/152279677-02eb9847-1863-4641-b59c-58a0e6cd2f24.svg" height="35"/>](#DataMartDesign)
+[<img src="https://user-images.githubusercontent.com/91146906/152280042-228b216c-e76c-4f34-80f6-f456a15358b2.svg" height="35"/>](#ETL)
 [<img src="https://user-images.githubusercontent.com/91146906/152239510-6c631219-71bc-4281-9c8b-b9b1e805b3d8.svg" height="35"/>](#BuildScript)
 [<img src="https://user-images.githubusercontent.com/91146906/152244444-33feb407-c877-4ea1-8486-490c4a8aec78.svg" height="35"/>](#DownloadExplore)
-
-[Executive Summary](#ExecutiveSummary) | [Business Requirements](#BusinessRequirements) | [Data Mart Design](#DataMartDesign) | [Build Script](#BuildScript) | [ETL](#ETL)
-<br>[Download and Explore!](#DownloadExplore)
 <hr>
 
 <a name="ExecutiveSummary"></a>
@@ -39,7 +39,7 @@ Back to Roots Bakery is a health-conscious, community-centered bakery focused on
     <td colspan="6">&nbsp;<i>Dimensions</i></td>
   </tr>
   <tr>
-    <td rowspan="35">&nbsp;<i>Hierarchies / Categories</i></td>
+    <td rowspan="0">&nbsp;<i>Hierarchies</i</td>
   </tr>
   <tr>
     <th>Date</th>
@@ -270,7 +270,8 @@ Back to Roots Bakery is a health-conscious, community-centered bakery focused on
   </tr>
 </table>
 
-![BackToRootsInformationPackage](https://user-images.githubusercontent.com/91146906/152254228-c0111f6e-2b84-4eeb-bf90-0262f7a3fdb6.png)
+*Price x Quantity
+<br>**Distinct count of order date by employee
 
 ### Star Schema
 
