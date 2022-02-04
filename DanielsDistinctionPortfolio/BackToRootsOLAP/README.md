@@ -18,6 +18,7 @@ Back to Roots Bakery is a health-conscious, community-centered bakery focused on
 <br>
 <br>The Back to Roots OLTP gives Back to Roots Bakery the competitive advantage, customer insights, process optimization, and data-driven decision-making capabilities to compete in an increasingly competitive industry and to maximize their potential. However, Back to Roots has grown beyond their needs for a traditional OLTP, and due to the volume of data coming into the Back to Roots OLTP, the need to create a data mart is realized for the following reasons: (1) optimize reporting, (2) archive data, and (3) consolidate data. With particular emphasis on optimizing reporting, a data mart will allow faster reporting design and results at Back to Roots Bakery, empowering a focus on analysis and data-driven decision making to continue competing in the industry and maximizing potential, building upon the goals and benefits of the OLTP.
 <br>
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="BusinessRequirements"></a>
 ## Business Requirements
@@ -29,6 +30,8 @@ Back to Roots Bakery is a health-conscious, community-centered bakery focused on
 
 <b>Chief Marketing Officer (CMO):</b> <i>What are the sales monthly, quarterly, and yearly summarized by customer age and reward status, in addition to order placement method?</i>
 <blockquote>This analysis will allow the CMO to understand the demographics, loyalty, and order placement habits of customers in terms of sales. This information will inform marketing and promotion decisions to reach customers and establish loyalty, in addition to the development and support of the appropriate order placement platforms.</blockquote>
+
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="DataMartDesign"></a>
 ## Data Mart Design
@@ -277,17 +280,21 @@ Back to Roots Bakery is a health-conscious, community-centered bakery focused on
 
 <img width="700" alt="BackToRootsDMStarSchema" src="https://user-images.githubusercontent.com/91146906/152288067-6de2031c-267d-4d4c-8cdf-eb1cfff8ddaf.png">
 
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+
 <a name="BuildScript"></a>
 ## Build Script
 The Back to Roots data mart build script creates the "BackToRootsDM" data mart if it does not exist, deletes tables if they exist, and creates dimension tables and the fact table with the appropriate attributes and constraints. Due to the logic, the script can be run multiple times without error.
 <br>
 <br>[<img src="https://user-images.githubusercontent.com/91146906/152286999-322b92ed-de1a-46f6-a8ff-9bc08b12f9ca.svg" height="35"/>](../BackToRootsOLAP/BuildBackToRootsDM.sql)
-
+<br>
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+	
 <a name="ETL"></a>
 ## Extract, Transform, and Load the Data Mart
 Using Visual Studio and SSIS, data is extracted from the Back to Roots OLTP, transformed, and loaded into the data mart.
 
-![BackToRootsDMETL](https://user-images.githubusercontent.com/91146906/138397836-485fec03-a356-45c7-9377-3f0d16099afe.png)
+<img width="494" alt="ETL" src="https://user-images.githubusercontent.com/91146906/152477629-7ca615fb-5f35-420d-90c4-245779f5531c.png">
 
 ### DimDate
 DimDate is loaded using the LoadDimDate.sql SQL query, which was provided.
@@ -298,117 +305,99 @@ DimDate is loaded using the LoadDimDate.sql SQL query, which was provided.
 DimProduct is loaded using the following SQL query.
 ```SQL
 -- BackToRootsDM DimProduct Source Query Written by Hannah McDonald
--- Originally Written: October 2021 | Updated October 2021
+-- Originally Written: October 2021 | Updated November 2021
 ---------------------------------------------------------------
 -- Script query to select products for DimProduct
 SELECT
 	BackToRoots.dbo.Product.ProductID,
-	BackToRoots.dbo.ProductType.ProductTypeName AS ProductType,       -- Type 0: Fixed
-	BackToRoots.dbo.Product.ProductName AS ProductName,               -- Type 0: Fixed
+	BackToRoots.dbo.ProductType.ProductTypeName AS ProductType,				-- Type 0: Fixed
+	BackToRoots.dbo.Product.ProductName AS ProductName,					-- Type 0: Fixed
 	-- Subquery to get multiple diets on one line to show in single record
-	STUFF((SELECT ', ' + BackToRoots.dbo.Diet.DietName
+	STUFF((SELECT ', ' + BackToRoots.dbo.Diet.DietID
 		   FROM BackToRoots.dbo.DietProduct
 		   LEFT OUTER JOIN BackToRoots.dbo.Diet
 				ON BackToRoots.dbo.Diet.DietID = BackToRoots.dbo.DietProduct.DietID
 			WHERE BackToRoots.dbo.DietProduct.ProductID = BackToRoots.dbo.Product.ProductID
-			FOR XML PATH('')),1,1,'') AS Diet,                -- Type 0: Fixed
-	BackToRoots.dbo.Product.ProductPrice AS ProductPrice              -- Type 2: Historical
+			FOR XML PATH('')),1,1,'') AS Diet,					-- Type 0: Fixed
+	BackToRoots.dbo.Product.ProductPrice AS ProductPrice					-- Type 2: Historical
 FROM BackToRoots.dbo.Product
 LEFT OUTER JOIN BackToRoots.dbo.ProductType
 	ON BackToRoots.dbo.ProductType.ProductTypeID = BackToRoots.dbo.Product.ProductTypeID;
-```
-
-### DimPosition
-DimPosition is loaded using the following SQL query.
-```SQL
--- BackToRootsDM DimPosition Source Query Written by Hannah McDonald
--- Originally Written: October 2021 | Updated October 2021
----------------------------------------------------------------
--- Script query to select positions for DimPosition
-SELECT
-	BackToRoots.dbo.Position.PositionID,
-	BackToRoots.dbo.Position.PositionType,	-- Type 0: Fixed
-	BackToRoots.dbo.Position.PositionName	-- Type 0: Fixed
-FROM BackToRoots.dbo.Position;
 ```
 
 ### DimEmployee
 DimEmployee is loaded using the following SQL query.
 ```SQL
 -- BackToRootsDM DimEmployee Source Query Written by Hannah McDonald
--- Originally Written: October 2021 | Updated October 2021
+-- Originally Written: October 2021 | Updated November 2021
 ---------------------------------------------------------------
 -- Script query to select employees for DimEmployee
 SELECT
 	BackToRoots.dbo.Employee.EmployeeID,
-	BackToRoots.dbo.Employee.EmployeeFirstName AS FirstName,                    -- Type 0: Fixed
-	BackToRoots.dbo.Employee.EmployeeLastName AS LastName                       -- Type 1: Changing
-	BackToRoots.dbo.EmploymentHistory.WageType,                                 -- Type 0: Fixed
-	ISNULL(BackToRoots.dbo.EmploymentHistory.Wage, -1) AS Wage,                 -- Type 0: Fixed      -- Replace null with illogical wage
-	BackToRoots.dbo.EmploymentHistory.HireDate,                                 -- Type 0: Fixed
-	ISNULL(BackToRoots.dbo.EmploymentHistory.EndDate, '9999-01-01') AS EndDate, -- Type 1: Changing   -- Replace null with illogical date
-	BackToRootsDM.dbo.DimPosition.PositionSK                                    -- Type 0: Fixed
+	BackToRoots.dbo.Employee.EmployeeFirstName AS FirstName,			-- Type 0: Fixed
+	BackToRoots.dbo.Employee.EmployeeLastName AS LastName,				-- Type 1: Changing
+	BackToRoots.dbo.Position.PositionType,						-- Type 2: Historical
+	BackToRoots.dbo.Position.PositionName,						-- Type 2: Historical
+	BackToRoots.dbo.EmploymentHistory.WageType,					-- Type 2: Historical
+	ISNULL(BackToRoots.dbo.EmploymentHistory.Wage, -1) AS Wage,			-- Type 2: Historical	-- Replace null with illogical wage
+	BackToRoots.dbo.EmploymentHistory.HireDate,					-- Type 0: Fixed
+	ISNULL(BackToRoots.dbo.EmploymentHistory.EndDate, '9999-01-01') AS EndDate	-- Type 1: Changing	-- Replace null with illogical date
 FROM BackToRoots.dbo.Employee
 LEFT OUTER JOIN BackToRoots.dbo.EmploymentHistory
 	ON BackToRoots.dbo.EmploymentHistory.EmployeeID = BackToRoots.dbo.Employee.EmployeeID
-INNER JOIN BackToRootsDM.dbo.DimPosition
-	ON BackToRootsDM.dbo.DimPosition.PositionAK = BackToRoots.dbo.EmploymentHistory.PositionID;
-```
-
-### DimReward
-DimReward is loaded using the following SQL query.
-```SQL
--- BackToRootsDM DimReward Source Query Written by Hannah McDonald
--- Originally Written: October 2021 | Updated October 2021
----------------------------------------------------------------
--- Script query to select rewards for DimReward
-SELECT
-	BackToRoots.dbo.RewardStatus.RewardStatusID,
-	BackToRoots.dbo.RewardStatus.RewardStatusName AS RewardStatus	-- Type 0: Fixed
-FROM BackToRoots.dbo.RewardStatus;
+LEFT OUTER JOIN BackToRoots.dbo.Position
+	ON BackToRoots.dbo.Position.PositionID = BackToRoots.dbo.EmploymentHistory.PositionID;
 ```
 
 ### DimCustomer
 DimCustomer is loaded using the following SQL query.
 ```SQL
 -- BackToRootsDM DimCustomer Source Query Written by Hannah McDonald
--- Originally Written: October 2021 | Updated October 2021
+-- Originally Written: October 2021 | Updated November 2021
 ---------------------------------------------------------------
 -- Script query to select customers for DimCustomer
 SELECT
-	Customer.CustomerID,
-	ISNULL(Customer.CustomerDOB, '9999-01-01') AS DOB,                              -- Type 0: Fixed      -- Replace null with illogical date
-	ISNULL(Customer.CustomerCity, 'N/A') AS City,                                   -- Type 1: Changing
-	ISNULL(Customer.CustomerState, 'N/A') AS State,                                 -- Type 1: Changing
-	ISNULL(Customer.CustomerZipCode, 00000) AS ZipCode,                             -- Type 1: Changing   -- Replace null with illogical zip code
-	RewardHistory.RewardStatusJoinDate,                                             -- Type 0: Fixed
-	ISNULL(RewardHistory.RewardStatusEndDate, '9999-01-01') AS RewardStatusEndDate, -- Type 1: Changing   -- Replace null with illogical date
-	BackToRootsDM.dbo.DimReward.RewardSK                                            -- Type 0: Fixed
+	BackToRoots.dbo.Customer.CustomerID,
+	ISNULL(BackToRoots.dbo.Customer.CustomerDOB, '9999-01-01') AS DOB,				-- Type 0: Fixed	-- Replace null with illogical date
+	ISNULL(BackToRoots.dbo.Customer.CustomerCity, 'N/A') AS City,					-- Type 1: Changing
+	ISNULL(BackToRoots.dbo.Customer.CustomerState, 'NA') AS State,					-- Type 1: Changing
+	ISNULL(BackToRoots.dbo.Customer.CustomerZipCode, 00000) AS ZipCode,				-- Type 1: Changing	-- Replace null with illogical zip code
+	BackToRoots.dbo.RewardStatus.RewardStatusName AS RewardStatus,					-- Type 2: Historical
+	BackToRoots.dbo.RewardHistory.RewardStatusJoinDate,						-- Type 0: Fixed
+	ISNULL(BackToRoots.dbo.RewardHistory.RewardStatusEndDate, '9999-01-01') AS RewardStatusEndDate	-- Type 1: Changing	-- Replace null with illogical date
 FROM BackToRoots.dbo.Customer
 LEFT OUTER JOIN BackToRoots.dbo.RewardHistory
 	ON BackToRoots.dbo.RewardHistory.CustomerID = BackToRoots.dbo.Customer.CustomerID
-INNER JOIN BackToRootsDM.dbo.DimReward
-	ON BackToRootsDM.dbo.DimReward.RewardAK = BackToRoots.dbo.RewardHistory.RewardStatusID;
+LEFT OUTER JOIN BackToRoots.dbo.RewardStatus
+	ON BackToRoots.dbo.RewardStatus.RewardStatusID = BackToRoots.dbo.RewardHistory.RewardStatusID;
 ```
 
 ### DimOrder
 DimOrder is loaded using the following SQL query.
 ```SQL
 -- BackToRootsDM DimOrder Source Query Written by Hannah McDonald
--- Originally Written: October 2021 | Updated October 2021
+-- Originally Written: October 2021 | Updated November 2021
 ---------------------------------------------------------------
 -- Script query to select orders for DimOrder
 SELECT
-	BackToRoots.dbo.CustomerOrder.OrderID,                          -- Type 0: Fixed
-	BackToRoots.dbo.CustomerOrder.OrderPlacement AS Placement,      -- Type 0: Fixed
-	BackToRoots.dbo.CustomerOrder.OrderFulfillment AS Fulfillment,  -- Type 0: Fixed
-	BackToRoots.dbo.StoreLocation.LocationStreetAddress,            -- Type 0: Fixed
-	BackToRoots.dbo.StoreLocation.LocationCity,                     -- Type 0: Fixed
-	BackToRoots.dbo.StoreLocation.LocationState,                    -- Type 0: Fixed
-	BackToRoots.dbo.StoreLocation.LocationZipCode                   -- Type 0: Fixed
+	BackToRoots.dbo.CustomerOrder.OrderID,						-- Type 0: Fixed
+	BackToRoots.dbo.CustomerOrder.OrderPlacement AS Placement,			-- Type 0: Fixed
+	BackToRoots.dbo.CustomerOrder.OrderFulfillment AS Fulfillment,			-- Type 0: Fixed
+	BackToRoots.dbo.StoreLocation.LocationStreetAddress,				-- Type 0: Fixed
+	BackToRoots.dbo.StoreLocation.LocationCity,					-- Type 0: Fixed
+	BackToRoots.dbo.StoreLocation.LocationState,					-- Type 0: Fixed
+	BackToRoots.dbo.StoreLocation.LocationZipCode,					-- Type 0: Fixed
+	BackToRoots.dbo.RewardStatus.RewardStatusName AS AssociatedRewardStatus		-- Type 0: Fixed
 FROM BackToRoots.dbo.CustomerOrder
 LEFT OUTER JOIN BackToRoots.dbo.StoreLocation
-	ON BackToRoots.dbo.StoreLocation.LocationID = BackToRoots.dbo.CustomerOrder.LocationID;
+	ON BackToRoots.dbo.StoreLocation.LocationID = BackToRoots.dbo.CustomerOrder.LocationID
+LEFT OUTER JOIN BackToRoots.dbo.Customer
+	ON BackToRoots.dbo.Customer.CustomerID = BackToRoots.dbo.CustomerOrder.CustomerID
+LEFT OUTER JOIN BackToRoots.dbo.RewardHistory
+	ON BackToRoots.dbo.RewardHistory.CustomerID = BackToRoots.dbo.Customer.CustomerID
+	AND BackToRoots.dbo.CustomerOrder.OrderDate BETWEEN BackToRoots.dbo.RewardHistory.RewardStatusJoinDate AND IIF(BackToRoots.dbo.RewardHistory.RewardStatusEndDate IS NULL, GetDate(), BackToRoots.dbo.RewardHistory.RewardStatusEndDate)
+LEFT OUTER JOIN BackToRoots.dbo.RewardStatus
+	ON BackToRoots.dbo.RewardStatus.RewardStatusID = BackToRoots.dbo.RewardHistory.RewardStatusID;
 ```
 
 ### FactSales
@@ -438,19 +427,28 @@ INNER JOIN BackToRoots.dbo.Product
 	ON BackToRoots.dbo.OrderLine.ProductID = BackToRoots.dbo.Product.ProductID;
 ```
 The lookups in the ETL, which popluate the SKs, are as follows.
-
+	
 ![BackToRootsDMLoadFactSales](https://user-images.githubusercontent.com/91146906/138399979-b6b7c8ec-0cf8-4f0a-8ef0-80fc0d892424.png)
 
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+	
 <a name="PowerPivot"></a>
 ## Power Pivot
 	
 ![BackToRootsDMPowerPivotSnapshot](https://user-images.githubusercontent.com/91146906/152288743-11ae6130-9ac9-4bc7-b06e-bed1f1f68ab7.png)
+
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 	
 <a name="PowerBI"></a>
 ## Power BI
 	
 <img width="1211" alt="BackToRootsDashboard" src="https://user-images.githubusercontent.com/91146906/152289272-89e5505c-4e6a-4f29-b516-66ec308c28af.png">
 
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+	
 <a name="DownloadExplore"></a>
 ## Download and Explore!
 Coming soon...
+<br>
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+
