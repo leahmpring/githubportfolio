@@ -130,9 +130,9 @@ Several queries are written, each answering a question and serving a business pu
 
 | Employees and Customers | Store Performance |
 | :---: | :---: |
-| [<img src="https://user-images.githubusercontent.com/91146906/153065868-ef86de4f-4b60-4e0a-8f62-4727e0237482.svg" height="35"/>](#Query1) <br> [<img src="https://user-images.githubusercontent.com/91146906/153066103-11454751-63e0-4911-882a-d4a9f3b88d5b.svg" height="35"/>](#Query2) | [<img src="https://user-images.githubusercontent.com/91146906/153084800-8ea76771-fa21-4745-9a9f-7bf597c82b69.svg" height="35"/>](#Query7) <br> [<img src="https://user-images.githubusercontent.com/91146906/153088131-f7b24d14-d806-4229-9493-3728751ad39f.svg" height="35"/>](#Query8) |
+| [<img src="https://user-images.githubusercontent.com/91146906/153065868-ef86de4f-4b60-4e0a-8f62-4727e0237482.svg" height="35"/>](#Query1) <br> [<img src="https://user-images.githubusercontent.com/91146906/153066103-11454751-63e0-4911-882a-d4a9f3b88d5b.svg" height="35"/>](#Query2) | [<img src="https://user-images.githubusercontent.com/91146906/153084800-8ea76771-fa21-4745-9a9f-7bf597c82b69.svg" height="35"/>](#Query3) <br> [<img src="https://user-images.githubusercontent.com/91146906/153088131-f7b24d14-d806-4229-9493-3728751ad39f.svg" height="35"/>](#Query4) |
 | **Orders**		        | **Products**			|
-| [<img src="https://user-images.githubusercontent.com/91146906/153084586-fd19d670-3d80-4ef2-8b08-36822d9147e6.svg" height="35"/>](#Query5A) <br> [<img src="https://user-images.githubusercontent.com/91146906/153084631-94b27fb1-e299-4ff3-aec4-909ece47f15f.svg" height="35"/>](#Query5B) <br> [<img src="https://user-images.githubusercontent.com/91146906/153066618-2f6fa745-af8a-4849-9f87-b32cdc0ae8ad.svg" height="35"/>](#Query4A) <br> [<img src="https://user-images.githubusercontent.com/91146906/153066719-97bd6289-af04-4029-a497-ddce5f7eb115.svg" height="35"/>](#Query4B) | [<img src="https://user-images.githubusercontent.com/91146906/153066219-568e85e2-827b-4c13-abda-648a1ef9e85d.svg" height="35"/>](#Query3) <br> [<img src="https://user-images.githubusercontent.com/91146906/153084698-840b197f-6968-47a9-9b3c-9fae4255e1c7.svg" height="35"/>](#Query6A) <br> [<img src="https://user-images.githubusercontent.com/91146906/153084755-3a76869b-4ac5-4e64-8a07-9c156ea53138.svg" height="35"/>](#Query6B) |
+| [<img src="https://user-images.githubusercontent.com/91146906/153084586-fd19d670-3d80-4ef2-8b08-36822d9147e6.svg" height="35"/>](#Query5A) <br> [<img src="https://user-images.githubusercontent.com/91146906/153084631-94b27fb1-e299-4ff3-aec4-909ece47f15f.svg" height="35"/>](#Query5B) <br> [<img src="https://user-images.githubusercontent.com/91146906/153066618-2f6fa745-af8a-4849-9f87-b32cdc0ae8ad.svg" height="35"/>](#Query6A) <br> [<img src="https://user-images.githubusercontent.com/91146906/153066719-97bd6289-af04-4029-a497-ddce5f7eb115.svg" height="35"/>](#Query6B) | [<img src="https://user-images.githubusercontent.com/91146906/153066219-568e85e2-827b-4c13-abda-648a1ef9e85d.svg" height="35"/>](#Query7) <br> [<img src="https://user-images.githubusercontent.com/91146906/153084698-840b197f-6968-47a9-9b3c-9fae4255e1c7.svg" height="35"/>](#Query8A) <br> [<img src="https://user-images.githubusercontent.com/91146906/153084755-3a76869b-4ac5-4e64-8a07-9c156ea53138.svg" height="35"/>](#Query8B) |
 
 [<img src="https://user-images.githubusercontent.com/91146906/152126285-8e8e3552-4f25-4e80-89c7-e79000850553.svg" height="35"/>](../BackToRootsOLTP/BackToRootsQueries.sql)
 
@@ -249,184 +249,117 @@ ORDER BY
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="Query3"></a>
-### Query 3: Products Ordered by Month
-<b>Question:</b> By product type and product, how many products have been purchased each month? Order by product type and product. Filter by year. Pivot the output. (33 rows)
+### Query 3: Store Location Performance
+<b>Question:</b> What are the total sales at each location every year? Pivot the output. (4 rows)
 <br>
-<br><b>Business Purpose:</b> This query will assist Back-to-Roots management in identifying seasonal trends by product. In purchasing inventory and menu planning, Back-to-Roots management can refer to this query to determine which products should be available for a given month, in addition to what inventory is needed and at what volume.
-<br>
-<br><b>Query:</b>
-```SQL
-DECLARE @year INT = '2020';
-
-SELECT *
-INTO #tempPivot
-FROM (SELECT 
-	ProductType.ProductTypeName AS [Product Type],
-	Product.ProductName AS [Product Name],
-	DATENAME(MONTH, CustomerOrder.OrderDate) AS [Month],
-	SUM(OrderLine.Quantity) AS [Total Quantity Sold]
-FROM ProductType
-INNER JOIN Product
-	ON ProductType.ProductTypeID = Product.ProductTypeID
-INNER JOIN OrderLine
-	ON Product.ProductID = OrderLine.ProductID
-INNER JOIN CustomerOrder
-	ON CustomerOrder.OrderID = OrderLine.OrderID
-WHERE YEAR(CustomerOrder.OrderDate) = @year
-GROUP BY
-	ProductType.ProductTypeName,
-	Product.ProductName,
-	DATENAME(MONTH, CustomerOrder.OrderDate)) AS MonthlyOrderData
-PIVOT(SUM([Total Quantity Sold])
-    FOR [Month] IN ([January],[February],[March],[April],[May],[June],[July],[August],[September],[October],[November],[December])) AS MonthNamePivot;
-
-SELECT
-	[Product Type],
-	[Product Name],
-	FORMAT([January],'###,###,###')		AS [January],
-	FORMAT([February],'###,###,###')	AS [February],
-	FORMAT([March],'###,###,###')		AS [March],
-	FORMAT([April],'###,###,###')		AS [April],
-	FORMAT([May],'###,###,###')		AS [May],
-	FORMAT([June],'###,###,###')		AS [June],
-	FORMAT([July],'###,###,###')		AS [July],
-	FORMAT([August],'###,###,###')		AS [August],
-	FORMAT([September],'###,###,###')	AS [September],
-	FORMAT([October],'###,###,###')		AS [October],
-	FORMAT([November],'###,###,###')	AS [November],
-	FORMAT([December],'###,###,###')	AS [December]
-FROM #tempPivot
-ORDER BY 
-	[Product Type], 
-	[Product Name];
-	
-DROP TABLE #tempPivot;
-```
-<i>Access Note: When writing SQL for Access, similar result can be obtained by modifying query as follows (does not filter by year).</i>
-```SQL
-TRANSFORM SUM(OrderLine.Quantity) AS [Quantity Products Sold]
-SELECT 
-	ProductType.ProductTypeName AS [Product Type],
-	Product.ProductName AS [Product Name], 
-	SUM(OrderLine.Quantity) AS [Total Quantity Sold]
-FROM ((ProductType
-INNER JOIN Product
-	ON ProductType.ProductTypeID = Product.ProductTypeID)
-INNER JOIN OrderLine
-	ON Product.ProductID = OrderLine.ProductID)
-INNER JOIN CustomerOrder
-	ON CustomerOrder.OrderID = OrderLine.OrderID
-GROUP BY
-	ProductType.ProductTypeName,
-	Product.ProductName
-ORDER BY 
-	ProductType.ProductTypeName,
-	Product.ProductName
-PIVOT MONTHNAME(DATEPART('m', CustomerOrder.OrderDate)) IN (January, February, March, April, May, June, July, August, September, October, November, December);
-```
-<b>Output:</b>
-<br>
-<br>![Query3](https://user-images.githubusercontent.com/91146906/152939690-21de26f3-9e0d-4df2-bd6a-7c44416e628f.png)
-
-[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Queries)
-[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
-
-<a name="Query4A"></a>
-### Query 4A: Order Fulfillment by Product Type
-<b>Question:</b> By product type, how many orders have been filled using each of the order received methods (delivery, in-store, pick-up)? Pivot the output. (10 rows)
-<br>
-<br><b>Business Purpose:</b> This query will allow Back-to-Roots management to understand how customers are receiving their orders. Based on this information, management can determine how they should optimize processes to meet consumers' needs. If there is high demand for delivery, Back-to-Roots needs to have the proper packaging and to-go materials, in addition to enough drivers, to fulfill these orders. Further, the packaging materials needed may vary by product type. For example, different packaging is needed to deliver cakes and drinks. If there is high demand for pick-up, Back-to-Roots needs the appropriate physical space and processes to provide this service in an organized and efficient manner.
+<br><b>Business Purpose:</b> This query will allow Back-to-Roots management to compare the yearly performance of each store location in terms of revenue. If one location is performing significantly better than another, strategies can be developed to transfer some of that demand from one location to another. It can also help identify if a location should close or remain open or if another location should open, perhaps close to a current location, given high demand. Lastly, this query can assist with staffing decisions. If one location is seeing high demand, it may need more staffing, while a slower location may need less staffing.
 <br>
 <br><b>Query:</b>
 ```SQL
 SELECT *
 INTO #tempPivot
 FROM (SELECT 
-	ProductType.ProductTypeName AS [Product Type],
-	CustomerOrder.OrderFulfillment,
-	COUNT(CustomerOrder.OrderID) AS [Quantity of Orders]
-FROM CustomerOrder
+	YEAR(CustomerOrder.OrderDate) AS [Year],
+	StoreLocation.LocationCity,
+	SUM(Product.ProductPrice * OrderLine.Quantity) AS [Total Sales]
+FROM ((StoreLocation
+INNER JOIN CustomerOrder
+	ON StoreLocation.LocationID = CustomerOrder.LocationID)
 INNER JOIN OrderLine
-	ON CustomerOrder.OrderID = OrderLine.OrderID
+	ON CustomerOrder.OrderID = OrderLine.OrderID)
 INNER JOIN Product
 	ON Product.ProductID = OrderLine.ProductID
-INNER JOIN ProductType
-	ON ProductType.ProductTypeID = Product.ProductTypeID
 GROUP BY 
-	ProductType.ProductTypeName,
-	CustomerOrder.OrderFulfillment) AS OrderData
-PIVOT(SUM([Quantity of Orders])
-	FOR OrderFulfillment IN ([Delivery],[In-Store],[Pick-Up])) AS FulfillmentPivot;
+	YEAR(CustomerOrder.OrderDate),
+	StoreLocation.LocationCity) AS LocationSales
+PIVOT(SUM([Total Sales])
+	FOR LocationCity IN ([Boulder],[Longmont])) AS LocationPivot;
 
-SELECT
-	[Product Type],
-	FORMAT([Delivery],'###,###,###') AS [Delivery],
-	FORMAT([In-Store],'###,###,###') AS [In-Store],
-	FORMAT([Pick-Up],'###,###,###') AS [Pick-Up]
+SELECT 
+	Year, 
+	'$' + CONVERT(NVARCHAR,Boulder,1) AS Boulder, 
+	'$' + CONVERT(NVARCHAR,Longmont,1) AS Longmont
 FROM #tempPivot
-ORDER BY [Product Type];
+ORDER BY Year;
 
 DROP TABLE #tempPivot;
 ```
 <i>Access Note: When writing SQL for Access, similar result can be obtained by modifying query as follows.</i>
 ```SQL
-TRANSFORM COUNT(CustomerOrder.OrderID) AS [Order Count]
+TRANSFORM SUM(Product.ProductPrice * OrderLine.Quantity) AS [Sales]
 SELECT 
-	ProductType.ProductTypeName AS [Product Type], 
-	COUNT(CustomerOrder.OrderID) AS [Quantity of Orders]
-FROM ((CustomerOrder
+	YEAR(CustomerOrder.OrderDate) AS [Year],
+	SUM(Product.ProductPrice * OrderLine.Quantity) AS [Total Sales]
+FROM ((StoreLocation
+INNER JOIN CustomerOrder
+	ON StoreLocation.LocationID = CustomerOrder.LocationID)
 INNER JOIN OrderLine
 	ON CustomerOrder.OrderID = OrderLine.OrderID)
 INNER JOIN Product
-	ON Product.ProductID = OrderLine.ProductID)
-INNER JOIN ProductType
-	ON ProductType.ProductTypeID = Product.ProductTypeID
-GROUP BY ProductType.ProductTypeName
-ORDER BY ProductType.ProductTypeName
-PIVOT CustomerOrder.OrderFulfillment;
+	ON Product.ProductID = OrderLine.ProductID
+GROUP BY YEAR(CustomerOrder.OrderDate)
+PIVOT StoreLocation.LocationCity;
 ```
 <b>Output:</b>
 <br>
-<br>![Query4A](https://user-images.githubusercontent.com/91146906/152935213-4152c21c-c710-404f-836c-72754bc3ee22.png)
+<br>![Query7](https://user-images.githubusercontent.com/91146906/152933813-c45d04c3-dd38-4484-9c1e-1e09d5f7be1b.png)
 
 [<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Queries)
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
-<a name="Query4B"></a>
-### Query 4B: Total Sales by Order Fulfillment
-<b>Question:</b> What are the total sales by order fulfillment method (delivery, in-store, pick-up) between the user input dates? Order descending by total sales. (Rows returned varies by input)
+<a name="Query4"></a>
+### Query 4: Quarterly Sales
+<b>Question:</b> What are the total sales by quarter each year? Pivot the output. (4 rows)
 <br>
-<br><b>Business Purpose:</b> This query will allow Back-to-Roots management to gain further insight into the information revealed by Query 4A, as they can filter by a specific date range. This will allow management to see more timely and relevant information in making their decisions. Perhaps delivery was not popular in 2019 but became much more relevant in 2020 with the COVID-19 pandemic. This is timely information management needs to make the best decisions possible.
+<br><b>Business Purpose:</b> This query will allow Back-to-Roots management to identify seasonal trends in their business each year. Which quarters are the busiest and which quarters are the slowest? This information will help Back-to-Roots management properly staff their stores and purchase inventory. Perhaps seasonal employees are needed during busy quarters to optimize productivity and sales.
 <br>
-<br>User inputs to test:
-<ul>
-	<li>@beginDate = 1/1/2018 AND @endDate = 12/31/2018 (2 rows)</li>
-	<li>@beginDate = 1/1/2019 AND @endDate = 12/31/2019 (3 rows)</li>
-	<li>@beginDate = 4/1/2020 AND @endDate = 5/31/2020 (1 row)</li>
-</ul>
-
-<b>Query:</b>
+<br><b>Query:</b>
 ```SQL
-DECLARE @beginDate DATE = '1/1/2019';
-DECLARE @endDate DATE = '12/31/2019';
-
-SELECT
-	CustomerOrder.OrderFulfillment AS [Order Fulfillment], 
-	'$' + CONVERT(NVARCHAR,SUM(Product.ProductPrice * OrderLine.Quantity),1) AS [Total Sales]
+SELECT *
+INTO #tempPivot
+FROM(SELECT 
+	YEAR(CustomerOrder.OrderDate) AS [Year],
+	DATEPART(QUARTER,CustomerOrder.OrderDate) AS [Quarter],
+	SUM(Product.ProductPrice * OrderLine.Quantity) AS [Total Sales]
 FROM (CustomerOrder
 INNER JOIN OrderLine
 	ON CustomerOrder.OrderID = OrderLine.OrderID)
-INNER JOIN PRODUCT
+INNER JOIN Product
 	ON Product.ProductID = OrderLine.ProductID
-WHERE CustomerOrder.OrderDate BETWEEN @beginDate AND @endDate
-GROUP BY CustomerOrder.OrderFulfillment
-ORDER BY SUM(Product.ProductPrice * OrderLine.Quantity) DESC;
+GROUP BY 
+	YEAR(CustomerOrder.OrderDate),
+	DATEPART(QUARTER,CustomerOrder.OrderDate)) AS QuarterlySales
+PIVOT(SUM([Total Sales])
+	FOR [Quarter] IN ([1],[2],[3],[4])) AS QuarterPivot;
+
+SELECT
+	Year,
+	'$' + CONVERT(NVARCHAR,[1],1) AS [Qtr 1],
+	'$' + CONVERT(NVARCHAR,[2],1) AS [Qtr 2],
+	'$' + CONVERT(NVARCHAR,[3],1) AS [Qtr 3],
+	'$' + CONVERT(NVARCHAR,[4],1) AS [Qtr 4]
+FROM #tempPivot
+ORDER BY Year;
+
+DROP TABLE #tempPivot;
 ```
-<i>Access Note: When writing SQL for Access, similar result can be obtained by removing the </i>```CONVERT()```<i> and the </i>```DECLARE```<i> statements.</i>
+<i>Access Note: When writing SQL for Access, similar result can be obtained by modifying query as follows.</i>
+```SQL
+TRANSFORM SUM(Product.ProductPrice * OrderLine.Quantity) AS [Sales]
+SELECT 
+	YEAR(CustomerOrder.OrderDate) AS [Year],
+	SUM(Product.ProductPrice * OrderLine.Quantity) AS [Total Sales]
+FROM (CustomerOrder
+INNER JOIN OrderLine
+	ON CustomerOrder.OrderID = OrderLine.OrderID)
+INNER JOIN Product
+	ON Product.ProductID = OrderLine.ProductID
+GROUP BY YEAR(CustomerOrder.OrderDate)
+PIVOT 'Qtr ' & DATEPART('q', CustomerOrder.OrderDate);
+```
+<b>Output:</b>
 <br>
-<br><b>Output:</b>
-<br>
-<br>![OrderFulfillmentB](https://user-images.githubusercontent.com/91146906/152920095-5e30b383-2204-4f3e-89c7-86d0857d9ec5.png)
+<br>![Query8](https://user-images.githubusercontent.com/91146906/152938869-e78a6a13-d660-40d2-871d-c90c9cc968b7.png)
 
 [<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Queries)
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
@@ -532,7 +465,190 @@ ORDER BY SUM(Product.ProductPrice * OrderLine.Quantity) DESC;
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="Query6A"></a>
-### Query 6A: Product Sales by Store Location
+### Query 6A: Order Fulfillment by Product Type
+<b>Question:</b> By product type, how many orders have been filled using each of the order received methods (delivery, in-store, pick-up)? Pivot the output. (10 rows)
+<br>
+<br><b>Business Purpose:</b> This query will allow Back-to-Roots management to understand how customers are receiving their orders. Based on this information, management can determine how they should optimize processes to meet consumers' needs. If there is high demand for delivery, Back-to-Roots needs to have the proper packaging and to-go materials, in addition to enough drivers, to fulfill these orders. Further, the packaging materials needed may vary by product type. For example, different packaging is needed to deliver cakes and drinks. If there is high demand for pick-up, Back-to-Roots needs the appropriate physical space and processes to provide this service in an organized and efficient manner.
+<br>
+<br><b>Query:</b>
+```SQL
+SELECT *
+INTO #tempPivot
+FROM (SELECT 
+	ProductType.ProductTypeName AS [Product Type],
+	CustomerOrder.OrderFulfillment,
+	COUNT(CustomerOrder.OrderID) AS [Quantity of Orders]
+FROM CustomerOrder
+INNER JOIN OrderLine
+	ON CustomerOrder.OrderID = OrderLine.OrderID
+INNER JOIN Product
+	ON Product.ProductID = OrderLine.ProductID
+INNER JOIN ProductType
+	ON ProductType.ProductTypeID = Product.ProductTypeID
+GROUP BY 
+	ProductType.ProductTypeName,
+	CustomerOrder.OrderFulfillment) AS OrderData
+PIVOT(SUM([Quantity of Orders])
+	FOR OrderFulfillment IN ([Delivery],[In-Store],[Pick-Up])) AS FulfillmentPivot;
+
+SELECT
+	[Product Type],
+	FORMAT([Delivery],'###,###,###') AS [Delivery],
+	FORMAT([In-Store],'###,###,###') AS [In-Store],
+	FORMAT([Pick-Up],'###,###,###') AS [Pick-Up]
+FROM #tempPivot
+ORDER BY [Product Type];
+
+DROP TABLE #tempPivot;
+```
+<i>Access Note: When writing SQL for Access, similar result can be obtained by modifying query as follows.</i>
+```SQL
+TRANSFORM COUNT(CustomerOrder.OrderID) AS [Order Count]
+SELECT 
+	ProductType.ProductTypeName AS [Product Type], 
+	COUNT(CustomerOrder.OrderID) AS [Quantity of Orders]
+FROM ((CustomerOrder
+INNER JOIN OrderLine
+	ON CustomerOrder.OrderID = OrderLine.OrderID)
+INNER JOIN Product
+	ON Product.ProductID = OrderLine.ProductID)
+INNER JOIN ProductType
+	ON ProductType.ProductTypeID = Product.ProductTypeID
+GROUP BY ProductType.ProductTypeName
+ORDER BY ProductType.ProductTypeName
+PIVOT CustomerOrder.OrderFulfillment;
+```
+<b>Output:</b>
+<br>
+<br>![Query4A](https://user-images.githubusercontent.com/91146906/152935213-4152c21c-c710-404f-836c-72754bc3ee22.png)
+
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Queries)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+
+<a name="Query6B"></a>
+### Query 6B: Total Sales by Order Fulfillment
+<b>Question:</b> What are the total sales by order fulfillment method (delivery, in-store, pick-up) between the user input dates? Order descending by total sales. (Rows returned varies by input)
+<br>
+<br><b>Business Purpose:</b> This query will allow Back-to-Roots management to gain further insight into the information revealed by Query 6A, as they can filter by a specific date range. This will allow management to see more timely and relevant information in making their decisions. Perhaps delivery was not popular in 2019 but became much more relevant in 2020 with the COVID-19 pandemic. This is timely information management needs to make the best decisions possible.
+<br>
+<br>User inputs to test:
+<ul>
+	<li>@beginDate = 1/1/2018 AND @endDate = 12/31/2018 (2 rows)</li>
+	<li>@beginDate = 1/1/2019 AND @endDate = 12/31/2019 (3 rows)</li>
+	<li>@beginDate = 4/1/2020 AND @endDate = 5/31/2020 (1 row)</li>
+</ul>
+
+<b>Query:</b>
+```SQL
+DECLARE @beginDate DATE = '1/1/2019';
+DECLARE @endDate DATE = '12/31/2019';
+
+SELECT
+	CustomerOrder.OrderFulfillment AS [Order Fulfillment], 
+	'$' + CONVERT(NVARCHAR,SUM(Product.ProductPrice * OrderLine.Quantity),1) AS [Total Sales]
+FROM (CustomerOrder
+INNER JOIN OrderLine
+	ON CustomerOrder.OrderID = OrderLine.OrderID)
+INNER JOIN PRODUCT
+	ON Product.ProductID = OrderLine.ProductID
+WHERE CustomerOrder.OrderDate BETWEEN @beginDate AND @endDate
+GROUP BY CustomerOrder.OrderFulfillment
+ORDER BY SUM(Product.ProductPrice * OrderLine.Quantity) DESC;
+```
+<i>Access Note: When writing SQL for Access, similar result can be obtained by removing the </i>```CONVERT()```<i> and the </i>```DECLARE```<i> statements.</i>
+<br>
+<br><b>Output:</b>
+<br>
+<br>![OrderFulfillmentB](https://user-images.githubusercontent.com/91146906/152920095-5e30b383-2204-4f3e-89c7-86d0857d9ec5.png)
+
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Queries)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+
+<a name="Query7"></a>
+### Query 7: Products Ordered by Month
+<b>Question:</b> By product type and product, how many products have been purchased each month? Order by product type and product. Filter by year. Pivot the output. (33 rows)
+<br>
+<br><b>Business Purpose:</b> This query will assist Back-to-Roots management in identifying seasonal trends by product. In purchasing inventory and menu planning, Back-to-Roots management can refer to this query to determine which products should be available for a given month, in addition to what inventory is needed and at what volume.
+<br>
+<br><b>Query:</b>
+```SQL
+DECLARE @year INT = '2020';
+
+SELECT *
+INTO #tempPivot
+FROM (SELECT 
+	ProductType.ProductTypeName AS [Product Type],
+	Product.ProductName AS [Product Name],
+	DATENAME(MONTH, CustomerOrder.OrderDate) AS [Month],
+	SUM(OrderLine.Quantity) AS [Total Quantity Sold]
+FROM ProductType
+INNER JOIN Product
+	ON ProductType.ProductTypeID = Product.ProductTypeID
+INNER JOIN OrderLine
+	ON Product.ProductID = OrderLine.ProductID
+INNER JOIN CustomerOrder
+	ON CustomerOrder.OrderID = OrderLine.OrderID
+WHERE YEAR(CustomerOrder.OrderDate) = @year
+GROUP BY
+	ProductType.ProductTypeName,
+	Product.ProductName,
+	DATENAME(MONTH, CustomerOrder.OrderDate)) AS MonthlyOrderData
+PIVOT(SUM([Total Quantity Sold])
+    FOR [Month] IN ([January],[February],[March],[April],[May],[June],[July],[August],[September],[October],[November],[December])) AS MonthNamePivot;
+
+SELECT
+	[Product Type],
+	[Product Name],
+	FORMAT([January],'###,###,###')		AS [January],
+	FORMAT([February],'###,###,###')	AS [February],
+	FORMAT([March],'###,###,###')		AS [March],
+	FORMAT([April],'###,###,###')		AS [April],
+	FORMAT([May],'###,###,###')		AS [May],
+	FORMAT([June],'###,###,###')		AS [June],
+	FORMAT([July],'###,###,###')		AS [July],
+	FORMAT([August],'###,###,###')		AS [August],
+	FORMAT([September],'###,###,###')	AS [September],
+	FORMAT([October],'###,###,###')		AS [October],
+	FORMAT([November],'###,###,###')	AS [November],
+	FORMAT([December],'###,###,###')	AS [December]
+FROM #tempPivot
+ORDER BY 
+	[Product Type], 
+	[Product Name];
+	
+DROP TABLE #tempPivot;
+```
+<i>Access Note: When writing SQL for Access, similar result can be obtained by modifying query as follows (does not filter by year).</i>
+```SQL
+TRANSFORM SUM(OrderLine.Quantity) AS [Quantity Products Sold]
+SELECT 
+	ProductType.ProductTypeName AS [Product Type],
+	Product.ProductName AS [Product Name], 
+	SUM(OrderLine.Quantity) AS [Total Quantity Sold]
+FROM ((ProductType
+INNER JOIN Product
+	ON ProductType.ProductTypeID = Product.ProductTypeID)
+INNER JOIN OrderLine
+	ON Product.ProductID = OrderLine.ProductID)
+INNER JOIN CustomerOrder
+	ON CustomerOrder.OrderID = OrderLine.OrderID
+GROUP BY
+	ProductType.ProductTypeName,
+	Product.ProductName
+ORDER BY 
+	ProductType.ProductTypeName,
+	Product.ProductName
+PIVOT MONTHNAME(DATEPART('m', CustomerOrder.OrderDate)) IN (January, February, March, April, May, June, July, August, September, October, November, December);
+```
+<b>Output:</b>
+<br>
+<br>![Query3](https://user-images.githubusercontent.com/91146906/152939690-21de26f3-9e0d-4df2-bd6a-7c44416e628f.png)
+
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Queries)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+
+<a name="Query8A"></a>
+### Query 8A: Product Sales by Store Location
 <b>Question:</b> For each product, display the price, quantity sold, and total sales at each store location. Order by store location, product type, and total sales descending. (64 rows)
 <br>
 <br><b>Business Purpose:</b> This query gives Back-to-Roots management insight into how products are selling at each location. Decisions can be made from this information regarding whether a location should stop selling a particular product or whether a location should consider selling a new product based on the success of other products.
@@ -573,11 +689,11 @@ ORDER BY
 [<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Queries)
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
-<a name="Query6B"></a>
-### Query 6B: Products Not Sold by Store Location
+<a name="Query8B"></a>
+### Query 8B: Products Not Sold by Store Location
 <b>Question:</b> List all the products that have never been ordered in Longmont within the user-input date range. (Rows returned varies by input)
 <br>
-<br><b>Business Purpose:</b> This query will allow Back-to-Roots management to gain further insight into the information revealed by Query 6A, as they can see which products have not been ordered at the Longmont location in a given date range. If these products are currently offered in Longmont and are not selling, perhaps they should be removed from the Longmont menu. Conversely, if these products are not currently offered, perhaps they should be, given the results of Query 6A indicate the product may be successful at this location.
+<br><b>Business Purpose:</b> This query will allow Back-to-Roots management to gain further insight into the information revealed by Query 8A, as they can see which products have not been ordered at the Longmont location in a given date range. If these products are currently offered in Longmont and are not selling, perhaps they should be removed from the Longmont menu. Conversely, if these products are not currently offered, perhaps they should be, given the results of Query 6A indicate the product may be successful at this location.
 <br>
 <br>User inputs to test:
 <ul>
@@ -613,122 +729,6 @@ WHERE LongmontOrder.ProductID IS NULL;
 <br><b>Output:</b>
 <br>
 <br>![Query6B](https://user-images.githubusercontent.com/91146906/152946531-d062f461-1fec-4579-8c94-6f4c6f4e98d1.png)
-
-[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Queries)
-[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
-
-<a name="Query7"></a>
-### Query 7: Store Location Performance
-<b>Question:</b> What are the total sales at each location every year? Pivot the output. (4 rows)
-<br>
-<br><b>Business Purpose:</b> This query will allow Back-to-Roots management to compare the yearly performance of each store location in terms of revenue. If one location is performing significantly better than another, strategies can be developed to transfer some of that demand from one location to another. It can also help identify if a location should close or remain open or if another location should open, perhaps close to a current location, given high demand. Lastly, this query can assist with staffing decisions. If one location is seeing high demand, it may need more staffing, while a slower location may need less staffing.
-<br>
-<br><b>Query:</b>
-```SQL
-SELECT *
-INTO #tempPivot
-FROM (SELECT 
-	YEAR(CustomerOrder.OrderDate) AS [Year],
-	StoreLocation.LocationCity,
-	SUM(Product.ProductPrice * OrderLine.Quantity) AS [Total Sales]
-FROM ((StoreLocation
-INNER JOIN CustomerOrder
-	ON StoreLocation.LocationID = CustomerOrder.LocationID)
-INNER JOIN OrderLine
-	ON CustomerOrder.OrderID = OrderLine.OrderID)
-INNER JOIN Product
-	ON Product.ProductID = OrderLine.ProductID
-GROUP BY 
-	YEAR(CustomerOrder.OrderDate),
-	StoreLocation.LocationCity) AS LocationSales
-PIVOT(SUM([Total Sales])
-	FOR LocationCity IN ([Boulder],[Longmont])) AS LocationPivot;
-
-SELECT 
-	Year, 
-	'$' + CONVERT(NVARCHAR,Boulder,1) AS Boulder, 
-	'$' + CONVERT(NVARCHAR,Longmont,1) AS Longmont
-FROM #tempPivot
-ORDER BY Year;
-
-DROP TABLE #tempPivot;
-```
-<i>Access Note: When writing SQL for Access, similar result can be obtained by modifying query as follows.</i>
-```SQL
-TRANSFORM SUM(Product.ProductPrice * OrderLine.Quantity) AS [Sales]
-SELECT 
-	YEAR(CustomerOrder.OrderDate) AS [Year],
-	SUM(Product.ProductPrice * OrderLine.Quantity) AS [Total Sales]
-FROM ((StoreLocation
-INNER JOIN CustomerOrder
-	ON StoreLocation.LocationID = CustomerOrder.LocationID)
-INNER JOIN OrderLine
-	ON CustomerOrder.OrderID = OrderLine.OrderID)
-INNER JOIN Product
-	ON Product.ProductID = OrderLine.ProductID
-GROUP BY YEAR(CustomerOrder.OrderDate)
-PIVOT StoreLocation.LocationCity;
-```
-<b>Output:</b>
-<br>
-<br>![Query7](https://user-images.githubusercontent.com/91146906/152933813-c45d04c3-dd38-4484-9c1e-1e09d5f7be1b.png)
-
-[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Queries)
-[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
-
-<a name="Query8"></a>
-### Query 8: Quarterly Sales
-<b>Question:</b> What are the total sales by quarter each year? Pivot the output. (4 rows)
-<br>
-<br><b>Business Purpose:</b> This query will allow Back-to-Roots management to identify seasonal trends in their business each year. Which quarters are the busiest and which quarters are the slowest? This information will help Back-to-Roots management properly staff their stores and purchase inventory. Perhaps seasonal employees are needed during busy quarters to optimize productivity and sales.
-<br>
-<br><b>Query:</b>
-```SQL
-SELECT *
-INTO #tempPivot
-FROM(SELECT 
-	YEAR(CustomerOrder.OrderDate) AS [Year],
-	DATEPART(QUARTER,CustomerOrder.OrderDate) AS [Quarter],
-	SUM(Product.ProductPrice * OrderLine.Quantity) AS [Total Sales]
-FROM (CustomerOrder
-INNER JOIN OrderLine
-	ON CustomerOrder.OrderID = OrderLine.OrderID)
-INNER JOIN Product
-	ON Product.ProductID = OrderLine.ProductID
-GROUP BY 
-	YEAR(CustomerOrder.OrderDate),
-	DATEPART(QUARTER,CustomerOrder.OrderDate)) AS QuarterlySales
-PIVOT(SUM([Total Sales])
-	FOR [Quarter] IN ([1],[2],[3],[4])) AS QuarterPivot;
-
-SELECT
-	Year,
-	'$' + CONVERT(NVARCHAR,[1],1) AS [Qtr 1],
-	'$' + CONVERT(NVARCHAR,[2],1) AS [Qtr 2],
-	'$' + CONVERT(NVARCHAR,[3],1) AS [Qtr 3],
-	'$' + CONVERT(NVARCHAR,[4],1) AS [Qtr 4]
-FROM #tempPivot
-ORDER BY Year;
-
-DROP TABLE #tempPivot;
-```
-<i>Access Note: When writing SQL for Access, similar result can be obtained by modifying query as follows.</i>
-```SQL
-TRANSFORM SUM(Product.ProductPrice * OrderLine.Quantity) AS [Sales]
-SELECT 
-	YEAR(CustomerOrder.OrderDate) AS [Year],
-	SUM(Product.ProductPrice * OrderLine.Quantity) AS [Total Sales]
-FROM (CustomerOrder
-INNER JOIN OrderLine
-	ON CustomerOrder.OrderID = OrderLine.OrderID)
-INNER JOIN Product
-	ON Product.ProductID = OrderLine.ProductID
-GROUP BY YEAR(CustomerOrder.OrderDate)
-PIVOT 'Qtr ' & DATEPART('q', CustomerOrder.OrderDate);
-```
-<b>Output:</b>
-<br>
-<br>![Query8](https://user-images.githubusercontent.com/91146906/152938869-e78a6a13-d660-40d2-871d-c90c9cc968b7.png)
 
 [<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Queries)
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
