@@ -9,6 +9,7 @@
 [<img src="https://user-images.githubusercontent.com/91146906/152239346-9d454364-ab2b-4de9-a3a7-acd62969a90b.svg" height="35"/>](#DatabaseDesign)
 [<img src="https://user-images.githubusercontent.com/91146906/152239424-a41f47e7-ca34-4c15-a454-a32c93cdac05.svg" height="35"/>](#SimulatingData)
 [<img src="https://user-images.githubusercontent.com/91146906/152239510-6c631219-71bc-4281-9c8b-b9b1e805b3d8.svg" height="35"/>](#BuildScript)
+[<img src="https://user-images.githubusercontent.com/91146906/152941367-252de8c0-9a0f-4659-86b6-944cdfefea93.svg" height="35"/>](#Queries)
 [<img src="https://user-images.githubusercontent.com/91146906/152242345-ff52d28e-14c3-445d-bdec-a668a48bc4b4.svg" height="35"/>](#ViewFunctionSPROC)
 [<img src="https://user-images.githubusercontent.com/91146906/152242423-78c24a7a-3937-4196-b97b-59fadedc3191.svg" height="35"/>](#Application)
 [<img src="https://user-images.githubusercontent.com/91146906/152244444-33feb407-c877-4ea1-8486-490c4a8aec78.svg" height="35"/>](#DownloadExplore)
@@ -125,6 +126,7 @@ The Back to Roots build script creates the "BackToRoots" database if it does not
 
 <a name="Queries"></a>
 ## Queries
+Several queries are written, each answering a question and serving a business purpose. In addition to the SQL to run in Microsoft SQL Server Management Studio, there are notes and code snippets for modifying the code to run in an Access database.
 <a name="Query1"></a>
 ### Query 1: Birthdays
 <b>Question:</b> List the rewards program customers who have a birthday this month and have placed an order over $10 in the last year. Union this with a list of current employees who have a birthday this month. Order by relation (customer or employee) descending and birthday. (Rows returned varies by month and year query is run.)
@@ -174,7 +176,7 @@ ORDER BY
 	[Relation] DESC, 
 	[Birthday];
 ```
-<i>Access Note: When writing SQL for Access, </i>```DATE()```<i> is used rather than </i>```GETDATE()```<i>, and </i>```'yyyy'```<i> is used rather than </i>```YEAR```<i> in the </i>```DATEADD()```<i>. Additionally, Access does not need the </i>```CAST()```<i> in the </i>```DATEADD()```<i> for this query.</i>
+<i>Access Note: When writing SQL for Access, </i>```DATE()```<i> is used rather than </i>```GETDATE()```<i>; </i>```'yyyy'```<i> is used rather than </i>```YEAR```<i> in the </i>```DATEADD()```<i>; and </i>```CAST()```<i> is not used in the </i>```DATEADD()```<i>.</i>
 <br>
 <br><b>Sample Output:</b>
 <br>
