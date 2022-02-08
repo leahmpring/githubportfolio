@@ -127,6 +127,10 @@ The Back to Roots build script creates the "BackToRoots" database if it does not
 <a name="Queries"></a>
 ## Queries
 Several queries are written, each answering a question and serving a business purpose. In addition to the SQL to run in Microsoft SQL Server Management Studio, there are notes and code snippets for modifying the SQL to run in an Access database. Snapshots of the queries' output from Microsoft SQL Server Management Studio are included.
+<br>
+<br>
+[<img src="https://user-images.githubusercontent.com/91146906/152126285-8e8e3552-4f25-4e80-89c7-e79000850553.svg" height="35"/>](../BackToRootsOLTP/BackToRootsQueries.sql)
+
 <a name="Query1"></a>
 ### Query 1: Birthdays
 <b>Question:</b> List the rewards program customers who have a birthday this month and have placed an order over $10 in the last year. Union this with a list of current employees who have a birthday this month. Order by relation (customer or employee) descending and birthday. (Rows returned varies by month and year query is run.)
