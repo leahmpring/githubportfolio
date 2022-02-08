@@ -127,17 +127,13 @@ The Back to Roots build script creates the "BackToRoots" database if it does not
 <a name="Queries"></a>
 ## Queries
 Several queries are written, each answering a question and serving a business purpose. In addition to the SQL to run in Microsoft SQL Server Management Studio, there are notes and code snippets for modifying the SQL to run in an Access database. Snapshots of the queries' output from Microsoft SQL Server Management Studio are included.
-<br>
-<br>
-[<img src="https://user-images.githubusercontent.com/91146906/153065868-ef86de4f-4b60-4e0a-8f62-4727e0237482.svg" height="35"/>](#Query1)
-[<img src="https://user-images.githubusercontent.com/91146906/153066103-11454751-63e0-4911-882a-d4a9f3b88d5b.svg" height="35"/>](#Query2)
-[<img src="https://user-images.githubusercontent.com/91146906/153066219-568e85e2-827b-4c13-abda-648a1ef9e85d.svg" height="35"/>](#Query3)
-[<img src="https://user-images.githubusercontent.com/91146906/153066618-2f6fa745-af8a-4849-9f87-b32cdc0ae8ad.svg" height="35"/>](#Query4A)
-[<img src="https://user-images.githubusercontent.com/91146906/153066719-97bd6289-af04-4029-a497-ddce5f7eb115.svg" height="35"/>](#Query4B)
-[<img src="https://user-images.githubusercontent.com/91146906/153066817-8c0c6e1a-a545-4025-9b76-0d2eace9f44d.svg" height="35"/>](#Query5A)
-[<img src="https://user-images.githubusercontent.com/91146906/153066904-77781c9d-cdb2-4d7a-8c7d-bfe8708c8ea0.svg" height="35"/>](#Query5B)
-<br>
-<br>
+
+| Employees and Customers | Store Performance |
+| :---: | :---: |
+| [<img src="https://user-images.githubusercontent.com/91146906/153065868-ef86de4f-4b60-4e0a-8f62-4727e0237482.svg" height="35"/>](#Query1) <br> [<img src="https://user-images.githubusercontent.com/91146906/153066103-11454751-63e0-4911-882a-d4a9f3b88d5b.svg" height="35"/>](#Query2) | [<img src="https://user-images.githubusercontent.com/91146906/153084800-8ea76771-fa21-4745-9a9f-7bf597c82b69.svg" height="35"/>](#Query7) <br> [<img src="https://user-images.githubusercontent.com/91146906/153088131-f7b24d14-d806-4229-9493-3728751ad39f.svg" height="35"/>](#Query8) |
+| **Orders**		        | **Products**			|
+| [<img src="https://user-images.githubusercontent.com/91146906/153084586-fd19d670-3d80-4ef2-8b08-36822d9147e6.svg" height="35"/>](#Query5A) <br> [<img src="https://user-images.githubusercontent.com/91146906/153084631-94b27fb1-e299-4ff3-aec4-909ece47f15f.svg" height="35"/>](#Query5B) <br> [<img src="https://user-images.githubusercontent.com/91146906/153066618-2f6fa745-af8a-4849-9f87-b32cdc0ae8ad.svg" height="35"/>](#Query4A) <br> [<img src="https://user-images.githubusercontent.com/91146906/153066719-97bd6289-af04-4029-a497-ddce5f7eb115.svg" height="35"/>](#Query4B) | [<img src="https://user-images.githubusercontent.com/91146906/153066219-568e85e2-827b-4c13-abda-648a1ef9e85d.svg" height="35"/>](#Query3) <br> [<img src="https://user-images.githubusercontent.com/91146906/153084698-840b197f-6968-47a9-9b3c-9fae4255e1c7.svg" height="35"/>](#Query6A) <br> [<img src="https://user-images.githubusercontent.com/91146906/153084755-3a76869b-4ac5-4e64-8a07-9c156ea53138.svg" height="35"/>](#Query6B) |
+
 [<img src="https://user-images.githubusercontent.com/91146906/152126285-8e8e3552-4f25-4e80-89c7-e79000850553.svg" height="35"/>](../BackToRootsOLTP/BackToRootsQueries.sql)
 
 <a name="Query1"></a>
