@@ -176,7 +176,7 @@ ORDER BY
 	[Relation] DESC, 
 	[Birthday];
 ```
-<i>Access Note: When writing SQL for Access, </i>```DATE()```<i> is used rather than </i>```GETDATE()```<i>; </i>```'yyyy'```<i> is used rather than </i>```YEAR```<i> in the </i>```DATEADD()```<i>; and </i>```CAST()```<i> is not used in the </i>```DATEADD()```<i>.</i>
+<i>Access Note: When writing SQL for Access, similar result can be obtained by using </i>```DATE()```<i> rather than </i>```GETDATE()```<i>; using </i>```'yyyy'```<i> rather than </i>```YEAR```<i> in the </i>```DATEADD()```<i>; and not using </i>```CAST()```<i> in the </i>```DATEADD()```<i>.</i>
 <br>
 <br><b>Sample Output:</b>
 <br>
@@ -190,8 +190,51 @@ ORDER BY
 <b>Question:</b> Return the quantity of orders filled, quantity of products sold, and total sales for employees working in the front of house for the duration of their employment in that position. Include the store location and whether the position is current. Order by store location, position name descending, whether the position is current descending, and total sales descending. (16 rows)
 <br>
 <br><b>Business Purpose:</b> This query will allow Back-to-Roots management to monitor employee success for front of house workers based on how many orders they are filling, how many products they are selling, and how much money they are brining-in with their sales. Employee performance can be compared by normalizing it against the number of months an employee worked in the given position. This information will help Back-to-Roots management identify which employees are highly successful and should be considered for a raise or promotion and which employess might be struggling and need additional support or training.
+<br>
+<br><b>Query:</b>
 ```SQL
+SELECT 
+	StoreLocation.LocationID AS [Location],
+	Position.PositionName AS [Position],
+	(Employee.EmployeeFirstName + ' ' + Employee.EmployeeLastName) AS [Employee Name],
+	IIF(EmploymentHistory.EndDate IS NULL, 'Current', 'End Dated') AS [Position Current?],
+	IIF(EmploymentHistory.EndDate IS NULL, DATEDIFF(MONTH, EmploymentHistory.HireDate, GETDATE()), DATEDIFF(MONTH, EmploymentHistory.HireDate, EmploymentHistory.EndDate)) AS [Months in Position],
+	FORMAT(COUNT(CustomerOrder.OrderID),'###,###,###') AS [Quantity of Orders Filled],
+	FORMAT(SUM(OrderLine.Quantity),'###,###,###') AS [Quantity of Product Sold], 
+	'$' + CONVERT(NVARCHAR,SUM(Product.ProductPrice * OrderLine.Quantity),1) AS [Total Sales]
+FROM (((((Position
+INNER JOIN EmploymentHistory
+	ON Position.PositionID = EmploymentHistory.PositionID)
+INNER JOIN Employee
+	ON Employee.EmployeeID = EmploymentHistory.EmployeeID)
+INNER JOIN CustomerOrder
+	ON Employee.EmployeeID = CustomerOrder.EmployeeID)
+INNER JOIN StoreLocation
+	ON StoreLocation.LocationID = CustomerOrder.LocationID)
+INNER JOIN OrderLine
+	ON CustomerOrder.OrderID = OrderLine.OrderID)
+INNER JOIN Product
+	ON Product.ProductID = OrderLine.ProductID
+WHERE 
+	Position.PositionName LIKE 'Front of House%'
+	AND CustomerOrder.OrderDate BETWEEN EmploymentHistory.HireDate AND IIF(EmploymentHistory.EndDate IS NULL, GETDATE(), EmploymentHistory.EndDate)
+GROUP BY 
+	StoreLocation.LocationID,
+	Position.PositionName,
+	(Employee.EmployeeFirstName + ' ' + Employee.EmployeeLastName),
+	IIF(EmploymentHistory.EndDate IS NULL, DATEDIFF(MONTH, EmploymentHistory.HireDate, GETDATE()), DATEDIFF(MONTH, EmploymentHistory.HireDate, EmploymentHistory.EndDate)),
+	IIF(EmploymentHistory.EndDate IS NULL, 'Current', 'End Dated')
+ORDER BY 
+	StoreLocation.LocationID,
+	Position.PositionName DESC,
+	IIF(EmploymentHistory.EndDate IS NULL, 'Current', 'End Dated') DESC,
+	SUM(Product.ProductPrice * OrderLine.Quantity) DESC;
 ```
+<i>Access Note: When writing SQL for Access, similar result can be obtained by using single quotes rather than double quotes in the employee name concatenation; using </i>```DATE()```<i> rather than </i>```GETDATE()```<i>; using </i>```'Front of House*'```<i> rather than </i>```'Front of House%'```<i> after the </i>```LIKE```<i> statement; using </i>```MONTH```<i> rather than </i>```'m'```<i> in the </i>```DATEDIFF()```<i>; and not using </i>```FORMAT()```<i> or </i>```CONVERT()```<i>.</i>
+<br>
+<br><b>Output:</b>
+<br>
+<br>![Query2](https://user-images.githubusercontent.com/91146906/152950929-cf051743-96fe-467d-89fc-fe463df615c0.png)
 
 [<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Queries)
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
@@ -536,13 +579,31 @@ ORDER BY
 
 <b>Query:</b>
 ```SQL
+DECLARE @beginDate DATE = '4/1/2020';
+DECLARE @endDate DATE = '5/31/2020';
+
+SELECT
+	Product.ProductName
+FROM Product
+LEFT OUTER JOIN
+	(SELECT 
+		OrderLine.ProductID
+	FROM (StoreLocation
+	INNER JOIN CustomerOrder
+		ON StoreLocation.LocationID = CustomerOrder.LocationID)
+	INNER JOIN OrderLine
+		ON CustomerOrder.OrderID = OrderLine.OrderID
+	WHERE 
+		StoreLocation.LocationID LIKE 'LONG%'
+		AND CustomerOrder.OrderDate BETWEEN @beginDate AND @endDate) AS LongmontOrder
+ON Product.ProductID = LongmontOrder.ProductID
+WHERE LongmontOrder.ProductID IS NULL;
 ```
-<i>Access Note: When writing SQL for Access, similar result can be obtained by modifying query as follows.</i>
-```SQL
-```
-<b>Output:</b>
+<i>Access Note: When writing SQL for Access, similar result can be obtained by using </i>```'LONG*'```<i> rather than </i>```'LONG%'```<i> after the </i>```LIKE```<i> statement and by removing the </i>```DECLARE```<i> statements.</i>
 <br>
+<br><b>Output:</b>
 <br>
+<br>![Query6B](https://user-images.githubusercontent.com/91146906/152946531-d062f461-1fec-4579-8c94-6f4c6f4e98d1.png)
 
 [<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Queries)
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
