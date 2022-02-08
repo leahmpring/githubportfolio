@@ -123,6 +123,110 @@ The Back to Roots build script creates the "BackToRoots" database if it does not
 
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
+<a name="Queries"></a>
+## Queries
+### Birthdays
+<b>Question:</b> List the rewards program customers who have a birthday this month and have placed an order over $10 in the last year. Union this with a list of current employees who have a birthday this month. Order by relation (customer or employee) descending and birthday. (Rows returned varies by month and year query is run.)
+<br>
+<br><b>Business Purpose:</b> This query will be run on the first day of every month to get a list of customers and employees meeting the criteria to receive a birthday promotion that month. It will allow Back-to-Roots Bakery to email their customers and employees a coupon on the first of the month with which to celebrate their birthday. This will help Back-to-Roots Bakery maintain good relationships with their customers and employees, and it will help incentivize customers to participate in the rewards program.
+<br>
+<br><b>Query:</b>
+```SQL
+	SELECT 
+		Customer.CustomerFirstName AS [First Name],
+		Customer.CustomerLastName AS [Last Name],
+		Customer.CustomerDOB AS [Birthday],
+		Customer.CustomerEmail AS [Email],
+		'Customer' AS [Relation]
+	FROM Customer
+	JOIN RewardHistory
+		ON Customer.CustomerID = RewardHistory.CustomerID
+		AND RewardHistory.RewardStatusEndDate IS NULL
+	WHERE 
+		RewardHistory.RewardStatusID <> 'NO-R'
+		AND MONTH(Customer.CustomerDOB) = MONTH(GETDATE())
+		AND CUSTOMER.CustomerID IN 
+			(SELECT DISTINCT CustomerOrder.CustomerID
+			FROM (CustomerOrder
+			INNER JOIN OrderLine
+				ON CustomerOrder.OrderID = OrderLine.OrderID)
+			INNER JOIN Product
+				ON Product.ProductID = OrderLine.ProductID
+			WHERE 
+				CustomerOrder.OrderDate BETWEEN DATEADD(YEAR,-1,CAST(GETDATE() AS Date)) AND GETDATE()
+				AND (Product.ProductPrice * OrderLine.Quantity) > 10)
+UNION
+	SELECT
+		Employee.EmployeeFirstName,
+		Employee.EmployeeLastName,
+		Employee.EmployeeDOB,
+		Employee.EmployeeEmail,
+		'Employee' AS [Relation]
+	FROM EMPLOYEE
+	WHERE 
+		MONTH(Employee.EmployeeDOB) = MONTH(GETDATE())
+		AND Employee.EmployeeID IN 	
+			(SELECT EmploymentHistory.EmployeeID
+			FROM EmploymentHistory
+			WHERE EmploymentHistory.EndDate IS NULL)
+ORDER BY 
+	[Relation] DESC, 
+	[Birthday];
+```
+<b>Sample Output:</b>
+<br>
+<br>![Birthdays](https://user-images.githubusercontent.com/91146906/152905341-de7d0fe2-1693-4e81-a50a-7d45142050cb.png)
+
+### Employee Performance
+<b>Question:</b> Return the quantity of orders filled, quantity of products sold, and total sales for employees working in the front of house for the duration of their employment in that position. Include the store location and whether the position is current. Order by store location, position name descending, whether the position is current descending, and total sales descending. (16 rows)
+<br>
+<br><b>Business Purpose:</b> This query will allow Back-to-Roots management to monitor employee success for front of house workers based on how many orders they are filling, how many products they are selling, and how much money they are brining-in with their sales. Employee performance can be compared by normalizing it against the number of months an employee worked in the given position. This information will help Back-to-Roots management identify which employees are highly successful and should be considered for a raise or promotion and which employess might be struggling and need additional support or training.
+```SQL
+```
+
+### Products Ordered by Month
+<b>Question:</b> By product type and product, how many products have been purchased each month? Order by product type and product. Filter by year. Pivot the output. (33 rows)
+<br>
+<br><b>Business Purpose:</b> This query will assist Back-to-Roots management in identifying seasonal trends by product. In purchasing inventory and menu planning, Back-to-Roots management can refer to this query to determine which products should be available for a given month, in addition to what inventory is needed and at what volume.
+<br>
+<br><b>Query:</b>
+```SQL
+DECLARE @year INT = '2020' 
+
+SELECT *
+INTO #tempPivot
+FROM (SELECT 
+	ProductType.ProductTypeName AS [Product Type],
+	Product.ProductName AS [Product Name],
+	DATENAME(MONTH, CustomerOrder.OrderDate) AS [Month],
+	SUM(OrderLine.Quantity) AS [Total Quantity Sold]
+FROM ProductType
+INNER JOIN Product
+	ON ProductType.ProductTypeID = Product.ProductTypeID
+INNER JOIN OrderLine
+	ON Product.ProductID = OrderLine.ProductID
+INNER JOIN CustomerOrder
+	ON CustomerOrder.OrderID = OrderLine.OrderID
+WHERE YEAR(CustomerOrder.OrderDate) = @year
+GROUP BY
+	ProductType.ProductTypeName,
+	Product.ProductName,
+	DATENAME(MONTH, CustomerOrder.OrderDate)) AS MonthlyOrderData
+PIVOT(SUM([Total Quantity Sold])
+    FOR [Month] IN ([January],[February],[March],[April],[May],[June],[July],[August],[September],[October],[November],[December])) AS MonthNamePivot
+
+SELECT * 
+FROM #tempPivot 
+ORDER BY 
+	[Product Type], 
+	[Product Name]
+
+DROP TABLE #tempPivot
+```
+<b>Output:</b>
+<br>
+<br>![MonthlyOrdersByProduct](https://user-images.githubusercontent.com/91146906/152904764-703a180a-0b92-474f-8020-7e2918bdcf29.png)
+
 <a name="ViewFunctionSPROC"></a>
 ## View, Function, and Stored Procedure
 [<img src="https://user-images.githubusercontent.com/91146906/152126285-8e8e3552-4f25-4e80-89c7-e79000850553.svg" height="35"/>](../BackToRootsOLTP/BackToRootsScript.sql)
