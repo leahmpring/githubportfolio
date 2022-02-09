@@ -302,7 +302,7 @@ PIVOT StoreLocation.LocationCity;
 ```
 <b>Output:</b>
 <br>
-<br>![Query7](https://user-images.githubusercontent.com/91146906/152933813-c45d04c3-dd38-4484-9c1e-1e09d5f7be1b.png)
+<br>![StoreLocationPerformance](https://user-images.githubusercontent.com/91146906/153096095-e432837f-5f7b-4b46-8d30-02c6b83d2ce5.png)
 
 [<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Queries)
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
@@ -359,7 +359,7 @@ PIVOT 'Qtr ' & DATEPART('q', CustomerOrder.OrderDate);
 ```
 <b>Output:</b>
 <br>
-<br>![Query8](https://user-images.githubusercontent.com/91146906/152938869-e78a6a13-d660-40d2-871d-c90c9cc968b7.png)
+<br>![QuarterlySales](https://user-images.githubusercontent.com/91146906/153096222-58c4fc80-bf23-41e7-aa10-30a6784b188e.png)
 
 [<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Queries)
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
@@ -520,7 +520,7 @@ PIVOT CustomerOrder.OrderFulfillment;
 ```
 <b>Output:</b>
 <br>
-<br>![Query4A](https://user-images.githubusercontent.com/91146906/152935213-4152c21c-c710-404f-836c-72754bc3ee22.png)
+<br>![OrderFulfillmentA](https://user-images.githubusercontent.com/91146906/153096376-6491affa-ef11-48bf-9feb-eff29426e08e.png)
 
 [<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Queries)
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
@@ -642,7 +642,7 @@ PIVOT MONTHNAME(DATEPART('m', CustomerOrder.OrderDate)) IN (January, February, M
 ```
 <b>Output:</b>
 <br>
-<br>![Query3](https://user-images.githubusercontent.com/91146906/152939690-21de26f3-9e0d-4df2-bd6a-7c44416e628f.png)
+<br>![ProductsByMonth](https://user-images.githubusercontent.com/91146906/153096881-2c546f08-353c-4a33-a069-5cbf6ef91719.png)
 
 [<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Queries)
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
@@ -684,7 +684,7 @@ ORDER BY
 <br>
 <br><b> Sample Output:</b>
 <br>
-<br>![Query6A](https://user-images.githubusercontent.com/91146906/152929134-bdc4662a-6da9-41f8-851d-7f20a4eafbee.png)
+<br>![ProductSalesByLoc](https://user-images.githubusercontent.com/91146906/153096678-beff702f-a3c3-45ac-a4d2-dbd4393c2c8f.png)
 
 [<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Queries)
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
@@ -728,7 +728,7 @@ WHERE LongmontOrder.ProductID IS NULL;
 <br>
 <br><b>Output:</b>
 <br>
-<br>![Query6B](https://user-images.githubusercontent.com/91146906/152946531-d062f461-1fec-4579-8c94-6f4c6f4e98d1.png)
+<br>![ProductsNotSold](https://user-images.githubusercontent.com/91146906/153096756-58c9a0c1-b96d-4592-8d1c-d3ce0525fa9b.png)
 
 [<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Queries)
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
