@@ -20,7 +20,8 @@
 <a name="WLLC"></a>
 ### Wellness Living and Learning Community
 <i>Fall 2018 - Spring 2019</i>
-
+<br>
+<br>The Wellness Living and Learning Community (LLC) is a group of first-year students living and taking academic classes together. I joined this community to help myself integrate into college with the support of those holding similar values and goals as myself. In my first weeks of school, I remember counting the hours I was expected to spend weekly on my classes and job: 18 hours of class, 36-54 hours of classwork, 10 hours of work, plus time for myself. At that point, I could not fathom how this was possible: When was I supposed to find time for fun and for myself? In this challenging transition, I sought to find balance through my academic and personal wellness journeys, and the Wellness LLC helped me focus on cultivating and maintaining a healthy lifestyle as it applies to self, spirituality, and community.
 <table>
   <tr>
     <td>
