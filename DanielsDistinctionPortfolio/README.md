@@ -9,6 +9,24 @@
 [<img src="https://user-images.githubusercontent.com/91146906/152071881-e4fdfd91-bd4d-42f6-a6f4-0e1234c6bfc7.svg" height="35"/>](#CommunityLeadership)
 [<img src="https://user-images.githubusercontent.com/91146906/152072049-ab7d3102-eb2e-4f8b-983e-be3783806f87.svg" height="35"/>](#Technical)
 
+<a name="Communucation and Interpersonal Effectiveness"></a>
+<hr>
+
+## Communucation and Interpersonal Effectiveness
+
+<a name="MOS"></a>
+### Microsoft Office Certification Program
+<i>Fall 2019 - Spring 2022</i>
+<br>
+<table>
+  <tr>
+    <td>
+      <img src="https://user-images.githubusercontent.com/91146906/160252055-791d54af-06ed-4df9-acc4-2d56d2727418.jpg" height="460">
+      <br><i>Team Bowling Night Winter 2022</i>
+      </td>
+  </tr>
+</table>
+
 <a name="CommunityLeadership"></a>
 <hr>
 
@@ -21,7 +39,15 @@
 ### Wellness Living and Learning Community
 <i>Fall 2018 - Spring 2019</i>
 <br>
-<br>The Wellness Living and Learning Community (LLC) is a group of first-year students living and taking academic classes together. I joined this community to help myself integrate into college with the support of those holding similar values and goals as myself. In my first weeks of school, I remember counting the hours I was expected to spend weekly on my classes and job: 18 hours of class, 36-54 hours of classwork, 10 hours of work, plus time for myself. At that point, I could not fathom how this was possible: When was I supposed to find time for fun and for myself? In this challenging transition, I sought to find balance through my academic and personal wellness journeys, and the Wellness LLC helped me focus on cultivating and maintaining a healthy lifestyle as it applies to self, spirituality, and community.
+<br>The Wellness Living and Learning Community (LLC) is a group of first-year students living and taking academic classes together. I joined this community to help myself integrate into college with the support of those holding similar values and goals as myself. In my first weeks of school, I remember counting the hours I was expected to spend weekly on my classes and job: 18 hours of class, 36-54 hours of classwork, 10 hours of work, plus time for myself. At that point, I could not fathom how this was possible: When was I supposed to find time for fun and for myself? In this challenging transition, I sought balance through my academic and personal wellness journeys, and the Wellness LLC helped me focus on cultivating and maintaining a healthy lifestyle as it applies to self, spirituality, and community.
+<br>
+<br>More reflection...
+<br>
+
+<details>
+<summary><i><b>See what I did in my role!</b></i></summary>
+</details>
+
 <table>
   <tr>
     <td>
@@ -218,3 +244,58 @@
 <br>Insert description.
 <br>
 <br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>]()
+
+### Internship: St. Vrain Valley School District - District Technology Services
+<i>Summer 2019, Summer 2020, Summer 2021</i>
+
+<table>
+  <tr>
+    <td>
+      <img src="https://user-images.githubusercontent.com/91146906/160251615-81674d36-c3b7-4bf9-b569-8d61d7d3761a.jpg" height="460">
+      <br><i>DTS Team Summer 2019</i>
+      </td>
+  </tr>
+</table>
+
+<a name="ProfessionalExperience"></a>
+<hr>
+
+## Professional Experience
+
+<a name="Fun"></a>
+<hr>
+
+## And a little fun in the Colordao outdoors...
+<table>
+  <tr>
+    <td>
+      <img src="https://user-images.githubusercontent.com/91146906/160253093-aedc00a3-b8fb-47bd-b180-09470f213463.jpg" width="460">
+      <br><i>Hiking Mt. Sherman Fall 2018</i>
+      </td>
+    <td>
+      <img src="https://user-images.githubusercontent.com/91146906/160253019-1cab3057-87fe-4f21-a44c-8a27f58781da.jpg" width="460">
+      <br><i>Rafting Summer 2019</i>
+    </td>
+  </tr>
+  <tr>
+    <td>
+      <img src="https://user-images.githubusercontent.com/91146906/160253248-af857098-07eb-4c9d-86b8-531b48c52694.jpg" width="460">
+      <br><i>Bolder Boulder Spring 2019 / 5K in Wash Park Fall 2019</i>
+      </td>
+    <td>
+      <img src="https://user-images.githubusercontent.com/91146906/160252752-aa75d597-dbf2-440c-9539-cd5ac380f7f3.jpg" width="460">
+      <br><i>Skiing Winter 2020</i>
+      </td>
+  </tr>
+    <tr>
+    <td>
+      <img src="https://user-images.githubusercontent.com/91146906/160253445-1d9d626f-7f9d-4550-8ffb-596c066ea718.jpg" width="460">
+      <br><i>Snowshoeing Winter 2020</i>
+      </td>
+    <td>
+      <img src="https://user-images.githubusercontent.com/91146906/160253356-7b4e89d0-9c25-4fa9-8282-fbf0977e6a8b.jpg" width="460">
+      <br><i>Snowman Building Winter 2022</i>
+    </td>
+  </tr>
+</table>
+
