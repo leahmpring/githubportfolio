@@ -269,30 +269,40 @@
 <table>
   <tr>
     <td>
-      <img src="https://user-images.githubusercontent.com/91146906/160253093-aedc00a3-b8fb-47bd-b180-09470f213463.jpg" width="460">
-      <br><i>Hiking Mt. Sherman Fall 2018</i>
+      <img src="https://user-images.githubusercontent.com/91146906/160346964-fbbcb1ab-8b60-4c43-8676-88bfbbd2f8ec.jpg" width="460">
+      <br><i>Hiking Red Rocks with Freshman Seminar Fall 2018</i>
       </td>
-    <td>
-      <img src="https://user-images.githubusercontent.com/91146906/160253019-1cab3057-87fe-4f21-a44c-8a27f58781da.jpg" width="460">
-      <br><i>Rafting Summer 2019</i>
-    </td>
+        <td>
+      <img src="https://user-images.githubusercontent.com/91146906/160253093-aedc00a3-b8fb-47bd-b180-09470f213463.jpg" width="460">
+      <br><i>Hiking Mt. Sherman 14er Fall 2018</i>
+      </td>
   </tr>
   <tr>
     <td>
+      <img src="https://user-images.githubusercontent.com/91146906/160253019-1cab3057-87fe-4f21-a44c-8a27f58781da.jpg" width="460">
+      <br><i>Rafting Colorado River Summer 2019</i>
+    </td>
+        <td>
       <img src="https://user-images.githubusercontent.com/91146906/160253248-af857098-07eb-4c9d-86b8-531b48c52694.jpg" width="460">
       <br><i>Bolder Boulder Spring 2019 / 5K in Wash Park Fall 2019</i>
       </td>
+  </tr>
+  <tr>
     <td>
       <img src="https://user-images.githubusercontent.com/91146906/160252752-aa75d597-dbf2-440c-9539-cd5ac380f7f3.jpg" width="460">
       <br><i>Skiing Winter 2020</i>
       </td>
-  </tr>
-    <tr>
-    <td>
+        <td>
       <img src="https://user-images.githubusercontent.com/91146906/160253445-1d9d626f-7f9d-4550-8ffb-596c066ea718.jpg" width="460">
       <br><i>Snowshoeing Winter 2020</i>
       </td>
+  </tr>
+    <tr>
     <td>
+      <img src="https://user-images.githubusercontent.com/91146906/160349054-2593e7e2-7f44-43d6-81d9-3c6ee62efd6f.jpg" width="460">
+      <br><i>Paddle Boarding Steamboat Lake Summer 2020</i>
+    </td>
+      <td>
       <img src="https://user-images.githubusercontent.com/91146906/160253356-7b4e89d0-9c25-4fa9-8282-fbf0977e6a8b.jpg" width="460">
       <br><i>Snowman Building Winter 2022</i>
     </td>
