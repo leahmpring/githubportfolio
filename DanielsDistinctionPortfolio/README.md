@@ -273,7 +273,7 @@
       <br><i>Hiking Red Rocks with Freshman Seminar Fall 2018</i>
       </td>
         <td>
-      <img src="https://user-images.githubusercontent.com/91146906/160253093-aedc00a3-b8fb-47bd-b180-09470f213463.jpg" width="460">
+      <img src="https://user-images.githubusercontent.com/91146906/160350753-371241a7-4111-4d07-b1b6-87d15608513c.jpg" width="460">
       <br><i>Hiking Mt. Sherman 14er Fall 2018</i>
       </td>
   </tr>
