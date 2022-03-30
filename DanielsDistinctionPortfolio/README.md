@@ -6,10 +6,11 @@
 # Daniels Distinction Portfolio
 <i>Hannah McDonald – April 2022 – Business Analytics</i>
 <br><br>
+[<img src="https://user-images.githubusercontent.com/91146906/160904313-d3515906-abf0-4f63-9a9c-c8dcdb80c446.svg" height="35"/>](#CommunucationInterpersonal)
 [<img src="https://user-images.githubusercontent.com/91146906/152071881-e4fdfd91-bd4d-42f6-a6f4-0e1234c6bfc7.svg" height="35"/>](#CommunityLeadership)
 [<img src="https://user-images.githubusercontent.com/91146906/152072049-ab7d3102-eb2e-4f8b-983e-be3783806f87.svg" height="35"/>](#Technical)
 
-<a name="Communucation and Interpersonal Effectiveness"></a>
+<a name="CommunucationInterpersonal"></a>
 <hr>
 
 ## Communucation and Interpersonal Effectiveness
@@ -26,6 +27,11 @@
       </td>
   </tr>
 </table>
+
+<a name="DAT"></a>
+### Daniels Ambassador Team
+<i>Fall 2019 - Winter 2022</i>
+<br>
 
 <a name="CommunityLeadership"></a>
 <hr>
@@ -218,33 +224,12 @@
 <hr>
 
 ## Technical Knowledge
+[<img src="https://user-images.githubusercontent.com/91146906/160903916-f1121ac9-ebfc-480a-9dc7-852b33104701.svg" height="35"/>](#SVVSD)
+[<img src="https://user-images.githubusercontent.com/91146906/160903984-a2bcca0a-7e91-4856-93b2-c97e60528097.svg" height="35"/>](#OLTP)
+[<img src="https://user-images.githubusercontent.com/91146906/160904040-9abe5b2d-e2a0-4f4c-a7b6-c911305bcbd8.svg" height="35"/>](#OLAP)
+[<img src="https://user-images.githubusercontent.com/91146906/160904098-dc1cb242-8a59-4691-bf4d-17c118dbfd62.svg" height="35"/>](#VBA)
 
-<a name="Database"></a>
-### Database Project: Back to Roots OLTP
-<i>Winter 2021</i>
-<br>
-<br>During my Foundations or Information Management class in Winter 2021, I was tasked with planning, designing, building, and programming aspects of an information management system using Microsoft Word (documentation), Visio (diagraming), and Access (relational database). This included designing a relational database, simulating data, building the relational database in Access, loading the data into the relational database, querying the relational database using SQL, and developing relational database forms and reports, including using VBA macros, functions, and sub procedures.
-<br>
-<br><i>Spring 2021</i>
-<br>
-<br>During my Enterprise Information Management class in Spring 2021, I expanded this relational database, adding tables and moving it to Microsoft SQL Server Management Studio. This included designing, building, and programing an enterprise information management database using SQL Server and Azure; designing, building, and programing interactive forms using Visual Studio and SQL Server; and designing, building, and programing a Windows integrated application, along with reports, using Visual Studio and SQL Server. Throughout this process, I used SQL (build script, function, stored procedure, views, reports) and Visual Basic (forms).
-<br>
-<br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>](../DanielsDistinctionPortfolio/BackToRootsOLTP/#top)
-
-### Database Project: Back to Roots OLAP
-<i>Fall 2021</i>
-<br>
-<br>Insert description.
-<br>
-<br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>](../DanielsDistinctionPortfolio/BackToRootsOLAP/#top)
-
-### Automating Business Processes
-<i>Winter 2021 - Spring 2022</i>
-<br>
-<br>Insert description.
-<br>
-<br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>]()
-
+<a name="SVVSD"></a>
 ### Internship: St. Vrain Valley School District - District Technology Services
 <i>Summer 2019, Summer 2020, Summer 2021</i>
 
@@ -256,6 +241,34 @@
       </td>
   </tr>
 </table>
+
+<a name="OLTP"></a>
+### Database Project: Back to Roots OLTP
+<i>Winter 2021</i>
+<br>
+<br>During my Foundations or Information Management class in Winter 2021, I was tasked with planning, designing, building, and programming aspects of an information management system using Microsoft Word (documentation), Visio (diagraming), and Access (relational database). This included designing a relational database, simulating data, building the relational database in Access, loading the data into the relational database, querying the relational database using SQL, and developing relational database forms and reports, including using VBA macros, functions, and sub procedures.
+<br>
+<br><i>Spring 2021</i>
+<br>
+<br>During my Enterprise Information Management class in Spring 2021, I expanded this relational database, adding tables and moving it to Microsoft SQL Server Management Studio. This included designing, building, and programing an enterprise information management database using SQL Server and Azure; designing, building, and programing interactive forms using Visual Studio and SQL Server; and designing, building, and programing a Windows integrated application, along with reports, using Visual Studio and SQL Server. Throughout this process, I used SQL (build script, function, stored procedure, views, reports) and Visual Basic (forms).
+<br>
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>](../DanielsDistinctionPortfolio/BackToRootsOLTP/#top)
+
+<a name="OLAP"></a>
+### Database Project: Back to Roots OLAP
+<i>Fall 2021</i>
+<br>
+<br>Insert description.
+<br>
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>](../DanielsDistinctionPortfolio/BackToRootsOLAP/#top)
+
+<a name="VBA"></a>
+### Automating Business Processes with VBA
+<i>Winter 2021 - Spring 2022</i>
+<br>
+<br>Insert description.
+<br>
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>]()
 
 <a name="ProfessionalExperience"></a>
 <hr>
