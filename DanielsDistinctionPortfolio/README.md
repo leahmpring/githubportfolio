@@ -184,15 +184,15 @@
     <tr>
       <td>
         <b>Care Like a Leader:</b> How to care for yourself, adopting habits to show up your best so you can better serve others.
-        <br><br><blockquote>Insert here</blockquote>
-        <blockquote><b>Key takeaway:</b> Insert here</blockquote>
+        <br><br><blockquote>Taking care of myself is challenging for me in the sense that I always put others first. However, I recognize that adopting habits to care for myself will allow me to show up at my best and, ultimately, will allow me to better serve others. With that in mind, I am working to identify and do things for myself that will enable me to best serve others. This includes taking inventory on my satisfaction with various areas of my life and whether I am prioritizing those most important to me; identifying things that bring me energy and things that drain my energy; and creating routines that foster a positive mindset and environment for myself. Further, I consider burnout prevention, particularly setting and communicating boundaries. In addition to caring for myself, my role as a learder includes supporing others' work-life harmony, particularly in helping others set boundaries and then adapting my work and expectations to respect those boundaries.</blockquote>
+        <blockquote><b>Key takeaway:</b> We must care for ourselves and prevent burnout to the extent that time off is not recovery but rather time to do what we enjoy. As a learder, this is two-fold: (1) How can I do this for myself, and (2) how can I foster this on my team?</blockquote>
       </td>
     </tr>
     <tr>
       <td>
         <b>Inspire Like a Leader:</b> How to take ownership of your life and path, declaring how you will make your mark on the world.
-        <br><br><blockquote>Insert here</blockquote>
-        <blockquote><b>Key takeaway:</b> Insert here</blockquote>
+        <br><br><blockquote>To be authentic in what I do, it is important to identify my values and to live my life by them. The five values I identified for myself are (1) show kindness, (2) seek balance, (3) live with passion, (4) foster learning and growth, and (5) be dependable. Additionally, I set my leadership vision: I am a leader constantly striving to grow and inspire others–I lead with passion and love; I listen and empower; and I help others be the best they can be.</blockquote>
+        <blockquote><b>Key takeaway:</b> It is not what I want to be but who I want to be. I get to decide who I want to be and have the ability to be just that. Further, I have the ability to make my mark–big deep to identify what that is and have the courage to pursue it.</blockquote>
       </td>
     </tr>
   </table>
