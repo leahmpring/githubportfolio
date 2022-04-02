@@ -13,9 +13,10 @@
 [<img src="https://user-images.githubusercontent.com/91146906/152242345-ff52d28e-14c3-445d-bdec-a668a48bc4b4.svg" height="35"/>](#ViewFunctionSPROC)
 [<img src="https://user-images.githubusercontent.com/91146906/152242423-78c24a7a-3937-4196-b97b-59fadedc3191.svg" height="35"/>](#Application)
 [<img src="https://user-images.githubusercontent.com/91146906/152244444-33feb407-c877-4ea1-8486-490c4a8aec78.svg" height="35"/>](#DownloadExplore)
-<hr>
 
 <a name="ExecutiveSummary"></a>
+<hr>
+
 ## Executive Summary
 Back to Roots Bakery is a (fictitious) health-conscious, community-centered bakery focused on helping people feel their best while still enjoying “going for ice cream.” The bakery makes and sells a variety of treats and comfort foods for in-store ordering, pre-ordered pick-up, and delivery. Orders can be placed using a variety of methods, including in-store, by phone, and online. In 2018, Back to Roots Bakery opened their first location in Boulder, Colorado and recently opened a new location in Longmont, Colorado. With this expansion, the bakery has seen an increase in demand. This proposed database will give Back to Roots Bakery the competitive advantage, customer insights, process optimization, and data-driven decision-making capabilities to compete in an increasingly competitive industry and to maximize their potential.
 <br>
@@ -23,6 +24,8 @@ Back to Roots Bakery is a (fictitious) health-conscious, community-centered bake
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="ProblemOpportunity"></a>
+<hr>
+
 ## The Problem and Opportunity
 Back to Roots Bakery decided a database is necessary for several key reasons, including creating a competitive advantage and better meeting customer needs:
 <ul>
@@ -40,6 +43,8 @@ After seeing an increase in health-conscious eating and the success of the Bould
 <br>[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="DatabaseDesign"></a>
+<hr>
+
 ## Database Design: Entity Relationship Diagram (ERD)
 
 <img width="1003" alt="Back to Roots OLTP ERD" src="https://user-images.githubusercontent.com/91146906/137017556-bae865cc-df49-48f9-9cf5-417b10a44c3f.png">
@@ -47,6 +52,8 @@ After seeing an increase in health-conscious eating and the success of the Bould
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="SimulatingData"></a>
+<hr>
+
 ## Simulating Data
 Coming soon...
 <br>
@@ -55,6 +62,8 @@ Coming soon...
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="BuildScript"></a>
+<hr>
+
 ## Build Script
 The Back to Roots build script creates the "BackToRoots" database if it does not exist, deletes tables if they exist, creates tables with the appropriate attributes and constraints, populates each table with data from CSV files, and then lists table names and row counts for confirmation. Due to the logic, the script can be run multiple times without error.
 <br>
@@ -125,6 +134,8 @@ The Back to Roots build script creates the "BackToRoots" database if it does not
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="Queries"></a>
+<hr>
+
 ## Queries
 Several queries are written, each answering a question and serving a business purpose. In addition to the SQL to run in Microsoft SQL Server Management Studio, there are notes and code snippets for modifying the SQL to run in an Access database. Snapshots of the queries' output from Microsoft SQL Server Management Studio are included.
 
@@ -734,6 +745,8 @@ WHERE LongmontOrder.ProductID IS NULL;
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="ViewFunctionSPROC"></a>
+<hr>
+
 ## View, Function, and Stored Procedure
 [<img src="https://user-images.githubusercontent.com/91146906/152126285-8e8e3552-4f25-4e80-89c7-e79000850553.svg" height="35"/>](../BackToRootsOLTP/BackToRootsScript.sql)
 
@@ -752,6 +765,8 @@ The usp_CustomerOrders stored procedure returns customer's order history. The pu
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="Application"></a>
+<hr>
+
 ## Order Management Application: Forms and Reports
 This is a VB.NET application built using Microsoft Visual Studio, consisting of forms and reports that allow Back to Roots to interact with and gain insight from their OLTP. The forms support business operations, and the reports empower data-driven decision making.
 <br>
@@ -851,6 +866,8 @@ GROUP BY
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="DownloadExplore"></a>
+<hr>
+
 ## Download and Explore!
 Want to explore the Back to Roots OLTP yourself? Download the BackToRootsOLTP.zip and open the readme.txt for instructions. This zip file contains all the project's components.
 <br>
