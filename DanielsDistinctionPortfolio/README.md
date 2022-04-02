@@ -283,6 +283,11 @@
 <br>
 <br>During my Enterprise Information Management class in Spring 2021, I expanded this relational database, adding tables and moving it to Microsoft SQL Server Management Studio. This included designing, building, and programing an enterprise information management database using SQL Server and Azure; designing, building, and programing interactive forms using Visual Studio and SQL Server; and designing, building, and programing a Windows integrated application, along with reports, using Visual Studio and SQL Server. Throughout this process, I used SQL (build script, function, stored procedure, views, reports) and Visual Basic (forms).
 <br>
+
+https://user-images.githubusercontent.com/91146906/137153830-d4bc600c-1931-483e-86c0-f72f6e6f0806.mp4
+
+<i>Unmute video for narration</i>
+<br>
 <br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>](../DanielsDistinctionPortfolio/BackToRootsOLTP/#top)
 
 
@@ -294,6 +299,8 @@
 <i>Fall 2021</i>
 <br>
 <br>During my Data Warehousing and Business Intelligence class in Fall 2021, I used my Back to Roots OLTP to plan, design, and build an enterprise data mart (OLAP) using SQL Server, Visio, Visual Studio, Excel, and Power BI. Throughout this process, I created busienss requirements and designed the data mart; built the data mart; extracted, transformed, and loaded (ETL) the data mart; and developed reports and dashboards from the data mart to answer the the business requirements' questions.
+<br>
+<br><img width="1211" alt="BackToRootsDashboard" src="https://user-images.githubusercontent.com/91146906/152289272-89e5505c-4e6a-4f29-b516-66ec308c28af.png">
 <br>
 <br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>](../DanielsDistinctionPortfolio/BackToRootsOLAP/#top)
 
