@@ -45,13 +45,41 @@
 ### Wellness Living and Learning Community
 <i>Fall 2018 - Spring 2019</i>
 <br>
-<br>The Wellness Living and Learning Community (LLC) is a group of first-year students living and taking academic classes together. I joined this community to help myself integrate into college with the support of those holding similar values and goals as myself. In my first weeks of school, I remember counting the hours I was expected to spend weekly on my classes and job: 18 hours of class, 36-54 hours of classwork, 10 hours of work, plus time for myself. At that point, I could not fathom how this was possible: When was I supposed to find time for fun and for myself? In this challenging transition, I sought balance through my academic and personal wellness journeys, and the Wellness LLC helped me focus on cultivating and maintaining a healthy lifestyle as it applies to self, spirituality, and community.
+<br>The Wellness Living and Learning Community (LLC) is a group of first-year students living and taking academic classes together. I joined this community to help myself integrate into college with the support of those holding similar values and goals as myself. In my first weeks of school, I remember counting the hours I was expected to spend weekly on my classes and job: 18 hours of class, 36-54 hours of classwork, 10 hours of work, plus time for myself. At that point, I could not fathom how this was possible: When was I supposed to find time for myself? In this challenging transition, I sought balance through my academic and personal wellness journeys, and the Wellness LLC helped me focus on cultivating and maintaining a healthy lifestyle as it applies to self, spirituality, and community.
 <br>
-<br>More reflection...
+<br>The classes and experiences in the Wellness LLC challenged me to prioritize my own wellness, in addition to the wellness of those around me. With the opportunity to explore and try new things, I learned a great deal about myself and the impact I can have on those around me. My time with the Wellness LLC enhanced my first year of college, and it gave me new perspective in navigating subsequent years, including that relating to my own wellness journey and my role in supporting others' journeys.
 <br>
 
 <details>
-<summary><i><b>See what I did in my role!</b></i></summary>
+<summary><i><b>See what I did in the Wellness LLC!</b></i></summary>
+    <br>
+  <table>
+    <tr>
+      <td>
+        <b>Personal Wellness:</b> Through the classes and experiences in the Wellness LLC, I identified and prioritized the areas of life most prevelant to my wellbeing, including exercising, eating well, sleeping, and connecting with those around me. Further, I explored spirituality through meditation, a practice with which I struggle. While I never "mastered" consistently prioritizing these areas, the Wellness LLC provided structure and support for my personal wellness journey, and challenged me to expand my personal wellness practices. Being part of this community allowed me to better develop the valuable foundation from which my personal wellness journey continues.    
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Community and Social Wellness:</b> In learning about community and social wellness and the processes involved in defining, maintaining, and improving it, my peers and I developed a project proposal for meeting the physcial activity needs of first-year students at the University of Denver. In doing these, we identified and gained an understanding of the community; defined the problem, including its scope, impact, influential factors, and existing resources; and proposed strategies for addressing the problem, including an app connecting "workout buddies," a resource workshop, and a club sports access fund. Throughout this process, I learned the intricate nature of community and social wellness, the challenges in addressing concerns, and the intersections between individual wellness and community and social wellness. A key takeaway was the power individuals and groups possess to make change in their communities.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Volunteering:</b> Giving back to the community, particularly through volunteer work, is a key component of both community and personal wellness. With the Wellness LLC, I volunteered at a community garden in Denver, completing the necessary work to tend to the gardens. Additionally, I volunteered at the Fischer Early Learning Center's Spring Fling, helping them raise money to support their students. Both these experiences were rewarding in supporting the community and developing relationships with my fellow volunteers.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Retreats:</b> With the Wellness LLC, I went on several retreats, including those to Stone Canyon EdVentures and Glenwood Hot Springs. These provided opportunities to disconnect, reflect, recenter, and nurture relationships with my peers. On one retreat, I spent several hours laying in my hamock in the woods. Initially, this sounded boring and even daunting; however, I was able to clear my mind, reflect, and connect with nature. Additionally, I spent uninterrupted time with my peers, having fun and making memories. These experiences highlighted the importance of taking time for myself and being present, as I left retreats feeling refreshed and energized.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Co-Curricular Activities:</b> I regularly participated in co-curricular activities that would expand and support my wellness journey. These activities included a feng shui workshop, a trip to the Denver Botanic Gardens, several yoga practices, a ski day, and more. These activities allowed me to take time for myself and, in many cases, learn or try something new.
+      </td>
+    </tr>
+  </table>
 </details>
 
 <table>
@@ -242,6 +270,9 @@
   </tr>
 </table>
 
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Technical)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+
 <a name="OLTP"></a>
 ### Database Project: Back to Roots OLTP
 <i>Winter 2021</i>
@@ -254,6 +285,10 @@
 <br>
 <br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>](../DanielsDistinctionPortfolio/BackToRootsOLTP/#top)
 
+
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Technical)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+
 <a name="OLAP"></a>
 ### Database Project: Back to Roots OLAP
 <i>Fall 2021</i>
@@ -262,6 +297,10 @@
 <br>
 <br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>](../DanielsDistinctionPortfolio/BackToRootsOLAP/#top)
 
+
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Technical)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+
 <a name="VBA"></a>
 ### Automating Business Processes with VBA
 <i>Winter 2021 - Spring 2022</i>
@@ -269,6 +308,10 @@
 <br>Insert description.
 <br>
 <br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>]()
+
+
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Technical)
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="ProfessionalExperience"></a>
 <hr>
