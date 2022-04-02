@@ -9,10 +9,13 @@
 [<img src="https://user-images.githubusercontent.com/91146906/152279677-02eb9847-1863-4641-b59c-58a0e6cd2f24.svg" height="35"/>](#DataMartDesign)
 [<img src="https://user-images.githubusercontent.com/91146906/152239510-6c631219-71bc-4281-9c8b-b9b1e805b3d8.svg" height="35"/>](#BuildScript)
 [<img src="https://user-images.githubusercontent.com/91146906/152280042-228b216c-e76c-4f34-80f6-f456a15358b2.svg" height="35"/>](#ETL)
+[<img src="https://user-images.githubusercontent.com/91146906/161397633-2e4d30dc-ba35-4fe9-b66d-9c8e91ba0f86.svg" height="35"/>](#PowerPivot)
+[<img src="https://user-images.githubusercontent.com/91146906/161397549-071ca628-25fa-4c34-91d1-78274cafc9b8.svg" height="35"/>](#PowerBI)
 [<img src="https://user-images.githubusercontent.com/91146906/152244444-33feb407-c877-4ea1-8486-490c4a8aec78.svg" height="35"/>](#DownloadExplore)
-<hr>
 
 <a name="ExecutiveSummary"></a>
+<hr>
+
 ## Executive Summary
 Back to Roots Bakery is a health-conscious, community-centered bakery focused on helping people feel their best while still enjoying “going for ice cream.” The bakery makes and sells a variety of treats and comfort foods for in-store ordering, pre-ordered pick-up, and delivery. Orders can be placed using a variety of methods, including in-store, by phone, and online. In 2018, Back to Roots Bakery opened their first location in Boulder, Colorado and recently opened a new location in Longmont, Colorado. With this expansion, the bakery has seen an increase in demand.
 <br>
@@ -21,6 +24,8 @@ Back to Roots Bakery is a health-conscious, community-centered bakery focused on
 <br>[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="BusinessRequirements"></a>
+<hr>
+
 ## Business Requirements
 <b>Chief Operating Officer (COO):</b> <i>What is the quantity of sales monthly, seasonally, and yearly summarized by product, product type, and diet, in addition to location and order fulfillment?</i>
 <blockquote>This analysis will allow the COO to understand demand for products and order fulfillment at each location, informing decisions regarding what products should be stocked and which order fulfillment methods should be supported for those products.</blockquote>
@@ -34,6 +39,8 @@ Back to Roots Bakery is a health-conscious, community-centered bakery focused on
 <br>[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="DataMartDesign"></a>
+<hr>
+
 ## Data Mart Design
 ### Information Package
 
@@ -283,6 +290,8 @@ Back to Roots Bakery is a health-conscious, community-centered bakery focused on
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="BuildScript"></a>
+<hr>
+	
 ## Build Script
 The Back to Roots data mart build script creates the "BackToRootsDM" data mart if it does not exist, deletes tables if they exist, and creates dimension tables and the fact table with the appropriate attributes and constraints. Due to the logic, the script can be run multiple times without error.
 <br>
@@ -291,6 +300,8 @@ The Back to Roots data mart build script creates the "BackToRootsDM" data mart i
 <br>[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 	
 <a name="ETL"></a>
+<hr>
+	
 ## Extract, Transform, and Load the Data Mart
 Using Visual Studio and SSIS, data is extracted from the Back to Roots OLTP, transformed, and loaded into the data mart.
 
@@ -433,6 +444,8 @@ The lookups in the ETL, which popluate the SKs, are as follows.
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 	
 <a name="PowerPivot"></a>
+<hr>
+	
 ## Sales Analysis (Power Pivot)
 ### Chief Operating Officer's Question 
 What is the quantity of sales monthly, seasonally, and yearly summarized by product, product type, and diet, in addition to location and order fulfillment?
@@ -462,6 +475,8 @@ The "Sales Overtime by Product Type" indicate special orders have the most sales
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 	
 <a name="PowerBI"></a>
+<hr>
+	
 ## Customer and Order Dashboard (Power BI)
 ### Chief Marketing Officer's Question
 What are the sales monthly, quarterly, and yearly summarized by customer age and reward status, in addition to order placement method?
@@ -488,6 +503,8 @@ Sales experienced a steady increase, despite seasonality, from Back-to-Root's op
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 	
 <a name="DownloadExplore"></a>
+<hr>
+	
 ## Download and Explore!
 Want to explore the Back to Roots OLAP yourself? Download the BackToRootsOLAP.zip. This zip file contains all the project's components.
 <br>
