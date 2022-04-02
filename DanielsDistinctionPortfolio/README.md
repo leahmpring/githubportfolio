@@ -293,7 +293,7 @@
 ### Database Project: Back to Roots OLAP
 <i>Fall 2021</i>
 <br>
-<br>Insert description.
+<br>During my Data Warehousing and Business Intelligence class in Fall 2021, I used my Back to Roots OLTP to plan, design, and build an enterprise data mart (OLAP) using SQL Server, Visio, Visual Studio, Excel, and Power BI. Throughout this process, I created busienss requirements and designed the data mart; built the data mart; extracted, transformed, and loaded (ETL) the data mart; and developed reports and dashboards from the data mart to answer the the business requirements' questions.
 <br>
 <br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>](../DanielsDistinctionPortfolio/BackToRootsOLAP/#top)
 
