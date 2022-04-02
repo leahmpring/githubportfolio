@@ -55,10 +55,137 @@ After seeing an increase in health-conscious eating and the success of the Bould
 <hr>
 
 ## Simulating Data
-Coming soon...
+Data in the Back to Roots database was simulated to include seasonality and to meet business rules. This was done using Excel. The process for generating OrderLine table data is outlined below. Data for other tables was generated using similar logic, skills, and processes.
+
+### Generating Orders and Order Lines
+Seeing as this Back to Roots database has orders spanning three years (February 2018 - March 2021), there were reasonably 200,000 orders with 600,000 order lines (1-5 products per order).
+
+<b>Step 1:</b> Create a list of OrderIDs and use the ```RANDBETWEEN()``` function to determine how many products are in each order. The ```=SUM(NumProducts)``` should equal the number of order lines desired.
+
+<table>
+	<tr>
+		<th>OrderID</th>
+		<th>NumProducts</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>2</td>
+	<t/r>
+	<tr>
+		<td>2</td>
+		<td>1</td>
+	<t/r>
+	<tr>
+		<td>3</td>
+		<td>2</td>
+	<t/r>
+</table>
+
+<b>Step 2:</b> Create a range with two columns: OrderLineID and OrderID. In the OrderLineID column, create a list of numbers representing the OrderLineID. In the OrderID column, put the number 1 in the first row; then, in subsequent rows, use nested functions to assign each OrderLine to an Order based on the number of products in the order. Use the below function in the column's second row then fill it down through the remaining rows:
+<br>
+<br>```=IF(COUNTIF($B$2:B2,B2)<>INDEX(ProductsPerOrder,MATCH(B2,OrderID,0),2),B2,INDEX(ProductsPerOrder,MATCH(B2,OrderID,0)+1,1))```
+<br>
+<br><i>Understanding the function: Count how many times the OrderID in the previous row has been used. If this number does not equal the number of products that order has, the current row is the same OrderID as the previous row. Otherwise, the current row is the next OrderID.</i>
+		
+
+<table>
+	<tr>
+		<th>OrderLineID</th>
+		<th>OrderID</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>1</td>
+	<t/r>
+	<tr>
+		<td>2</td>
+		<td>1</td>
+	<t/r>
+	<tr>
+		<td>3</td>
+		<td>2</td>
+	<t/r>
+	<tr>
+		<td>4</td>
+		<td>3</td>
+	<t/r>
+	<tr>
+		<td>5</td>
+		<td>3</td>
+	<t/r>
+</table>
+
+### Generating Products for Order Lines
+Product sales are seasonal, and the data is generated accordingly.
+
+<b>Step 1:</b> Make a list of products and determine the percentage of sales each product will generate by season.
+<br><i>Percentage column sums to 100% each season; cumulative column calculated by summing percentage and cumulative values in row above.</i>
+
+<img width="1211" alt="Seasonality" src="https://user-images.githubusercontent.com/91146906/161401965-1c472f2d-2806-4909-9b7d-3183a0957a55.png">
+
+<b>Step 2:</b> To assign products to each OrderLine using seasonality, create a range with the headings in the table below. The OrderLineID and OrderID columns are the columns generated previously. The date column is populated with the order's date, and the season is derived from that date. The quantity column is populated after the product column using ```RANDBETWEEN()``` by product, as different products have different quantity ranges. The ProductID column is populated using the following nested functions to incorporate seasonality:
+<br>
+<br>```=IFS(F2="Winter",INDEX(WinterProdID,MATCH(RAND(),WinterCum)),F2="Spring",INDEX(SpringProdID,MATCH(RAND(),SpringCum)),F2="Summer",INDEX(SummerProdID,MATCH(RAND(),SummerCum)),F2="Fall",INDEX(FallProdID,MATCH(RAND(),FallCum)))```
+<br>
+<br><i>Understanding the function: Random number weighted probability is used to populate the product column. Read more [here](https://exceljet.net/formula/random-number-weighted-probability).</i>
+<table>
+	<tr>
+		<th>OrderLineID</th>
+		<th>ProductID</th>
+		<th>OrderID</th>
+		<th>Quantity</th>
+		<th>Date</th>
+		<th>Season</th>
+	</tr>
+	<tr>
+		<td>1</td>
+		<td>BALL-1</td>
+		<td>1</td>
+		<td>18</td>
+		<td>2/13/2018</td>
+		<td>Winter</td>
+	<t/r>
+	<tr>
+		<td>2</td>
+		<td>BROW-3</td>
+		<td>1</td>
+		<td>1</td>
+		<td>2/13/2018</td>
+		<td>Winter</td>
+	<t/r>
+	<tr>
+		<td>3</td>
+		<td>CRIS-2</td>
+		<td>2</td>
+		<td>4</td>
+		<td>4/2/2019</td>
+		<td>Spring</td>
+	<t/r>
+	<tr>
+		<td>4</td>
+		<td>BALL-5</td>
+		<td>3</td>
+		<td>12</td>
+		<td>6/12/2019</td>
+		<td>Summer</td>
+	<t/r>
+	<tr>
+		<td>5</td>
+		<td>DRIN-2</td>
+		<td>3</td>
+		<td>6</td>
+		<td>6/12/2019</td>
+		<td>Summer</td>
+	<t/r>
+</table>
+		
+<i>This example is not representative of the data in the database.</i>
+<br>
+<br><b>Step 3:</b> Since it is unlikely that an order will have the same product on two different lines, it may be worthwhile to prevent that. One method of doing so is to simply remove duplicates on OrderID and ProductID.
+<br>
+<br> After completing these steps, the OrderLine table has seasonal data. Similar strategies can be used for generating other data.
 <br>
 <br>
-[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#SimulatingData)
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="BuildScript"></a>
