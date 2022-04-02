@@ -489,7 +489,12 @@ Sales experienced a steady increase, despite seasonality, from Back-to-Root's op
 	
 <a name="DownloadExplore"></a>
 ## Download and Explore!
-Coming soon...
+Want to explore the Back to Roots OLAP yourself? Download the BackToRootsOLAP.zip. This zip file contains all the project's components.
 <br>
-<br>[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+<br>[<img src="https://user-images.githubusercontent.com/91146906/152245279-8e2a2d13-3ea0-4f4d-bd19-131e8d895360.svg" height="35"/>](../BackToRootsOLAP/BackToRootsOLAP.zip)
+<br>
+<br><i>Note: You must have Microsoft SQL Server Management Studio, Visual Studio, Excel, and Power BI installed on your machine.</i>
+<br>
+<br>
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
