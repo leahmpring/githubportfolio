@@ -125,7 +125,7 @@ Product sales are seasonal, and the data is generated accordingly.
 
 <b>Step 2:</b> To assign products to each OrderLine using seasonality, create a range with the headings in the table below. The OrderLineID and OrderID columns are the columns generated previously. The date column is populated with the order's date, and the season is derived from that date. The quantity column is populated after the product column using ```RANDBETWEEN()``` by product, as different products have different quantity ranges. The ProductID column is populated using the following nested functions to incorporate seasonality:
 <br>
-<br>```=IFS(F2="Winter",INDEX(WinterProdID,MATCH(RAND(),WinterCum)),F2="Spring",INDEX(SpringProdID,MATCH(RAND(),SpringCum)),F2="Summer",INDEX(SummerProdID,MATCH(RAND(),SummerCum)),F2="Fall",INDEX(FallProdID,MATCH(RAND(),FallCum)))```
+<br>```=IFS(F2="Winter",INDEX(WinProdID,MATCH(RAND(),WinCum)),F2="Spring",INDEX(SprProdID,MATCH(RAND(),SprCum)),F2="Summer",INDEX(SumProdID,MATCH(RAND(),SumCum)),F2="Fall",INDEX(FalProdID,MATCH(RAND(),FalCum)))```
 <br>
 <br><i>Understanding the function: Random number weighted probability is used to populate the product column. Read more [here](https://exceljet.net/formula/random-number-weighted-probability).</i>
 <table>
