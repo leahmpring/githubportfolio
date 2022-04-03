@@ -271,7 +271,9 @@
   <table>
     <tr>
       <td>
-        <b>Data Managment Platform and Visualization Tools:</b> Insert here.    
+        <b>Data Managment and Analytics Platforms:</b> In helping envision and enable the school district's future data work, I evaluated twelve request for information responses and completed two proof of concepts for data management and analytics platforms. My focus in this evaluation was on data visualization, particularly the potential of tools to empower decision making through data visualization. I had the opportunity to work closely with vendors in this process, and I gave my feedback regarding the products' potential.
+        <br><br><blockquote><b>Critical Thinking:</b> Evaluating products required deep critical thinking in considering the school district's needs and the ability of each product to meet those needs. I had to intentionally consider how to complete the proof of concepts to gain an understanding of the tools and had to purposefully ask the vendors questions to accurately evaluate the tools.</blockquote>
+        <blockquote><b>Ethical Decision Making:</b> Ethical practices were used throughout this process to ensure (1) successful proof of concepts with  anonymized data and (2) fair assessment across products. In doing this, evaluation criteria and guidelines were developed.</blockquote>
       </td>
     </tr>
     <tr>
