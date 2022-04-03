@@ -352,10 +352,24 @@ https://user-images.githubusercontent.com/91146906/137153830-d4bc600c-1931-483e-
 [<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Technical)
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
-<a name="Section"></a>
+<a name="Global"></a>
 <hr>
 
-## Section
+## Global and Intercultural Competence
+Traveling internationally and educating myself on cultures other than my own has always been a passion of mine. With that, I have traveled to thirteen countries with many opportunities to engage with locals, whether living with a host family in Spain or visiting a slum in India.
+<br>
+<br>Unfortunately, with the ongoing COVID-19 pandemic, my study abroad program to New Zealand was cancelled, and I did not have the opportunity to travel abroad in college. Nonetheless, I found opportunities at DU to expand by intercultural competence, practice inclusive excellence, and consider multiple perspectives. Further, I am planning a trip abroad for Summer 2022 to continue growing in these areas.
+
+<a name="InternationalBusiness"></a>
+### International Business Exposure
+<i>Winter 2021</i>
+<br><br>During my International Martketing course, I explored the various dimensions of international marketing, particularly their affect on marketing strategies. In doing this, my peers and I developed a strategy to introduce a company's product line in a new country. This required understanding the products and identifying a market that would purchase it. In this process, political, economic, social, technological, environmental, and legal compatabilites between the product line and the new market were considered. Further, my team and I evaluated competition and the needed modifications, segmentation, targeting, and positioning for the product's success in the market.
+<br>
+<br>My key takeaways were the complexity of international business and the importance of taking time to learn about about other cultures. While our research provided valuable insight, it would be worthwhile to travel to the new market and engage in conversation.
+
+<a name="Worldviews"></a>
+### Connecting Across Worldviews
+<i>Winter 2022</i>
 
 <a name="Fun"></a>
 <hr>
