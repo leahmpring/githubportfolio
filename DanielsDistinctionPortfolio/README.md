@@ -276,14 +276,16 @@
     </tr>
     <tr>
       <td>
-        <b>Attendance Reporting:</b> Attendnace is a surprisingly complex calculatiion. Much of my attendance work centered around reading and understaning others' code, pinpointing discrepancies in calculations, and optimizing queries for more readable code and a better user experience. Some key accomplishments from my attendance work include (1) evaluating accuracy of attendance calculations for reporting and (2) rewriting SQL query to run in 12 seconds, rather than 2.5 minutes.
+        <b>Attendance Reporting:</b> Attendnace is a surprisingly complex calculation. Much of my attendance work centered around reading and understaning others' code, pinpointing discrepancies in calculations, and optimizing queries for more readable code and a better user experience. Further, I documented my thought process for reference. Key accomplishments from my attendance work include (1) evaluating accuracy of attendance calculations for reporting and (2) rewriting SQL query to run in 12 seconds, rather than 2.5 minutes.
         <br><br><blockquote><b>Critical Thinkning:</b> Reading and understanding another analyst's code required critical thinking, particularly in determining why that analyst did something in a certain way. Did they find a specific use case that they accounted for with this code, or is it a redundancy that can be optimized? Further, determining how to accurately calculate attendance required critical thinkning.</blockquote>
-        <blockquote><b>Ethical Decision Makeing:</b> Accurate attendance reporting has many implications for ethical decision making, especially given the variety of reasons students may miss school and the associated intervention and student support. 
+        <blockquote><b>Ethical Decision Making:</b> Accurate attendance reporting has many implications for ethical decision making, especially given the variety of reasons students may miss school and the associated intervention and student support. 
       </td>
     </tr>
     <tr>
       <td>
-        <b>Student Performance Project:</b> Insert here.
+        <b>Student Performance Project:</b> I was the backend programmer on this project developed to empower early intervention for students failing their coursework. The lead programmer and myself worked closely with an assistant principal to understand their current (manual) process for gathering information and what additional information was desired. In automating that process and meeting those needs, I helped design and develop an application that positively impacts student success and serves as the foundation for current and future student performance work.
+        <br><br><blockquote><b>Critical Thinkning:</b> This project required a snapshot of data not already captured, necessitating critical thinkning in how to capture that information to use in reporting. Additionally, as a backend programmer, I critically considered how my work interacted with that of the frontend programmer, ensuring modifications to my work did not interfere with their work.</blockquote>
+        <blockquote><b>Ethical Decision Making:</b> To empower ethical decision making, I worked with my fellow programmers to ensure we accurately reported data. Further, we included the appropriate data for decision makers to take informed and ethical next steps. Data security was another important component, particularly in granting access to data based on the users' credentials and authorization.</blockquote>
       </td>
     </tr>
   </table>
