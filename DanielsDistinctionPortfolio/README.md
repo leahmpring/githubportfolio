@@ -352,10 +352,10 @@ https://user-images.githubusercontent.com/91146906/137153830-d4bc600c-1931-483e-
 [<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Technical)
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
-<a name="ProfessionalExperience"></a>
+<a name="Section"></a>
 <hr>
 
-## Professional Experience
+## Section
 
 <a name="Fun"></a>
 <hr>
