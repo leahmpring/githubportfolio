@@ -260,6 +260,34 @@
 <a name="SVVSD"></a>
 ### Internship: St. Vrain Valley School District - District Technology Services
 <i>Summer 2019, Summer 2020, Summer 2021</i>
+<br>
+<br>For three consecutive summers, I was an intern on the DevOps team at St. Vrain Valley School District. On my first day with this team, my supervisor asked about my technical skill set, to which I shared my basic Excel knowledge. In return, I got a puzzled look and one question: Do you know SQL? Seeing as I had never heard of SQL, I was now the puzzled one. Returning home after that first day, I immediately found an online course from which to learn SQL over the weekend, equipping myself with the skills to support and contribute to this team. 
+<br>
+<br>Since then, I received the opportunity to expand my SQL skills working in a large, production database while contributing to a variety of projects impacting stakeholders across the school district, including attendance reports and a student performance application. Through these projects, I quickly learned valuable skills, particularly from the experienced team mentoring me. My <b>technical skills</b> were expanded in writing readable, optimized code to solve complex problems. Further, I was challenged to <b>think critically</b> in designing and developing solutions that serve as a foundation for the district's future student success work. As with all data-related projects, ethical use of data to inform <b>ethical decision making</b> was at the cornerstone of this work, particularly in ensuring the accurate representation of data.
+
+<details>
+<summary><i><b>See the projects I did!</b></i></summary>
+    <br>
+  <table>
+    <tr>
+      <td>
+        <b>Data Managment Platform and Visualization Tools:</b> Insert here.    
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Attendance Reporting:</b> Attendnace is a surprisingly complex calculatiion. Much of my attendance work centered around reading and understaning others' code, pinpointing discrepancies in calculations, and optimizing queries for more readable code and a better user experience. Some key accomplishments from my attendance work include (1) evaluating accuracy of attendance calculations for reporting and (2) rewriting SQL query to run in 12 seconds, rather than 2.5 minutes.
+        <br><br><blockquote><b>Critical Thinkning:</b> Reading and understanding another analyst's code required critical thinking, particularly in determining why that analyst did something in a certain way. Did they find a specific use case that they accounted for with this code, or is it a redundancy that can be optimized? Further, determining how to accurately calculate attendance required critical thinkning.</blockquote>
+        <blockquote><b>Ethical Decision Makeing:</b> Accurate attendance reporting has many implications for ethical decision making, especially given the variety of reasons students may miss school and the associated intervention and student support. 
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Student Performance Project:</b> Insert here.
+      </td>
+    </tr>
+  </table>
+</details>
 
 <table>
   <tr>
