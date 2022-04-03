@@ -9,6 +9,7 @@
 [<img src="https://user-images.githubusercontent.com/91146906/160904313-d3515906-abf0-4f63-9a9c-c8dcdb80c446.svg" height="35"/>](#CommunucationInterpersonal)
 [<img src="https://user-images.githubusercontent.com/91146906/152071881-e4fdfd91-bd4d-42f6-a6f4-0e1234c6bfc7.svg" height="35"/>](#CommunityLeadership)
 [<img src="https://user-images.githubusercontent.com/91146906/152072049-ab7d3102-eb2e-4f8b-983e-be3783806f87.svg" height="35"/>](#Technical)
+[<img src="https://user-images.githubusercontent.com/91146906/161411069-5a6c5a81-e2e7-4c39-a687-f8aa95f23ce6.svg" height="35"/>](#Global)
 
 <a name="CommunucationInterpersonal"></a>
 <hr>
@@ -28,10 +29,14 @@
   </tr>
 </table>
 
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+
 <a name="DAT"></a>
 ### Daniels Ambassador Team
 <i>Fall 2019 - Winter 2022</i>
 <br>
+
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="CommunityLeadership"></a>
 <hr>
@@ -360,6 +365,10 @@ Traveling internationally and educating myself on cultures other than my own has
 <br>
 <br>Unfortunately, with the ongoing COVID-19 pandemic, my study abroad program to New Zealand was cancelled, and I did not have the opportunity to travel abroad in college. Nonetheless, I found opportunities at DU to expand by intercultural competence, practice inclusive excellence, and consider multiple perspectives. Further, I am planning a trip abroad for Summer 2022 to continue growing in these areas.
 
+<a name="GlobalCitizenship"></a>
+### Exploring Global Citizenship
+<i>Fall 2019</i>
+
 <a name="InternationalBusiness"></a>
 ### International Business Exposure
 <i>Winter 2021</i>
@@ -370,6 +379,8 @@ Traveling internationally and educating myself on cultures other than my own has
 <a name="Worldviews"></a>
 ### Connecting Across Worldviews
 <i>Winter 2022</i>
+
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="Fun"></a>
 <hr>
