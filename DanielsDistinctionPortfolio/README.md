@@ -6,6 +6,8 @@
 # Daniels Distinction Portfolio
 <i>Hannah McDonald – April 2022 – Business Analytics</i>
 <br><br>
+Welcome to my Daniels Distinction Portfolio, highlighting my undergraduate experiences and work at the University of Denver!
+<br><br>
 [<img src="https://user-images.githubusercontent.com/91146906/160904313-d3515906-abf0-4f63-9a9c-c8dcdb80c446.svg" height="35"/>](#CommunucationInterpersonal)
 [<img src="https://user-images.githubusercontent.com/91146906/152071881-e4fdfd91-bd4d-42f6-a6f4-0e1234c6bfc7.svg" height="35"/>](#CommunityLeadership)
 [<img src="https://user-images.githubusercontent.com/91146906/152072049-ab7d3102-eb2e-4f8b-983e-be3783806f87.svg" height="35"/>](#Technical)
@@ -15,6 +17,9 @@
 <hr>
 
 ## Communucation and Interpersonal Effectiveness
+[<img src="https://user-images.githubusercontent.com/91146906/161487604-ed3edeaa-53b5-4e97-b493-0fbca6befd8b.svg" height="35"/>](#MOS)
+[<img src="https://user-images.githubusercontent.com/91146906/161487639-b5e2053c-599d-4e20-9660-977258d3731f.svg" height="35"/>](#DAT)
+[<img src="https://user-images.githubusercontent.com/91146906/161487686-1bcb9c45-aaa3-45ad-8def-27fa463ccdc4.svg" height="35"/>](#Writing)
 
 <a name="MOS"></a>
 ### Microsoft Office Certification Program
@@ -35,6 +40,11 @@
 ### Daniels Ambassador Team
 <i>Fall 2019 - Winter 2022</i>
 <br>
+
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+
+<a name="Writing"></a>
+### Writing Samples
 
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
