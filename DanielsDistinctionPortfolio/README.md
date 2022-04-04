@@ -389,6 +389,8 @@ Traveling internationally and educating myself on cultures other than my own has
 <a name="Worldviews"></a>
 ### Connecting Across Worldviews
 <i>Winter 2022</i>
+<br>
+<br>In my role as the TA Coordinator for the Microsoft Office Certification Program, I continuously seek opportunities to expand our team's skill set through personal and professional growth. One example of this is working with the Inclusion & Equity Education department to bring our team a workshop on worldviews and how to connect across them. In our daily work and lives, we interact with people who have different backgrounds, experiences, beliefs, expectations, and values than our own. 
 
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
