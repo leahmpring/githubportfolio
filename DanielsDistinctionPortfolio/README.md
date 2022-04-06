@@ -371,6 +371,11 @@ https://user-images.githubusercontent.com/91146906/137153830-d4bc600c-1931-483e-
 <hr>
 
 ## Global and Intercultural Competence
+
+[<img src="https://user-images.githubusercontent.com/91146906/161900652-98c6a3f7-3dfe-4705-8ea0-06376a7672af.svg" height="35"/>](#GlobalCitizenship)
+[<img src="https://user-images.githubusercontent.com/91146906/161900702-4e7fa7a4-19f7-4859-9441-b7e23afa6df5.svg" height="35"/>](#InternationalBus)
+[<img src="https://user-images.githubusercontent.com/91146906/161900739-32ba4e02-5219-4e56-92ec-ba67f3dfe484.svg" height="35"/>](#Worldviews)
+
 Traveling internationally and educating myself on cultures other than my own has always been a passion of mine. With that, I have traveled to thirteen countries with many opportunities to engage with locals, whether living with a host family in Spain or visiting a slum in India.
 <br>
 <br>Unfortunately, with the ongoing COVID-19 pandemic, my study abroad program to New Zealand was cancelled, and I did not have the opportunity to travel abroad in college. Nonetheless, I found opportunities at DU to expand by intercultural competence, practice inclusive excellence, and consider multiple perspectives. Further, I am planning a trip abroad for Summer 2022 to continue growing in these areas.
@@ -383,15 +388,17 @@ Traveling internationally and educating myself on cultures other than my own has
 <br>
 <br>The awareness I developed in this course proved worthwhile beyond studying abroad, as it applies to my interactions with anyone whose background and experiences differ from my own. Recognizing and understanding cultural differences gives me an opportunity to reflect on the "why" of certain interactions and to begin understanding those interactions from the perspective of those with different cultural backgrounds than my own. This ability has the potential to help avoid miscommunications and to diffuse uncomfortable situations, which is valuable in any setting.
 
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Global)
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
-<a name="InternationalBusiness"></a>
+<a name="InternationalBus"></a>
 ### International Business Exposure
 <i>Winter 2021</i>
 <br><br>During my International Martketing course, I explored the various dimensions of international marketing, particularly their affect on marketing strategies. In doing this, my peers and I developed a strategy to introduce a company's product line in a new country. This required understanding the products and identifying a market that would purchase them. In this process, political, economic, social, technological, environmental, and legal compatabilites between the product line and the new market were considered. Further, my team and I evaluated competition and the needed modifications, segmentation, targeting, and positioning for the product's success in the market.
 <br>
 <br>My key takeaways were the complexity of international business and the importance of taking time to learn about about other cultures. While our research provided valuable insight, it would be worthwhile to travel to the new market and engage in conversation.
 
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Global)
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="Worldviews"></a>
@@ -402,6 +409,7 @@ Traveling internationally and educating myself on cultures other than my own has
 <br>
 <br>Every day, I interact with people who have different beliefs, expectations, and values than my own, which results in different perceptions of the same experiences. This workshop helped me better understand what worldviews are, the role they play in my interactions with others, and how I can identify commonality to connect across them. One of my key takeaways was intent versus impact and how to navigate situations in which the intent of my actions does not match the impact. Further, it served as a reminder to regularly check my assumptions (and the assumptions others may have) and to ask questions with curiosity. Following this session, I was able to implement what we discussed to more productively understand and engage with others. 
 
+[<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Global)
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="Fun"></a>
