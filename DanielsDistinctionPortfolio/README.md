@@ -25,6 +25,44 @@ Welcome to my Daniels Distinction Portfolio, highlighting my undergraduate exper
 ### Microsoft Office Certification Program
 <i>Fall 2019 - Spring 2022</i>
 <br>
+<br>The Daniels College of Business has a Microsoft Office Certification Program that teaches Advanced Excel, Excel, Word, and PowerPoint classes, preparing students to pass the certification exams for each of these programs and to apply these skills in their classwork and professional work. After taking the classes and certification exams myself, I applied for a position as a Junior TA with the program, and I quickly advanced to teaching my own classes and then managing the program. My quick advancement came with many personal reservations about whether I was ready to fill those roles. Nonetheless, I pursued the opportunities recognizing others saw my potential and knowing my own drive and ability to learn, adapt, and meet challenges. By doing so, I developed countless valuable skills and made a positive impact on my students and team.
+<br>
+<br>In my time managing the program as TA Coordinator, we have faced numerous challenges, including being fully remote for a year, onboarding almost an entirely new team while returning to in-person learning, having limited staff, and adapting to constant changes due to the COVID-19 pandemic and other factors. To best prepare our team for these challenges, I updated all our program materials, developed a robust onboarding program, and facilitated ongoing training through a series of workshops. Further, I taught an Excel class to a group of 80 students—a class size never seen before in Daniels. Despite these challenges, we saw incredibly high student pass rates on the certification exams, resulting from the development of a strong TA team. 
+<br>
+<br>The opportunities I have received and work I have done with this program facilitated immense personal and professional growth. I developed skills in public speaking, teaching, facilitating, mentoring, managing, and driving growth. Further, I learned my resilience and adaptability in navigating uncertainty and challenges. With all this, the most rewarding aspect of my role is seeing the growth and success of those around me, including students and my team.  
+
+<details>
+<summary><i><b>See what I did in my role!</b></i></summary>
+    <br>
+  <table>
+    <tr>
+      <td>
+        <b>Teaching:</b> Insert here.    
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Mentoring:</b> Insert here.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Program Growth:</b> Insert here.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Category:</b> Insert here.
+      </td>
+    </tr>
+    <tr>
+      <td>
+        <b>Category:</b> Insert here.
+      </td>
+    </tr>
+  </table>
+</details>
+
 <table>
   <tr>
     <td>
