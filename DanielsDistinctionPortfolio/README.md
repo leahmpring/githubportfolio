@@ -379,6 +379,8 @@ Traveling internationally and educating myself on cultures other than my own has
 ### Exploring Global Citizenship
 <i>Fall 2019</i>
 
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+
 <a name="InternationalBusiness"></a>
 ### International Business Exposure
 <i>Winter 2021</i>
@@ -386,11 +388,15 @@ Traveling internationally and educating myself on cultures other than my own has
 <br>
 <br>My key takeaways were the complexity of international business and the importance of taking time to learn about about other cultures. While our research provided valuable insight, it would be worthwhile to travel to the new market and engage in conversation.
 
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+
 <a name="Worldviews"></a>
 ### Connecting Across Worldviews
 <i>Winter 2022</i>
 <br>
-<br>In my role as the TA Coordinator for the Microsoft Office Certification Program, I continuously seek opportunities to expand our team's skill set through personal and professional growth. One example of this is working with the Inclusion & Equity Education department to bring our team a workshop on worldviews and how to connect across them. In our daily work and lives, we interact with people who have different backgrounds, experiences, beliefs, expectations, and values than our own. 
+<br>In my role as the TA Coordinator for the Microsoft Office Certification Program, I continuously seek opportunities to expand our team's skill set through personal and professional growth. One example of this is working with the Inclusion & Equity Education department at DU to bring our team a workshop on worldviews and connecting across them–a session valuable in learning to consider multiple perspectives. 
+<br>
+<br>Every day, I interact with people who have different beliefs, expectations, and values than my own, which results in different perceptions of the same experiences. This workshop helped me better understand what worldviews are, the role they play in my interactions with others, and how I can identify commonality to connect across them. One of my key takeaways was intent versus impact and how to navigate situations in which the intent of my actions does not match the impact. Further, it served as a reminder to regularly check my assumptions (and the assumptions others may have) and to ask questions with curiosity. Following this session, I was able to implement what we discussed to more productively understand and engage with others. 
 
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
