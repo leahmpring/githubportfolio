@@ -37,17 +37,19 @@ Welcome to my Daniels Distinction Portfolio, highlighting my undergraduate exper
   <table>
     <tr>
       <td>
-        <b>Teaching:</b> Insert here.    
+        <b>Hiring and Onboarding:</b> Insert here.    
       </td>
     </tr>
     <tr>
       <td>
-        <b>Mentoring:</b> Insert here.
+        <b>Training and Development:</b> To promote my team's continued learning, I proposed and implemented ongoing development through regular meetings and workshops. These workshops include expanding technical skills, developing teaching skills, promoting personal growth, and facilitating team cohesion. In planning these workshops and activities, I identified our team's needs and growth areas, often by asking team members, and I took the appropriate steps to bring those learnings to them. In some instances, this entailed partnering with other departments on campus to bring trainings to our team, such as those on supporting mental health, teaching and facilitating, connecting across worldviews, and responding to microagressions. Other times, I developed trainings from my own ongoing learning, such as those on teaching methodologies and techniques, giving and receiving feedback, and personal narratives and limiting beliefs. Additionally, I developed a variety of activities surrounding reflection, goal setting, and feedback implementation.
+          <br><br><blockquote>Developing these trainings challenged me to continue expanding my own skill set, as I educated myself on a variety of topics and brought a selection of those back to my team. In doing this, I learned to transform my own learning into engaging activities from which my team could also learn. Further, I gained facilitation skills, particularly in promoting meaningful conversation. Beyond this, I practiced networking in finding people with knowledge beyond my own to supplement our team's growth.</blockquote>
+          <i>See a sample of the "Advanced Teaching Techniques: Questioning" workshop I developed.</i>
       </td>
     </tr>
     <tr>
       <td>
-        <b>Program Growth:</b> Insert here.
+        <b>Teaching:</b> Insert here.
       </td>
     </tr>
     <tr>
