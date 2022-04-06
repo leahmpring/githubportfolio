@@ -378,13 +378,17 @@ Traveling internationally and educating myself on cultures other than my own has
 <a name="GlobalCitizenship"></a>
 ### Exploring Global Citizenship
 <i>Fall 2019</i>
+<br>
+<br>Although my study abroad program was cancelled, I took a class on Exploring Global Citizenship in preparation of going abroad. This course helped me examine how my own culture and identity may interact with other cultures. Specifically, I examined how historical events, political climates, and social disparities surrounding privilege may influence others' views of and assumptions about me. Further, I educated myself on subtle cultural differences I may encounter, inlcluding differences in language and communication, approach to conflict, and cultural tendencies ([Hofstede's cultural dimensions](https://www.hofstede-insights.com/)).
+<br>
+<br>The awareness I developed in this course proved worthwhile beyond studying abroad, as it applies to my interactions with anyone whose background and experiences differ from my own. Recognizing and understanding cultural differences gives me an opportunity to reflect on the "why" of certain interactions and to begin understanding those interactions from the perspective of those with different cultural backgrounds than my own. This ability has the potential to help avoid miscommunications and to diffuse uncomfortable situations, which is valuable in any setting.
 
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="InternationalBusiness"></a>
 ### International Business Exposure
 <i>Winter 2021</i>
-<br><br>During my International Martketing course, I explored the various dimensions of international marketing, particularly their affect on marketing strategies. In doing this, my peers and I developed a strategy to introduce a company's product line in a new country. This required understanding the products and identifying a market that would purchase it. In this process, political, economic, social, technological, environmental, and legal compatabilites between the product line and the new market were considered. Further, my team and I evaluated competition and the needed modifications, segmentation, targeting, and positioning for the product's success in the market.
+<br><br>During my International Martketing course, I explored the various dimensions of international marketing, particularly their affect on marketing strategies. In doing this, my peers and I developed a strategy to introduce a company's product line in a new country. This required understanding the products and identifying a market that would purchase them. In this process, political, economic, social, technological, environmental, and legal compatabilites between the product line and the new market were considered. Further, my team and I evaluated competition and the needed modifications, segmentation, targeting, and positioning for the product's success in the market.
 <br>
 <br>My key takeaways were the complexity of international business and the importance of taking time to learn about about other cultures. While our research provided valuable insight, it would be worthwhile to travel to the new market and engage in conversation.
 
