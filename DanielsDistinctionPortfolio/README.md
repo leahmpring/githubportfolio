@@ -37,7 +37,7 @@ Welcome to my Daniels Distinction Portfolio, highlighting my undergraduate exper
   <table>
     <tr>
       <td>
-        <b>Hiring and Onboarding:</b> Insert here.    
+        <b>Hiring and Onboarding:</b> I had the opportunity to participate in the hiring process for our team, including creating application and interview questions, reviewing applications, and conducting interviews. Through this process, I learned how to identify candidates that will add value to our team, and it helped me understand the hiring process from an employer's perspective, giving me insight for my own job search process. In writing interview and application questions and making hiring decisions, I regularly checked myself for unconscious biases and influences, ensuring the best decisions were made.      
       </td>
     </tr>
     <tr>
