@@ -11,7 +11,8 @@
 <hr>
 
 ## Education
-Univeristy of Denver, Daniels College of Business – BSBA in Business Information and Analytics, June 2022
+### Univeristy of Denver, Daniels College of Business
+Bachelor of Science Business Administration – Business Information and Analytics, June 2022
 
 <a name="DanielsDistinction"></a>
 #### Daniels Distinction Portfolio
