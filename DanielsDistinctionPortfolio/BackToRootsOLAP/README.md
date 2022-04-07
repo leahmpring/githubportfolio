@@ -11,7 +11,6 @@
 [<img src="https://user-images.githubusercontent.com/91146906/152280042-228b216c-e76c-4f34-80f6-f456a15358b2.svg" height="35"/>](#ETL)
 [<img src="https://user-images.githubusercontent.com/91146906/161397633-2e4d30dc-ba35-4fe9-b66d-9c8e91ba0f86.svg" height="35"/>](#PowerPivot)
 [<img src="https://user-images.githubusercontent.com/91146906/161397549-071ca628-25fa-4c34-91d1-78274cafc9b8.svg" height="35"/>](#PowerBI)
-[<img src="https://user-images.githubusercontent.com/91146906/152244444-33feb407-c877-4ea1-8486-490c4a8aec78.svg" height="35"/>](#DownloadExplore)
 
 <a name="ExecutiveSummary"></a>
 <hr>
@@ -500,18 +499,5 @@ Sales experienced a steady increase, despite seasonality, from Back-to-Root's op
   <li>Market to potential customers in cities surrounding Boulder, Longmont, Niwot, and Lafayette to increase customer base (delivery may be appealing).</li>
 </ul>
 
-[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
-	
-<a name="DownloadExplore"></a>
-<hr>
-	
-## Download and Explore!
-Want to explore the Back to Roots OLAP yourself? Download the BackToRootsOLAP.zip. This zip file contains all the project's components.
-<br>
-<br>[<img src="https://user-images.githubusercontent.com/91146906/152245279-8e2a2d13-3ea0-4f4d-bd19-131e8d895360.svg" height="35"/>](../BackToRootsOLAP/BackToRootsOLAP.zip)
-<br>
-<br><i>Note: You must have Microsoft SQL Server Management Studio, Visual Studio, Excel, and Power BI installed on your machine.</i>
-<br>
-<br>
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
