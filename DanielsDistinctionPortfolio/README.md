@@ -12,6 +12,7 @@ Welcome to my Daniels Distinction Portfolio, highlighting my undergraduate exper
 [<img src="https://user-images.githubusercontent.com/91146906/152071881-e4fdfd91-bd4d-42f6-a6f4-0e1234c6bfc7.svg" height="35"/>](#CommunityLeadership)
 [<img src="https://user-images.githubusercontent.com/91146906/152072049-ab7d3102-eb2e-4f8b-983e-be3783806f87.svg" height="35"/>](#Technical)
 [<img src="https://user-images.githubusercontent.com/91146906/161411069-5a6c5a81-e2e7-4c39-a687-f8aa95f23ce6.svg" height="35"/>](#Global)
+[<img src="https://user-images.githubusercontent.com/91146906/162137053-f80f8671-f676-4beb-949d-186ded72919b.svg" height="35"/>](#Fun)
 
 <a name="CommunucationInterpersonal"></a>
 <hr>
@@ -471,7 +472,7 @@ Traveling internationally and educating myself on cultures other than my own has
 <a name="Fun"></a>
 <hr>
 
-## And a little fun in the Colordao outdoors...
+## And a little fun in the Colorado outdoors...
 <table>
   <tr>
     <td>
@@ -514,4 +515,6 @@ Traveling internationally and educating myself on cultures other than my own has
     </td>
   </tr>
 </table>
+
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
