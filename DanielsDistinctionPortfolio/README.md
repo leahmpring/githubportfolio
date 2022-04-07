@@ -37,7 +37,7 @@ Welcome to my Daniels Distinction Portfolio, highlighting my undergraduate exper
   <table>
     <tr>
       <td>
-        <b>Hiring and Onboarding:</b> I had the opportunity to participate in the hiring process for our team, including creating application and interview questions, reviewing applications, and conducting interviews. Through this process, I learned how to identify candidates that will add value to our team, and it helped me understand the hiring process from an employer's perspective, giving me insight for my own job search process. In writing interview and application questions and making hiring decisions, I regularly checked myself for unconscious biases and influences, ensuring the best decisions were made.      
+        <b>Hiring and Onboarding:</b> I had the opportunity to participate in the hiring process for our team, including creating application and interview questions, reviewing applications, and conducting interviews. Through this process, I learned how to identify candidates that will add value to our team, and it helped me understand the hiring process from an employer's perspective, giving me insight for my own job search process. In writing interview and application questions and making hiring decisions, I regularly checked myself for unconscious biases and influences, ensuring the best decisions were made. After hiring, I developed an onboarding program to prepare our new team members for success and facilitated the three-day training.      
       </td>
     </tr>
     <tr>
@@ -49,17 +49,17 @@ Welcome to my Daniels Distinction Portfolio, highlighting my undergraduate exper
     </tr>
     <tr>
       <td>
-        <b>Teaching:</b> Insert here.
+        <b>Developing Curriculum and Teaching:</b> To best prepare students for the certification exams and to equip them with valuable skills for their classwork and professional work, I regularly evaluated our curriculum and made the appropriate modifications. Doing so helped me develop skills in the methodologies of teaching–when to introduce concepts, how material builds on itself, the role of review, and more. Teaching this material further expanded my skill set, particularly in adapting to student needs, troubleshooting issues, managing a classroom, and public speaking. Often, class would not go exactly as planned, and I would shift accordingly. Further, I gained experience in how to fairly support and accommodate students in a variety of situations, particularly with the stressors of the COVID-19 pandemic. Teaching is incredibly rewarding–seeing students' "lightbulb" or "that's so cool" moments will always be one of my favorites.
       </td>
     </tr>
     <tr>
       <td>
-        <b>Category:</b> Insert here.
+        <b>Operations:</b> My goal has always been to maximize time spent supporing students and TAs and growing the program, which means minimizing time spent on administrative work. To accomplish that, I sought to streamline processes and communications and eliminate repetitive work. One example of this is the VBA code I wrote to automate a frequent task, allowing time and efforts to be focused elsewhere and serving as an opportunity to expand my coding skills. Another example is reviewing and modifying all communications to ensure they are clear and concise, eliminating confusion and excessive communication.  
       </td>
     </tr>
-    <tr>
+<tr>
       <td>
-        <b>Category:</b> Insert here.
+        <b>Management:</b> Management can be challenging, particularly in the last two years with the uncertainty and stressors of the COVID-19 pandemic. Being in a management role during this time, I learned how to balance the needs of the program with the needs of our people. I often shifted plans as new challenges surfaced, and I did so while prioritizing our people. Further, I learned to make tough decisions and to have tough conversations. Through this, I realized my resilience and adaptability: I rose to the challege each time (and there were a lot of times) and saw successes more often than not. When there was not an initial success, I learned and adjusted going forward. Despite the challenges, I found management highly rewarding, and I really enjoy working with people in that capacity. 
       </td>
     </tr>
   </table>
