@@ -88,6 +88,19 @@ Welcome to my Daniels Distinction Portfolio, highlighting my undergraduate exper
 
 <a name="Writing"></a>
 ### Writing Samples
+#### Child Emotional Maltreatment: Identifying Child Emotional Maltreatment and Intervening
+<i>Fall 2020</i>
+<br>
+<br>In this blog post, I researched child abuse, specifically emotional maltreatment, and distilled the complex information into language understood by a non-scientific audience. This helped me develop skills in understanding scientific work and reframing it for consumption beyond a scientific audience. These skills apply to my technical analytic work and to my teaching, as technical concepts often must be explained in non-technical terms to be understood by a broader audience.
+
+[<img src="https://user-images.githubusercontent.com/91146906/162126570-0ee09e62-f24d-4a2a-8d68-3fcb47da7c67.svg" height="35"/>](../DanielsDistinctionPortfolio/ChildEmotionalMaltreatmentBlogPost.pdf)
+
+#### The Impacts of Screen Time on Mental, Emotional, and Relational Health in Children Ages 0-10
+<i>Fall 2020</i>
+<br>
+<br>In this paper, I summarized the results of existing scientific articles related to the impact of screen time on mental, emotional, and relational health in children ages 0-10. Then, I developed a research proposal for future research related to the topic. This required critical thinkning in identifying gaps in existing research and then brainstorming how to bridge those gaps.
+
+[<img src="https://user-images.githubusercontent.com/91146906/162126570-0ee09e62-f24d-4a2a-8d68-3fcb47da7c67.svg" height="35"/>](../DanielsDistinctionPortfolio/ScreenTimeResearchProposal.pdf)
 
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
