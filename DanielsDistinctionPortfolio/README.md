@@ -417,7 +417,11 @@ https://user-images.githubusercontent.com/91146906/137153830-d4bc600c-1931-483e-
 ### Automating Business Processes with VBA
 <i>Winter 2021 - Spring 2022</i>
 <br>
-<br>Insert description.
+<br>In my Automating Business Processes class, I learned how to streamline processes and reduce repetitive work, specifically using VBA in Excel. After just a couple weeks, I realized the real impact this could have on the work I was doing for the Microsoft Office Certification Program. By automating repetitive, time-consuming tasks, my team and I could focus our energies elsewhere, like on maximizing support for TAs and students and growing the program.
+<br>
+<br>The repetitive task I identified and sought to automate was matching registrations for the certification exams against a list of students supposed to be registered for those exams. While it may seem trivial, this consumed unnecessary time and effort when completed manually, particularly given how frequently the task is completed. After understanding the process and goal, I designed and developed a solution to complete this task with the click of a button, and I added additional functionality, like error checking, to better meet our needs and even improve our work. Since its implementation, I have trained team members on how to use it, provided documentation, and maintained and improved it. This is just one example of identifying a problem and developing a solution, ultimately allowing our team to minimize repetitive work and maximize student, staff, and program development.
+<br>
+<br>This project allowed me to develop my skill set, particularly related to coding and seeing a project through every phase of the development cycle including planning, analysis, design, implementation, testing, training, and maintenance.
 <br>
 <br>[<img src="https://user-images.githubusercontent.com/91146906/152109152-fbd18f8c-4c42-46f6-97cc-631c298e7eac.svg" height="35"/>]()
 
@@ -487,6 +491,8 @@ Traveling internationally and educating myself on cultures other than my own has
 <br>Aaron Beam was co-founder and CFO of HealthSouth, and in his presentation, he shared the ethical dilemma he faced when his boss, Richard Scrushy, asked him to fix the numbers to prevent a drop in share price. Although recognizing it was wrong, Mr. Beam altered the numbers "just this once." Inevitably, this led to numerous instances of "cooking the books" until it eventually caught-up to him. My key takeaways from Mr. Beam's story is the courage it takes to act on doing right, rather than just knowing right versus wrong, and how small concessions can quickly lead to loosing oneself.
 <br>
 <br>Ethics Bootcamp was a rewarding and inspiring experience in collaborating with my peers to consider the role of ethics in our daily lives, and the key takeaways continue to resonate with me in the work I do and decisions I make.
+
+[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
 
 <a name="Fun"></a>
 <hr>
