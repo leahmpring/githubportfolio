@@ -12,7 +12,8 @@ Welcome to my Daniels Distinction Portfolio, highlighting my undergraduate exper
 [<img src="https://user-images.githubusercontent.com/91146906/152071881-e4fdfd91-bd4d-42f6-a6f4-0e1234c6bfc7.svg" height="35"/>](#CommunityLeadership)
 [<img src="https://user-images.githubusercontent.com/91146906/152072049-ab7d3102-eb2e-4f8b-983e-be3783806f87.svg" height="35"/>](#Technical)
 [<img src="https://user-images.githubusercontent.com/91146906/161411069-5a6c5a81-e2e7-4c39-a687-f8aa95f23ce6.svg" height="35"/>](#Global)
-[<img src="https://user-images.githubusercontent.com/91146906/162137053-f80f8671-f676-4beb-949d-186ded72919b.svg" height="35"/>](#Fun)
+[<img src="https://user-images.githubusercontent.com/91146906/162367305-5589f7ee-e667-468e-9548-4ee401f7f683.svg" height="35"/>](#Ethics)
+[<img src="https://user-images.githubusercontent.com/91146906/162367370-96cd19ed-02c8-4511-86d6-1cc358e56458.svg" height="35"/>](#Fun)
 
 <a name="CommunucationInterpersonal"></a>
 <hr>
@@ -26,7 +27,7 @@ Welcome to my Daniels Distinction Portfolio, highlighting my undergraduate exper
 ### Microsoft Office Certification Program
 <i>Fall 2019 - Spring 2022</i>
 <br>
-<br>The Daniels College of Business has a Microsoft Office Certification Program that teaches Advanced Excel, Excel, Word, and PowerPoint classes, preparing students to pass the certification exams for each of these programs and to apply these skills in their classwork and professional work. After taking the classes and certification exams myself, I applied for a position as a Junior TA with the program, and I quickly advanced to teaching my own classes and then managing the program. My quick advancement came with many personal reservations about whether I was ready to fill those roles. Nonetheless, I pursued the opportunities recognizing others saw my potential and knowing my own drive and ability to learn, adapt, and meet challenges. By doing so, I developed countless valuable skills and made a positive impact on my students and team.
+<br>The Daniels College of Business offers a Microsoft Office Certification Program that teaches Advanced Excel, Excel, Word, and PowerPoint classes, preparing students to pass the certification exams for each of these programs and to apply these skills in their classwork and professional work. After completing the classes and certification exams myself, I applied for a position as a Junior TA with the program, and I quickly advanced to teaching my own classes and then managing the program. My quick advancement came with many personal reservations about whether I was ready to fill those roles. Nonetheless, I pursued the opportunities, recognizing others saw my potential and knowing my own drive and ability to learn, adapt, and meet challenges. By doing so, I developed countless valuable skills and made a positive impact on my students and team.
 <br>
 <br>In my time managing the program as TA Coordinator, we have faced numerous challenges, including being fully remote for a year, onboarding almost an entirely new team while returning to in-person learning, having limited staff, and adapting to constant changes due to the COVID-19 pandemic and other factors. To best prepare our team for these challenges, I updated all our program materials, developed a robust onboarding program, and facilitated ongoing training through a series of workshops. Further, I taught an Excel class to a group of 80 students—a class size never seen before in Daniels. Despite these challenges, we saw incredibly high student pass rates on the certification exams, resulting from the development of a strong TA team. 
 <br>
@@ -43,7 +44,7 @@ Welcome to my Daniels Distinction Portfolio, highlighting my undergraduate exper
     </tr>
     <tr>
       <td>
-        <b>Training and Development:</b> To promote my team's continued learning, I proposed and implemented ongoing development through regular meetings and workshops. These workshops include expanding technical skills, developing teaching skills, promoting personal growth, and facilitating team cohesion. In planning these workshops and activities, I identified our team's needs and growth areas, often by asking team members, and I took the appropriate steps to bring those learnings to them. In some instances, this entailed partnering with other departments on campus to bring trainings to our team, such as those on supporting mental health, teaching and facilitating, connecting across worldviews, and responding to microagressions. Other times, I developed trainings from my own ongoing learning, such as those on teaching methodologies and techniques, giving and receiving feedback, and personal narratives and limiting beliefs. Additionally, I developed a variety of activities surrounding reflection, goal setting, and feedback implementation.
+        <b>Training and Development:</b> To promote our team's continued learning, I proposed and implemented ongoing development through regular meetings and workshops. These workshops include expanding technical skills, developing teaching skills, promoting personal growth, and facilitating team cohesion. In planning these workshops and activities, I identified our team's needs and growth areas, often by asking team members, and I took the appropriate steps to bring those learnings to them. In some instances, this entailed partnering with other departments on campus to bring trainings to our team, such as those on supporting mental health, teaching and facilitating, connecting across worldviews, and responding to microagressions. Other times, I developed trainings from my own ongoing learning, such as those on teaching methodologies and techniques, giving and receiving feedback, and personal narratives and limiting beliefs. Additionally, I developed a variety of activities surrounding reflection, goal setting, and feedback implementation.
           <br><br><blockquote>Developing these trainings challenged me to continue expanding my own skill set, as I educated myself on a variety of topics and brought a selection of those back to my team. In doing this, I learned to transform my own learning into engaging activities from which my team could also learn. Further, I gained facilitation skills, particularly in promoting meaningful conversation. Beyond this, I practiced networking in finding people with knowledge beyond my own to supplement our team's growth.</blockquote>
           <i>See a sample of the "<a href="../DanielsDistinctionPortfolio/AdvancedTeachingTechniques-Questioning.pdf">Advanced Teaching Techniques: Questioning</a>" workshop I developed.</i>
       </td>
@@ -468,6 +469,24 @@ Traveling internationally and educating myself on cultures other than my own has
 
 [<img src="https://user-images.githubusercontent.com/91146906/152072343-975b3adf-3d47-4d4b-8c3f-fd7b880f036d.svg" height="35"/>](#Global)
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+
+<a name="Ethics"></a>
+<hr>
+
+## Ethics
+[<img src="https://user-images.githubusercontent.com/91146906/162368149-5c3c245e-5798-448e-93be-e40a67ccf1ea.svg" height="35"/>](#EBC)
+
+<a name="EBC"></a>
+### Ethics Bootcamp
+<i>Winter 2020</i>
+<br>
+<br>As part of my Ethics and Legal Studies class, I had the opportunity to partake in Ethics Bootcamp, where I attended a variety of sessions surrounding ethics and the Daniels Fund Ethics Initiative Principles (integrity, trust, accountability, transparency, fairness, respect, rule of law, and viability). Two sessions I found most impactful were Considerations of Driverless Mobility by Professor Libbi Levine Segev and Fraud, Lies, and Hermes Ties by Aaron Beam.
+<br>
+<br>Driverless mobility is an interesting ethical dilemma, specifically in terms of the code behind it. Developers make decisions when writing the cars' code that impact the livelihood of the driver and their surroundings, including other people. For example, if a crash is inevitable, who or what will be protected by the car–and really by the coders behind the technology. Driverless mobility is just one of many ethical delimmas in the advancing technology space, and it poses interesting questions to be considered. This session got me thinkning about those questions and the broader implications, including the potential ethical considerations behind code I develop.
+<br>
+<br>Aaron Beam was co-founder and CFO of HealthSouth, and in his presentation, he shared the ethical dilemma he faced when his boss, Richard Scrushy, asked him to fix the numbers to prevent a drop in share price. Although recognizing it was wrong, Mr. Beam altered the numbers "just this once." Inevitably, this led to numerous instances of "cooking the books" until it eventually caught-up to him. My key takeaways from Mr. Beam's story is the courage it takes to act on doing right, rather than just knowing right versus wrong, and how small concessions can quickly lead to loosing oneself.
+<br>
+<br>Ethics Bootcamp was a rewarding and inspiring experience in collaborating with my peers to consider the role of ethics in our daily lives, and the key takeaways continue to resonate with me in the work I do and decisions I make.
 
 <a name="Fun"></a>
 <hr>
