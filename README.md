@@ -56,7 +56,6 @@ In pursuing Distinction in Business Analytics from the University of Denver, I c
         <li>SQL</li>
         <li>Visual Basic</li>
        <li>Python</li>
-       <li>R</li>
         <li>Excel</li>
         <li>Microsoft SQL Server Management Studio</li>
         <li>Microsoft Visual Studio</li>
