@@ -14,6 +14,12 @@
 ### Univeristy of Denver, Daniels College of Business
 Bachelor of Science Business Administration – Business Information and Analytics, June 2022
 
+<ul>
+  <li><b>Margery Reed Service Award</b>: This recognizes a student with an outstanding commitment to Daniels Undergraduate Programs.</li>
+  <li><b>ANDREW H. WOOD Award</b>: This award goes to the students with the highest scholarship ranking in the 2021-2022 class.</li>
+  <li><b>Daniels Award for Excellence</b>: This is awarded to an outstanding undergraduate student in the Daniels Community.</li>
+</ul>
+
 <a name="DanielsDistinction"></a>
 #### Daniels Distinction Portfolio
 In pursuing Distinction in Business Analytics from the University of Denver, I compiled a portfolio highlighting my experiences and work throughout my undergraduate years. 
