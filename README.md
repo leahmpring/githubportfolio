@@ -104,17 +104,4 @@ January 2021 – July 2021
 ## Skills & Certifications
 
 - **Graphic Design:** Canva, PowToon, Figma, Wix, Adobe Creative Suite (Illustrator, InDesign, Photoshop)
-- **Data Analytics:** Microsoft Office 365 Suite Certified, Excel, Tableau, Qualtrics, Access, JMP, Power BI (basic)
-- **Programming Languages:** Python, HTML/CSS, JavaScript, SQL, VBA (basic), R (basic)
-- **Marketing:** Hubspot Email & Inbound, Meta Ads Manager Basic, Digital Marketing, SEO & SEM, UX Design
-<hr>
-
-## Music Projects 
-
-One of my greatest passions is music. During my study abroad at Lund University in Sweden, I developed an idea for an application called NEXUS. 
-
-NEXUS is a mobile application and website designed to help you meet your next favorite artist in a way like never before. Crafted as an immersive experience, this application increases cultural awareness and ethnic identity, strengthens relationships between artists and fans, and allows artists to offer original content to their fans.
-
-Inspired by Spotify World Map 2.0
-
-To find more information on this project, please [view NEXUS](https://leahpring.wixsite.com/leahpringportfolio/nexus-project)
+- **Data Analytics:** Microsoft Office 365 Suit
