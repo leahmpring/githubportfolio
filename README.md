@@ -24,17 +24,21 @@ Currently on the verge of completing my Bachelor of Science in Marketing, I'm ea
 
 
 ## Education
-### Univeristy of Denver, Daniels College of Business
-Bachelor of Science Business Administration – Marketing with a Minor in Business Information and Analytics, March 2024
+### University of Denver, Daniels College of Business
+Bachelor of Science Business Administration - Marketing, March 2024
 
 <ul>
-  <li><b>Margery Reed Service Award</b>: This award recognizes outstanding commitment to Daniels Undergraduate Programs.</li>
-  <li><b>ANDREW H. WOOD Award</b>: This award goes to the students with the highest scholarship ranking in the 2021-2022 class.</li>
-  <li><b>Daniels Award for Excellence</b>: This is awarded to a student who has made an outstanding contribution to the College and demonstrates the Daniels' values of leadership, ethical behavior, appreciation of diversity, and service to the community.</li>
-  <li><b>Outstanding Business Information and Analytics Undergraduate</b>: Awarded in recognition of work at Daniels within Business Information and Analytics.</li>
+  <li><b>Daniels Student Spotlight</b>: Recognized for outstanding achievements in Daniels College of Business.</li>
+  <li><b>Summa Cum Laude</b>: Awarded for exceptional academic performance.</li>
+  <li><b>Daniels Distinction</b>: Recognized for excellence in Business Analytics.</li>
+  <li><b>Delta Sigma Pi Collegian of the Year in 2022</b>: Honored for leadership and service in Delta Sigma Pi fraternity.</li>
 </ul>
 
 <a name="DanielsDistinction"></a>
+<hr>
+
+
+
 #### Daniels Distinction Portfolio
 In pursuing Distinction in Business Analytics from the University of Denver, I compiled a portfolio highlighting my experiences and work throughout my undergraduate years. 
 
