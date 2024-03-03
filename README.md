@@ -47,13 +47,15 @@ To pursue a Distinction in Marketing from the University of Denver, I researched
 <hr>
 
 
-## Jobs and Internships
-<i>See my [resume](/HannahMcDonaldResume.pdf) and [LinkedIn](https://www.linkedin.com/in/hannah-m-mcdonald/)</i>
+## Work Experience
 
-[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+During the past four years at the University of Denver, I have had the pleasure of completing two internships and various on-campus jobs.
+
+<i>See my [resume](https://leahpring.wixsite.com/leahpringportfolio/about-me) and [LinkedIn](https://www.linkedin.com/in/leahpring/)</i>
 
 <a name="skills"></a>
 <hr>
+
 
 ## Skills
 
