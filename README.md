@@ -116,5 +116,5 @@ NEXUS is a mobile application and website designed to help you meet your next fa
 
 Inspired by Spotify World Map 2.0
 
-To find more information on this project, please go to [View NEXUS](https://leahpring.wixsite.com/leahpringportfolio/nexus-project)
+To find more information on this project, please [view NEXUS](https://leahpring.wixsite.com/leahpringportfolio/nexus-project)
 
