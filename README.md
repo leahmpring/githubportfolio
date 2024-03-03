@@ -51,66 +51,61 @@ To pursue a Distinction in Marketing from the University of Denver, I researched
 
 During the past four years at the University of Denver, I have had the pleasure of completing two internships and various on-campus jobs.
 
+### Projects
+
+**Google**  
+October 2019 - March 2020  
+- Facilitated a design sprint to rebrand the Creativity Sparks application to Tonglo, where I aided in designing the UX platform on Figma and developing comprehensive marketing campaigns for deployment on Instagram, Facebook, and TikTok
+
+**Deloitte DEI Case Competition**  
+May 2020  
+- Spearheaded initiatives to increase customer and employee diversity, inclusion, and representation
+
+**Daniels Distinction Thesis**  
+January 2023 - March 2024  
+- Conducted in-depth research to propose actionable insights on “What Kazakhstan can learn from South Korea’s K-pop to increase tourism and economic growth.”
+
+### Professional Experience
+
+**Comcast**  
+Hybrid in Denver, CO  
+Marketing Sales Operations Analyst Intern  
+June 2023 - August 2023  
+- Conducted comprehensive competitive analysis of companies in the Mountain West Region, identifying key market trends, competitor strategies, and potential growth opportunities
+- Developed a comprehensive business case for a new product initiative, outlining the project scope, objectives, timelines, resource requirements, and projected ROI, then presented to senior leadership team
+
+**GOT BAG**  
+Remote in Denver, CO  
+Brand Development & Sales Management  
+February 2022 – August 2022  
+Brand & Marketing Intern  
+November 2021 – February 2022  
+- Drove lead generation initiatives targeting retailers in the Western region of North America, resulting in increased sales opportunities and market penetration
+- Coordinated sales representatives and managed retail operations, acting as a vital intermediary between clients, sales representatives, and corporate to oversee CRM activities and ensure seamless order processing and fulfillment
+
+**Crimson Call Center**  
+Denver, CO  
+Supervisor & Marketing Manager  
+July 2021 – September 2021  
+Alumni Engagement Caller  
+January 2021 – July 2021  
+- Supported fundraising efforts to secure scholarships and gifts for department and student projects, demonstrating strong persuasive skills and strategic planning, culminating in raising over $27,000 over three days
+- Implemented a comprehensive branding remodel and executed innovative campaigns on Instagram, resulting in a remarkable 108% increase in engagement
+
 <i>See my [resume](https://leahpring.wixsite.com/leahpringportfolio/about-me) and [LinkedIn](https://www.linkedin.com/in/leahpring/)</i>
+
+[View Portfolio of Work](https://leahpring.wixsite.com/leahpringportfolio)
 
 <a name="skills"></a>
 <hr>
 
 
-## Skills
+## Skills & Certifications
 
-<table>
-  <tr>
-    <th>Tools and Technical Skills</th>
-    <th>Certifications</th>
-  </tr>
-  <tr>
-    <td>
-     <ul>
-        <li>SQL</li>
-        <li>Visual Basic</li>
-        <li>Python</li>
-        <li>R</li>
-        <li>Excel</li>
-        <li>Microsoft SQL Server Management Studio</li>
-        <li>Microsoft Visual Studio</li>
-        <li>Tableau</li>
-       <li>PowerBI</li>
-        <li>Trello</li>
-      </ul>
-    </td>
-    <td>
-     <ul>
-        <li><a href = "https://www.credly.com/badges/e654fce3-19be-40b3-9347-228eea2ce3a1/public_url">Microsoft Expert Access 2019</a></li>
-        <li><a href = "https://www.credly.com/badges/23f6c6da-fbcd-4a01-bedc-2f9ca4e5a540/public_url">Microsoft Expert Excel 2019</a></li>
-        <li><a href = "https://www.credly.com/badges/ac1cb133-b395-4a61-a71c-8fd6ea908771/public_url">Microsoft Expert Word 2019</a></li>
-        <li><a href = "https://www.credly.com/badges/e1f089c5-e148-4a30-9dc3-b6551e873dd8/public_url">Microsoft Associate PowerPoint 2019</a></li>
-       <li><a href = "https://www.credly.com/badges/7204aaa1-f592-4582-bc1c-7444f5d49cba/public_url">Microsoft Associate Outlook 2019</a></li>
-      </ul>
-    </td>
-  </tr>
-  <tr>
-    <th>CliftonStrengths (Fall 2018)</th>
-    <th>Other Skills</th>
- </tr>
- <tr>
-   <td>
-     <ol>
-        <li>Responsibility</li>
-        <li>Learner</li>
-        <li>Discipline</li>
-        <li>Developer</li>
-        <li>Achiever</li>
-     </ol>
-   </td>
-   <td>
-     <ul>
-        <li>Teaching</li>
-        <li>Facilitating</li>
-       <li>Problem Solving</li>
-     </ul>
-   </td>
- </tr>
-</table>
+- **Graphic Design:** Canva, PowToon, Figma, Wix, Adobe Creative Suite (Illustrator, InDesign, Photoshop)
+- **Data Analytics:** Microsoft Office 365 Suite Certified, Excel, Tableau, Qualtrics, Access, JMP, Power BI (basic)
+- **Programming Languages:** Python, HTML/CSS, JavaScript, SQL, VBA (basic), R (basic)
+- **Marketing:** Hubspot Email & Inbound, Meta Ads Manager Basic, Digital Marketing, SEO & SEM, UX Design
+<hr>
 
-[<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+
