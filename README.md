@@ -1,7 +1,7 @@
 <a name="top"></a>
 <hr>
 
-## Welcome! This is a little about me and a sampling of my work.
+## Welcome to my portfolio of work! 
 [<img src="https://user-images.githubusercontent.com/91146906/162140860-bfb69654-5603-49bd-a7a1-a836ab1c772c.svg" height="35"/>](#education)
 [<img src="https://user-images.githubusercontent.com/91146906/152290724-72946642-3e58-4ba3-b5b8-b687628526b1.svg" height="35"/>](#DanielsDistinction)
 [<img src="https://user-images.githubusercontent.com/91146906/162140921-207cd392-cfe5-40e6-a84e-0a16e19e405a.svg" height="35"/>](#profExp)
@@ -108,4 +108,13 @@ January 2021 – July 2021
 - **Marketing:** Hubspot Email & Inbound, Meta Ads Manager Basic, Digital Marketing, SEO & SEM, UX Design
 <hr>
 
+## Music Projects 
+
+One of my greatest passions is music. During my study abroad at Lund University in Sweden, I developed an idea for an application called NEXUS. 
+
+NEXUS is a mobile application and website designed to help you meet your next favorite artist in a way like never before. Crafted as an immersive experience, this application increases cultural awareness and ethnic identity, strengthens relationships between artists and fans, and allows artists to offer original content to their fans.
+
+Inspired by Spotify World Map 2.0
+
+To find more information on this project, please go to [View NEXUS](https://leahpring.wixsite.com/leahpringportfolio/nexus-project)
 
