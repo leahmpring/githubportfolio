@@ -7,12 +7,25 @@
 [<img src="https://user-images.githubusercontent.com/91146906/162140921-207cd392-cfe5-40e6-a84e-0a16e19e405a.svg" height="35"/>](#profExp)
 [<img src="https://user-images.githubusercontent.com/91146906/162140965-cf707805-9abd-43f7-8314-4f96794c44dc.svg" height="35"/>](#skills)
 
+<hr>
+
+## Introduction
+
+![Introduction](https://static.wixstatic.com/media/b0af15_5f63f193e0d94b49915d84f74e7aa228~mv2.jpg/v1/fill/w_980,h_1098,al_c,q_85,usm_0.66_1.00_0.01,enc_auto/b0af15_5f63f193e0d94b49915d84f74e7aa228~mv2.jpg)
+
+Passionate about merging the art of marketing with the science of data, I'm dedicated to crafting narratives that resonate with companies, clients, and shape the future. My vision is to build brands that not only thrive but also care deeply about their impact on customers, communities, and the environment.
+
+With a firm belief in the transformative power of businesses, I strive to foster meaningful connections between companies and their clientele. By integrating sustainability into brand DNA, we can create lifestyle brands that stand the test of time and contribute positively to our world.
+
+Currently on the verge of completing my Bachelor of Science in Marketing, I'm eager to collaborate with companies that share these values and are committed to a future where business is a force for good. Let's work together in forging a path toward a more sustainable and prosperous tomorrow.
+
 <a name="education"></a>
 <hr>
 
+
 ## Education
 ### Univeristy of Denver, Daniels College of Business
-Bachelor of Science Business Administration – Business Information and Analytics, June 2022
+Bachelor of Science Business Administration – Marketing with a Minor in Business Information and Analytics, March 2024
 
 <ul>
   <li><b>Margery Reed Service Award</b>: This award recognizes outstanding commitment to Daniels Undergraduate Programs.</li>
