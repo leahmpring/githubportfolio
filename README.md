@@ -39,25 +39,27 @@ Bachelor of Science Business Administration - Marketing, March 2024
 
 
 
-#### Daniels Distinction Portfolio
-In pursuing Distinction in Business Analytics from the University of Denver, I compiled a portfolio highlighting my experiences and work throughout my undergraduate years. 
+#### Daniels Distinction Thesis
+
+To pursue a Distinction in Marketing from the University of Denver, I researched and developed a thesis on "What Kazakhstan can learn from South Korea's K-pop to increase tourism and economic growth." The paper first unravels the mechanics behind the idol industry in South Korea to understand what differentiates K-pop from the rest of the music industry. Next, it discusses the power of K-pop fandoms and the reason behind their massive social media impact. Lastly, it touches on the importance of politics in promoting a positive environment for tourism.
 
 <table>
   <tr>
     <td>
-      <img src="https://user-images.githubusercontent.com/91146906/163692219-efc3d673-751e-4734-8667-21a3aae17f44.jpg" height="460">
-      <br><i>Daniels Distinction Presentation April 2022</i>
+      <img src="https://www.linkedin.com/in/leahpring/overlay/projects/1219968773/multiple-media-viewer/?profileId=ACoAAC02-P4BQig672sT87NkmBJX48ngLacOEak&treasuryMediaId=1705004991900" height="460">
+      <br><i>Daniels Distinction Thesis January 2024</i>
       </td>
   </tr>
 </table>
 
 [<img src="https://user-images.githubusercontent.com/91146906/152291436-225cf6f7-2fb4-4c9c-b6bd-96a5010d3db7.svg" height="35"/>](/DanielsDistinctionPortfolio/#top)
 [<img src="https://user-images.githubusercontent.com/91146906/163692713-13e3fdac-bef7-47f0-85d3-6c98086204cf.svg" height="35"/>](https://www.youtube.com/watch?v=Wo9jiR-w170)
-
 [<img src="https://user-images.githubusercontent.com/91146906/152072378-b0168a2d-e85c-47c6-a272-fcfb3f6a44ae.svg" height="35"/>](#top)
+[<img src="https://user-images.githubusercontent.com/91146906/163692713-13e3fdac-bef7-47f0-85d3-6c98086204cf.svg" height="35"/>](https://www.canva.com/design/DAF4U-F6h_o/al0N9Z8u5oXSn9_DLz3ziw/edit?utm_content=DAF4U-F6h_o&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
 
 <a name="profExp"></a>
 <hr>
+
 
 ## Jobs and Internships
 <i>See my [resume](/HannahMcDonaldResume.pdf) and [LinkedIn](https://www.linkedin.com/in/hannah-m-mcdonald/)</i>
