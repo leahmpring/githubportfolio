@@ -49,6 +49,7 @@ To pursue a Distinction in Marketing from the University of Denver, I researched
 <hr>
 
 
+
 ## Jobs and Internships
 <i>See my [resume](/HannahMcDonaldResume.pdf) and [LinkedIn](https://www.linkedin.com/in/hannah-m-mcdonald/)</i>
 
