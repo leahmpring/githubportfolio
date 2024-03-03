@@ -43,11 +43,8 @@ To pursue a Distinction in Marketing from the University of Denver, I researched
 
 [See Presentation](https://www.canva.com/design/DAF4U-F6h_o/83o77ySxpoyR8tr0Mgp0dw/view?utm_content=DAF4U-F6h_o&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
-[<img src="https://user-images.githubusercontent.com/91146906/152291436-225cf6f7-2fb4-4c9c-b6bd-96a5010d3db7.svg" height="35"/>](/DanielsDistinctionPortfolio/#top)
-
 <a name="profExp"></a>
 <hr>
-
 
 
 ## Jobs and Internships
