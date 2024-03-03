@@ -41,12 +41,13 @@ Bachelor of Science Business Administration - Marketing, March 2024
 
 To pursue a Distinction in Marketing from the University of Denver, I researched and developed a thesis on "What Kazakhstan can learn from South Korea's K-pop to increase tourism and economic growth." The paper first unravels the mechanics behind the idol industry in South Korea to understand what differentiates K-pop from the rest of the music industry. Next, it discusses the power of K-pop fandoms and the reason behind their massive social media impact. Lastly, it touches on the importance of politics in promoting a positive environment for tourism.
 
-[Link to Presentation](https://www.canva.com/design/DAF4U-F6h_o/83o77ySxpoyR8tr0Mgp0dw/view?utm_content=DAF4U-F6h_o&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+[See Presentation](https://www.canva.com/design/DAF4U-F6h_o/83o77ySxpoyR8tr0Mgp0dw/view?utm_content=DAF4U-F6h_o&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 [<img src="https://user-images.githubusercontent.com/91146906/152291436-225cf6f7-2fb4-4c9c-b6bd-96a5010d3db7.svg" height="35"/>](/DanielsDistinctionPortfolio/#top)
 
 <a name="profExp"></a>
 <hr>
+
 
 ## Jobs and Internships
 <i>See my [resume](/HannahMcDonaldResume.pdf) and [LinkedIn](https://www.linkedin.com/in/hannah-m-mcdonald/)</i>
